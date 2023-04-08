@@ -1,5 +1,21 @@
 /* Style the video: 100% width and height to cover the entire window */
 
+*{
+  font-family: 'Open Sans','Ubuntu','Calibri', 'Tahoma';  
+}
+
+*::-webkit-scrollbar {width: 5px;}
+*::-webkit-scrollbar-track {
+  background: orange;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+/*   border: 3px solid orange; */
+}
+
+
 .myVideo {
     position: absolute;
     right: 0;
@@ -14,9 +30,10 @@
     top: 5px;
  /*    background: rgba(0, 0, 0, 0.5); */
     color: #f1f1f1;
+    font-size: large;
     width: 100%;
-    padding: 10px;
-    padding-left: 5px;
+    padding: 5px;
+    padding-left: 130px;
   }
   
 .inline-element{
@@ -56,7 +73,7 @@ a:hover, h5 a:hover{
 
 .logo{
 position : fixed;
-z-index: 2;
+z-index: 22;
 }
 
 h3{
@@ -65,9 +82,7 @@ z-index: 2;
 }
 
 
-*{
-  font-family: 'Ubuntu','Calibri', 'Tahoma';
-}
+
 
 /* Hover Dropdown */
 .dropdown:hover .dropdown-menu {
@@ -101,8 +116,8 @@ z-index: 2;
  .navbar li:hover>a {
    color: #007bff;
    transition: margin 0.1s;
-   /*font-style: bold;
-    opacity: .1; */
+   font-style: bold;
+   /* opacity: .1; */
  }
 
 
@@ -134,8 +149,6 @@ z-index: 2;
   }
 
 
-/* Stackoverflow Start*/
-
   .carouselso {
     position:absolute;
     top:0;    
@@ -143,4 +156,5 @@ z-index: 2;
   .bannerContainer {
     position:relative;     
   }
-    /* Stackoverflow End*/
+    
+

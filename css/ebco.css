@@ -1,9 +1,6 @@
 /* Style the video: 100% width and height to cover the entire window */
-*{
-    font-family: 'Calibri';
-}
 
-#myVideo {
+.myVideo {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -30,3 +27,120 @@
 .align-end{
     text-align: end;
 }
+
+
+
+.carousel-caption {
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  color: #fff;
+}
+
+.carousel-item:hover .carousel-caption {
+  opacity: 1;
+}
+
+video{
+  width: 100%; 
+  height:auto;
+}
+
+a, h5 a{
+  color: white;
+}
+
+a:hover, h5 a:hover{
+  color:whitesmoke;
+}
+
+.logo{
+position : fixed;
+z-index: 2;
+}
+
+h3{
+position : absolute;
+z-index: 2;
+}
+
+
+*{
+  font-family: 'Ubuntu','Calibri', 'Tahoma';
+}
+
+/* Hover Dropdown */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    margin-top: 0;
+}
+
+ .navbar a{
+    text-align: end;
+ }
+
+ .align-end{
+    text-align: end;
+ }
+
+ /* Sticky Class Designed to provide Sticky Property to the Navbar using JavaScript */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ .navbar
+
+ .navbar a:hover,
+ .navbar .active,
+ .navbar .active:focus,
+ .navbar li:hover>a {
+   color: #007bff;
+   transition: margin 0.1s;
+   /*font-style: bold;
+    opacity: .1; */
+ }
+
+
+  
+  .navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 1px;
+    top: calc(100% + 30px);
+    padding: 10px 0;
+    z-index: 1; /* try10 */
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    transition: 0.1s;
+    /* width:100%; */
+  }
+    
+  
+  
+  .navbar .dropdown:hover>ul {
+    opacity: .6;
+    top: 100%;
+    visibility: visible;
+  }
+  
+  .img-fluid-2{
+     width:100%;
+  }
+
+
+/* Stackoverflow Start*/
+
+  .carouselso {
+    position:absolute;
+    top:0;    
+  }
+  .bannerContainer {
+    position:relative;     
+  }
+    /* Stackoverflow End*/

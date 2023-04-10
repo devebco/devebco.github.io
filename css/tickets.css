@@ -41,7 +41,7 @@
   }
   
   .ticketsli:nth-child(2){
-      transform:rotate(0deg);
+      transform:rotate(-5deg);
   }
   
   .ticketsli:nth-child(3){

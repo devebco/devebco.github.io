@@ -1,12 +1,23 @@
+:root{
+  --ebco:#124f90;
+  --livsmart:#f36620;
+  --worksmart:#696c6c;
+}
+
+
 /* Style the video: 100% width and height to cover the entire window */
 
 *{
   font-family: 'Open Sans','Ubuntu','Calibri', 'Tahoma';  
 }
 
+/* body{
+  background-image: linear-gradient(to right, var(--ebco) , var(--worksmart), var(--livsmart));
+} */
+
 *::-webkit-scrollbar {width: 5px;}
 *::-webkit-scrollbar-track {
-  background: orange;
+  background: var(--livsmart);
 }
 
 *::-webkit-scrollbar-thumb {
@@ -68,7 +79,7 @@ a, h5 a{
 }
 
 a:hover, h5 a:hover{    
-  color:whitesmoke;
+  color:white;
 }
 
 .logo{
@@ -108,13 +119,14 @@ z-index: 2;
   width: 100%;
 }
 
+
  .navbar
 
  .navbar a:hover,
  .navbar .active,
  .navbar .active:focus,
  .navbar li:hover>a {
-   color: #f36620;
+   color: var(--livsmart);
    transition: margin 0.1s;
    font-style: bold;
    /* opacity: .1; */

@@ -1,8 +1,4 @@
-.newlaunch{
-    padding-top: 50px;
-    margin: auto; 
-    text-align: center;
-}
+
 
 .container1 {
     display: flex;
@@ -51,7 +47,12 @@
     color: brown;
   }
 
+
   .newlaunch{
+    padding-top: 50px;
+    margin: auto; 
+    text-align: center;
+
     font-size: xxx-large;
     color: #124f90;
 

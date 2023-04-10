@@ -64,10 +64,10 @@ video{
 }
 
 a, h5 a{
-  color: white;
+  color: rgb(214, 43, 43);
 }
 
-a:hover, h5 a:hover{
+a:hover, h5 a:hover{    
   color:whitesmoke;
 }
 
@@ -114,7 +114,7 @@ z-index: 2;
  .navbar .active,
  .navbar .active:focus,
  .navbar li:hover>a {
-   color: #007bff;
+   color: #f36620;
    transition: margin 0.1s;
    font-style: bold;
    /* opacity: .1; */

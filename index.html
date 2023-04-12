@@ -9,24 +9,22 @@
     <link rel="icon" type="image/gif" href="img/logo/ebco_blue_logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
-            <link rel="stylesheet" href="css/article.css">
-            <link rel="stylesheet" href="css/hover1.css">
-            <link rel="stylesheet" href="css/tickets.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/ebco.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
 </head>
 
 <body>
     <!-- Logo Start-->
-    <div class="logo">
-        <img src="img/logo/ebco_blue_logo.png" href="#" target="_self" alt="Logo" width="84" height="84">
-    </div><!-- Logo End-->
+    <div class="logo"><a href="https://shop.ebco.in/" target="_blank">
+        <img class="logo-img" src="img/logo/ebco_blue_logo.png" alt="Logo"></a>
+    </div>
+    <!-- Logo End-->
+    
     <!-- Carousel Start -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -42,7 +40,7 @@
                     <h5><a target="_blank"
                             href="https://ebco.in/table-lift-200-with-damper?search=table_lift_200_with_damper">
                             Table Lift 200 with Damper</a></h5>
-                    <p style="margin : auto;">Perfect for low coffee tables | Ideal for Writing & TV Dinners</p>
+                    <p>Perfect for low coffee tables | Ideal for Writing & TV Dinners</p>
                 </div>
             </div>
             <div class="carousel-item">
@@ -51,7 +49,7 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h5><a target="_blank" href="https://ebco.in/shelf-tray?search=shelf%20tray">
                             Shelf Tray</a></h5>
-                    <p style="margin : auto;">A multi-utility shelf tray for use in kitchens, Wardrobes, bathroom
+                    <p>A multi-utility shelf tray for use in kitchens, Wardrobes, bathroom
                         cabinets & more</p>
                 </div>
             </div>
@@ -62,7 +60,7 @@
                     <h5><a target="_blank"
                             href="https://ebco.in/smart-lift-single-leg-gas-lift-center-pole-(with-table-top)">
                             Smart Lift Single Leg - Gas Lift Center Pole (With Table Top)</a></h5>
-                    <p style="margin : auto;">Sit or stand mobile work desk with height adjustment feature</p>
+                    <p>Sit or stand mobile work desk with height adjustment feature</p>
                 </div>
             </div>
         </div>
@@ -74,19 +72,20 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div><!-- Carousel End -->
+    </div>
+    <!-- Carousel End -->
     <!-- NavBar Start -->
-    <div class="content" style="background-color: var(--ebco); opacity: .8; padding-top: 0%; z-index: 4;">
-        <nav class="navbar navbar-expand-lg center-block ">
-            <div class="container-fluid" >
+    <div class="content" id="navbar-menu-background">
+        <nav class="navbar navbar-expand-lg center-block" id="logoheight">
+            <div class="container-fluid">
                 <!-- Dropdown Start -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="color:white; "> <!-- This is navbar text color -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- style="color:white;" -->
+                    <!-- This is navbar text color -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown" >
-                            <a class="nav-link" role="button" aria-expanded="false"
-                                style="padding-right: 50px; opacity: none;">Office
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" role="button" aria-expanded="false" id="navbar-top-links">Office
                                 Furniture Fittings</a>
-                            <ul class="transparent dropdown-menu" >
+                            <ul class="transparent dropdown-menu">
                                 <li><a target=”_blank” class="dropdown-item"
                                         href="https://shop.ebco.in/office-furniture-accessories/height-adjustable-desks.html">Height
                                         Adjustable Desks</a></li>
@@ -123,7 +122,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" role="button" aria-expanded="false" style="padding-right: 50px;">Kitchen
+                            <a class="nav-link" role="button" aria-expanded="false" id="navbar-top-links">Kitchen
                                 Accessories</a>
                             <ul class="dropdown-menu">
                                 <li><a target=”_blank” class="dropdown-item"
@@ -146,8 +145,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" role="button" aria-expanded="false"
-                                style="padding-right: 50px;">Wordrobe
+                            <a class="nav-link" role="button" aria-expanded="false" id="navbar-top-links">Wordrobe
                                 Accessories</a>
                             <ul class="dropdown-menu">
                                 <li><a target=”_blank” class="dropdown-item"
@@ -167,7 +165,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" role="button" aria-expanded="false" style="padding-right: 50px;">General
+                            <a class="nav-link" role="button" aria-expanded="false" id="navbar-top-links">General
                                 Hardware</a>
                             <ul class="dropdown-menu">
                                 <li><a target=”_blank” class="dropdown-item"
@@ -191,13 +189,11 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" role="button" aria-expanded="false"
-                                style="padding-right: 50px;">Furniture
+                            <a class="nav-link" role="button" aria-expanded="false" id="navbar-top-links">Furniture
                                 Lights</a>
                             <ul class="dropdown-menu">
                                 <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/furniture-lights.html">All
-                                        Furniture Lights</a></li>
+                                        href="https://shop.ebco.in/furniture-lights.html">All Furniture Lights</a></li>
                             </ul>
                         </li>
                     </ul><!-- Dropdown End -->
@@ -208,11 +204,30 @@
                         <span class="navbar-toggler-icon"></span>
                     </button><!-- Dropdown Collapse End -->
                     <!-- Search, user, cart icons Start -->
-                    <div class="align-end" style="text-align: end;">
-                        <img data-v-f428a812="" src="img/icons/search.png" class="header-icon" height="26px"
+                    <div> <!--class="align-end" id="searchusercart" add this if only required-->
+                        <!-- <img data-v-f428a812="" src="img/icons/search.png" class="header-icon" height="26px"
                             width="26px">
                         <img data-v-f428a812="" src="img/icons/user.png" class="header-icon" height="26px" width="26px">
-                        <img data-v-f428a812="" src="img/icons/cart.png" class="header-icon" height="26px" width="26px">
+                        <img data-v-f428a812="" src="img/icons/cart.png" class="header-icon" height="26px" width="26px"> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                            class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                        </svg>
+                        
+                    <!-- </svg> -->
+
                     </div><!-- Search, user, cart icons End -->
                 </div>
             </div>
@@ -255,105 +270,72 @@
     </div>
     <article class="flow">
         <div class="team">
-            <ul class="auto-grid" style="list-style-type: none" role="list">
+            <ul class="auto-grid" role="list">
                 <li>
-                    <a style="text-decoration: none;" href="https://ebco.in/flat-screen-holder-single-arm-edge-mount" target="_blank" class="profile">
+                    <a id="no-underline" href="https://ebco.in/flat-screen-holder-single-arm-edge-mount" target="_blank"
+                        class="profile">
                         <h2 class="profile__name">Screen Holder</h2>
-                        <p style="color:var(--worksmart)">Worksmart</p>
-                        <img alt="Anita Simmons" src="img/products/flat-screen-holder-single-arm-edge-mount.jpg" />
+                        <p id="color-worksmart">Worksmart</p>
+                        <img alt="Worksmart" src="img/products/flat-screen-holder-single-arm-edge-mount.jpg" />
                     </a>
                 </li>
                 <li>
-                    <a style="text-decoration: none;" href="https://ebco.in/foldable-bed" target="_blank" class="profile">
+                    <a id="no-underline" href="https://ebco.in/foldable-bed" target="_blank" class="profile">
                         <h2 class="profile__name">Foldable Bed</h2>
-                        <p style="color:var(--livsmart)">Livsmart</p>
-                        <img alt="Profile shot for Celina Harris" src="img/products/foldable-bed.jpg" />
+                        <p id="color-livsmart">Livsmart</p>
+                        <img alt="Livsmart" src="img/products/foldable-bed.jpg" />
                     </a>
                 </li>
                 <li>
-                    <a style="text-decoration: none;" href="https://ebco.in/smart-lift-single-leg-gas-lift-centre-pole-tilt-with-tabletop" target="_blank" class="profile">
+                    <a id="no-underline"
+                        href="https://ebco.in/smart-lift-single-leg-gas-lift-centre-pole-tilt-with-tabletop"
+                        target="_blank" class="profile">
                         <h2 class="profile__name">Smart Lift</h2>
-                        <p style="color:var(--worksmart)">Worksmart</p>
-                        <img alt="Profile shot for Ruby Morris"
+                        <p id="color-worksmart">Worksmart</p>
+                        <img alt="Worksmart"
                             src="img/products/smart-lift-single-leg-gas-lift-centre-pole-tilt-with-tabletop.jpg" />
                     </a>
                 </li>
                 <li>
-                    <a style="text-decoration: none;" href="https://ebco.in/table-bracket-mini target="_blank" class="profile">
+                    <a id="no-underline" href="https://ebco.in/table-bracket-mini target=" _blank" class="profile">
                         <h2 class="profile__name">Table Bracket Mini</h2>
-                        <p style="color:var(--ebco)">Ebco</p>
-                        <img alt="Profile shot for Nicholas Castro" src="img/products/table-bracket-mini.jpg" />
+                        <p id="color-ebco">Ebco</p>
+                        <img alt="Ebco" src="img/products/table-bracket-mini.jpg" />
                     </a>
                 </li>
                 <li>
-                    <a style="text-decoration: none;" href="https://ebco.in/wireless-charger" target="_blank" class="profile">
+                    <a id="no-underline" href="https://ebco.in/wireless-charger" target="_blank" class="profile">
                         <h2 class="profile__name">Wireless Charger</h2>
-                        <p style="color:var(--worksmart)">Worksmart</p>
-                        <img alt="Profile shot for Marc Dixon" src="img/products/wireless-charger.jpg" />
+                        <p id="color-worksmart">Worksmart</p>
+                        <img alt="Worksmart" src="img/products/wireless-charger.jpg" />
                     </a>
                 </li>
                 <li>
-                    <a style="text-decoration: none;" href="https://ebco.in/foldable-bed" target="_blank" class="profile">
+                    <a id="no-underline" href="https://ebco.in/foldable-bed" target="_blank" class="profile">
                         <h2 class="profile__name">Foldable Bed</h2>
-                        <p style="color:var(--livsmart) ">Livsmart</p>
-                        <img alt="Profile shot for Chad" src="img/products/foldable-bed.jpg" />
+                        <p id="color-livsmart">Livsmart</p>
+                        <img alt="Livsmart" src="img/products/foldable-bed.jpg" />
                     </a>
                 </li>
                 <li>
-                    <a style="text-decoration: none;" href="https://ebco.in/table-bracket-mini target="_blank" class="profile">
+                    <a id="no-underline" href="https://ebco.in/table-bracket-mini target=" _blank" class="profile">
                         <h2 class="profile__name">Table Bracket Mini</h2>
-                        <p style="color:var(--ebco)">Ebco</p>
-                        <img alt="Profile shot for Nicholas Castro" src="img/products/table-bracket-mini.jpg" />
+                        <p id="color-ebco">Ebco</p>
+                        <img alt="Ebco" src="img/products/table-bracket-mini.jpg" />
                     </a>
                 </li>
                 <li>
-                    <a style="text-decoration: none;" href="https://ebco.in/flat-screen-holder-single-arm-edge-mount" target="_blank" class="profile">
+                    <a id="no-underline" href="https://ebco.in/flat-screen-holder-single-arm-edge-mount" target="_blank"
+                        class="profile">
                         <h2 class="profile__name">Screen Holder</h2>
-                        <p style="color:var(--worksmart)">Worksmart</p>
-                        <img alt="Anita Simmons" src="img/products/flat-screen-holder-single-arm-edge-mount.jpg" />
+                        <p id="color-worksmart">Worksmart</p>
+                        <img alt="Worksmart" src="img/products/flat-screen-holder-single-arm-edge-mount.jpg" />
                     </a>
                 </li>
             </ul>
         </div>
     </article><!-- Article End -->
-    <!-- Tickets started -->
-    <div class="ticketsbody"  style="padding-bottom:180;
-    padding-left:80;">
-    <ul class="ticketsul">
-        <li class="ticketsli">
-            <a href="https://ebco.in/flat-screen-holder-single-arm-edge-mount" target="_blank">
-            <img src="img/products/flat-screen-holder-single-arm-edge-mount.jpg" width="200"></a>
-            <p>Screen Holder</p>
-        </li>
-        <li class="ticketsli">
-            <a href="https://ebco.in/foldable-bed" target="_blank">
-            <img src="img/products/foldable-bed.jpg" width="200" /></a>
-            <p>Foldable Bed</p>
-        </li>
-        <li class="ticketsli">
-            <a href="https://ebco.in/smart-lift-single-leg-gas-lift-centre-pole-tilt-with-tabletop" target="_blank">
-            <img src="img/products/smart-lift-single-leg-gas-lift-centre-pole-tilt-with-tabletop.jpg" width="200" /></a>
-            <p>Smart Lift</p>
-        </li>
-        <li class="ticketsli">
-            <a href="https://ebco.in/table-bracket-mini" target="_blank">
-            <img src="img/products/table-bracket-mini.jpg" width="200" /></a>
-            <p>Table Bracket</p>
-        </li>
-        <li class="ticketsli">
-            <a href="https://ebco.in/wireless-charger" target="_blank">
-            <img src="img/products/wireless-charger.jpg" width="200" /></a>
-            <p>Wireless Charger</p>
-        </li>
-        <li class="ticketsli">
-            <a href="https://ebco.in/flat-screen-holder-single-arm-edge-mount" target="_blank">
-            <img src="img/products/flat-screen-holder-single-arm-edge-mount.jpg" width="200"></a>
-            <p>Screen Holder</p>
-        </li>
-    </ul>
-<!--     <div class="light"></div> -->
-</div>
-    <!-- Tickets Ended -->
+
 
 </body>
 

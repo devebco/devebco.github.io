@@ -16,7 +16,7 @@
   font-family: "ubuntu", "Inter", sans-serif;
   /*     max-width: 55rem; */
   /*     max-width: 95%; */
-  padding: 2rem 1.5rem;
+  padding: 2rem 7.5rem;
   margin: 0 auto;
   /*   color: #241623; */
   /*     background: #eef2f4; */
@@ -262,7 +262,7 @@ h1 {
 } not using*/
 
 .newlaunch {
-  padding-top: 50px;
+  padding: 8% 0% 0% 0%;
   margin: auto;
   text-align: center;
 
@@ -458,6 +458,29 @@ h3 {
 .img-fluid-2 {
   width: 100%;
 }
+
+.featuredproducts1{
+  text-align: center; 
+  margin: auto;
+  padding: 6% 0%; 
+  font-weight: 400; 
+  font-size: 48px; 
+  color: var(--ebco);
+}
+
+.newlaunch1{
+  text-align: center; 
+  margin: auto;
+  padding: 1% 0%; 
+  font-weight: 400; 
+  font-size: 48px; 
+  color: var(--ebco);
+}
+
+.newlaunch1head:hover{
+  color: var(--livsmart);
+}
+
 
 #newlaunch1carousel{
   width:100px;

@@ -13,9 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/ebco.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -25,55 +26,6 @@
     </div>
     <!-- Logo End-->
     
-    <!-- Carousel Start -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <video src="vid/table_lift_200_with_damper_5696.mp4" autoplay type="video/mp4" muted class="vid" loop>
-                </video>
-                <div class="carousel-caption d-none d-md-block">
-                    <h5><a target="_blank"
-                            href="https://ebco.in/table-lift-200-with-damper?search=table_lift_200_with_damper">
-                            Table Lift 200 with Damper</a></h5>
-                    <p>Perfect for low coffee tables | Ideal for Writing & TV Dinners</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <video src="vid/shelf_tray_17152.mp4" type="video/mp4" autoplay muted class="vid" loop>
-                </video>
-                <div class="carousel-caption d-none d-md-block">
-                    <h5><a target="_blank" href="https://ebco.in/shelf-tray?search=shelf%20tray">
-                            Shelf Tray</a></h5>
-                    <p>A multi-utility shelf tray for use in kitchens, Wardrobes, bathroom
-                        cabinets & more</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <video src="vid/smart_lift_single_leg_11520.mp4" type="video/mp4" autoplay muted class="vid" loop>
-                </video>
-                <div class="carousel-caption d-none d-md-block">
-                    <h5><a target="_blank"
-                            href="https://ebco.in/smart-lift-single-leg-gas-lift-center-pole-(with-table-top)">
-                            Smart Lift Single Leg - Gas Lift Center Pole (With Table Top)</a></h5>
-                    <p>Sit or stand mobile work desk with height adjustment feature</p>
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <!-- Carousel End -->
     <!-- NavBar Start -->
     <div class="content" id="navbar-menu-background">
         <nav class="navbar navbar-expand-lg center-block" id="logoheight">
@@ -81,11 +33,11 @@
                 <!-- Dropdown Start -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- style="color:white;" -->
                     <!-- This is navbar text color -->
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
                         <li class="nav-item dropdown">
                             <a class="nav-link" role="button" aria-expanded="false" id="navbar-top-links">Office
                                 Furniture Fittings</a>
-                            <ul class="transparent dropdown-menu">
+                            <ul class="dropdown-menu">
                                 <li><a target=”_blank” class="dropdown-item"
                                         href="https://shop.ebco.in/office-furniture-accessories/height-adjustable-desks.html">Height
                                         Adjustable Desks</a></li>
@@ -196,15 +148,18 @@
                                         href="https://shop.ebco.in/furniture-lights.html">All Furniture Lights</a></li>
                             </ul>
                         </li>
-                    </ul><!-- Dropdown End -->
+                    </ul>
+                    <!-- Dropdown End -->
                     <!-- Dropdown Collapse Start -->
-                    <button class="navbar-toggler align-end d-block" type="button" data-bs-toggle="collapse"
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
-                    </button><!-- Dropdown Collapse End -->
+                    </button>
+                    <!-- Dropdown Collapse End -->
                     <!-- Search, user, cart icons Start -->
-                    <div> <!--class="align-end" id="searchusercart" add this if only required-->
+                    <div> 
+                        <!--class="align-end" id="searchusercart" add this if only required-->
                         <!-- <img data-v-f428a812="" src="img/icons/search.png" class="header-icon" height="26px"
                             width="26px">
                         <img data-v-f428a812="" src="img/icons/user.png" class="header-icon" height="26px" width="26px">
@@ -233,6 +188,56 @@
             </div>
         </nav>
     </div><!-- NavBar End -->
+        <!-- Carousel Start -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video src="vid/table_lift_200_with_damper_5696.mp4" autoplay type="video/mp4" muted class="vid" loop>
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5><a target="_blank"
+                                href="https://ebco.in/table-lift-200-with-damper?search=table_lift_200_with_damper">
+                                Table Lift 200 with Damper</a></h5>
+                        <p>Perfect for low coffee tables | Ideal for Writing & TV Dinners</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <video src="vid/shelf_tray_17152.mp4" type="video/mp4" autoplay muted class="vid" loop>
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5><a target="_blank" href="https://ebco.in/shelf-tray?search=shelf%20tray">
+                                Shelf Tray</a></h5>
+                        <p>A multi-utility shelf tray for use in kitchens, Wardrobes, bathroom
+                            cabinets & more</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <video src="vid/smart_lift_single_leg_11520.mp4" type="video/mp4" autoplay muted class="vid" loop>
+                    </video>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5><a target="_blank"
+                                href="https://ebco.in/smart-lift-single-leg-gas-lift-center-pole-(with-table-top)">
+                                Smart Lift Single Leg - Gas Lift Center Pole (With Table Top)</a></h5>
+                        <p>Sit or stand mobile work desk with height adjustment feature</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- Carousel End -->
+    
     <!-- New Launched Start -->
     <div class="newlaunch">
         Our New Launches

@@ -41,4 +41,6 @@ function stickynavbar() {
     navbar.classList.remove('sticky');    
   }
 }
-window.addEventListener('scroll', stickynavbar);
+
+
+console.log("exit out of js");

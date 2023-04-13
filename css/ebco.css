@@ -5,6 +5,10 @@
   --logoheight: 84px;
 }
 
+* {
+  font-family: "Ubuntu", "Raleway","Open Sans", "Calibri", "Tahoma";
+}
+
 /* Article CSS Start */
 
 /* Globals */
@@ -169,6 +173,7 @@ h1 {
   transition-delay: 200ms;
 }
 
+
 .profile:hover img,
 .profile:focus img {
   filter: grayscale(0);
@@ -176,7 +181,7 @@ h1 {
 }
 
 .featuredproducts {
-  padding-bottom: 50px;
+  padding: 50px 0px;
   margin: auto;
   text-align: center;
 
@@ -293,9 +298,7 @@ h1 {
 
 /* Style the video: 100% width and height to cover the entire window */
 
-* {
-  font-family: "Open Sans", "Ubuntu", "Calibri", "Tahoma";
-}
+
 
 /* body{
   background-image: linear-gradient(to right, var(--ebco) , var(--worksmart), var(--livsmart));
@@ -324,7 +327,7 @@ h1 {
 
 /* Add some content at the bottom of the video/page */
 .content {
-  position: fixed;
+  position: absolute;
   top: 5px;
   /*    background: rgba(0, 0, 0, 0.5); */
   color: white;
@@ -341,6 +344,12 @@ h1 {
   display: inline-block;
   text-align: center;
 } */
+
+.circleimage{
+  padding: 5% 0px;
+  width:100%;
+  height:auto;
+}
 
 .carousel-caption {
   opacity: 0;
@@ -372,13 +381,15 @@ h5 a:hover {
   position: fixed;
   z-index: 22;
   top: 5px;
-  width: var(--logoheight);
   height: var(--logoheight);
+  width: var(--logoheight);
+/*   width: calc(var(--logoheight) * 1.25); */
 }
 
 .logo-img {
-  max-width: 100%;
-  height: auto;
+/*   max-width: 100%; */
+  height: var(--logoheight);
+  width: calc(var(--logoheight) * 1.25);
 }
 
 h3 {
@@ -401,11 +412,11 @@ h3 {
 }
 
 /* Sticky Class Designed to provide Sticky Property to the Navbar using JavaScript */
-.sticky {
+/* .sticky {
   position: fixed;
   top: 0;
   width: 100%;
-}
+} */
 
 .navbar .navbar a:hover,
 .navbar .active,
@@ -448,6 +459,13 @@ h3 {
   width: 100%;
 }
 
+#newlaunch1carousel{
+  width:100px;
+  height:10px;
+}
+
+
+
 .carouselso {
   position: absolute;
   top: 0;
@@ -476,10 +494,10 @@ h3 {
 
 #navbar-menu-background {
   background-color: rgba(39,72,137, 0.4);
-  /* background-color for top nav bar */
+  /* background-color for top navbar */
 
     /* background-image: linear-gradient(to right, rgba(39,72,137, 1.0), rgba(39,72,137, 0.3), rgba(39,72,137, 0.1), rgba(39,72,137, 0.0)); */
-    /* background-color for top nav bar with gradient effect*/
+    /* background-color for top navbar with gradient effect*/
 
   /*  background-color: var(--ebco); 
  */ /*   opacity: .6;  */

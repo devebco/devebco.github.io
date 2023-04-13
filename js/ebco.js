@@ -30,7 +30,7 @@ function clickme(){
 
 /* clickme(); */
 
-console.log("exit out of js");
+
 
 const navbar = document.querySelector('#NavBar');
 let top = navbar.offsetTop;
@@ -41,6 +41,6 @@ function stickynavbar() {
     navbar.classList.remove('sticky');    
   }
 }
-
+window.addEventListener('scroll', stickynavbar);
 
 console.log("exit out of js");

@@ -346,9 +346,7 @@ h1 {
 } */
 
 .circleimage{
-  padding: 5% 0px;
-  width:100%;
-  height:auto;
+  margin: 8% 8%;
 }
 
 .carousel-caption {

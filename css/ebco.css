@@ -78,7 +78,7 @@ h1 {
   left: 0;
 }
 
-.profile::before {
+/* .profile::before {
   background: linear-gradient(
     to top,
     hsl(0 0% 0% / 0.79) 0%,
@@ -99,7 +99,7 @@ h1 {
     hsl(0 0% 0% / 0) 100%
   );
   transition: 300ms opacity linear;
-}
+} */
 
 .profile::after {
   /*     background: linear-gradient(
@@ -534,8 +534,11 @@ h3 {
   color:black
 }
 
+#no-underline{
+  text-decoration: none;
+}
 
-#color-ebco {
+#color-ebco { 
   color: var(--ebco);
 }
 

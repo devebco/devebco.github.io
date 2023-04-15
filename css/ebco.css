@@ -261,36 +261,7 @@ h1 {
   color: var(--livsmart);
 } not using*/
 
-.newlaunch {
-  padding: 8% 0% 0% 0%;
-  margin: auto;
-  text-align: center;
 
-  font-size: xxx-large;
-  color: var(--ebco);
-
-  background: linear-gradient(
-      to right,
-      rgba(255, 215, 255, 0) 0%,
-      rgba(225, 255, 255, 0.5) 20%,
-      rgba(255, 255, 255, 0) 61%
-    ),
-    linear-gradient(var(--ebco) 50%, var(--livsmart) 50%); /* you can change the colors based on your preference */
-  background-clip: text; /*it defines how far the background should extend within an element, here we set it to text */
-  -webkit-background-clip: text; /*for browsers compatibility */
-  -webkit-text-fill-color: transparent; /* specifies the fill color of text characters. We use transparent to use the background as our text fill  */
-  animation: wave 1000ms ease alternate infinite;
-  transition: all 0.4s ease;
-}
-
-@keyframes wave {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 40vw 40px;
-  }
-}
 
 /* New Launches CSS End */
 
@@ -348,6 +319,21 @@ h1 {
 .circleimage{
   margin: 8% 8%;
 }
+
+/* .circleimage:hover{
+  background-image: 'img/banner/Circle_hover.png';
+}
+ */
+
+/* @media only screen and (max-width: 1008px) {
+  .circleimage{
+    width: 100%;
+  height:auto;
+  }
+} */
+
+
+
 
 .carousel-caption {
   opacity: 0;
@@ -466,40 +452,88 @@ h3 {
   color: var(--ebco);
 }
 
+.newlaunch {
+  padding: 8% 0% 0% 0%;
+  margin: auto;
+  text-align: center;
+
+  font-size: xxx-large;
+  color: var(--ebco);
+
+  background: linear-gradient(
+      to right,
+      rgba(255, 215, 255, 0) 0%,
+      rgba(225, 255, 255, 0.5) 20%,
+      rgba(255, 255, 255, 0) 61%
+    ),
+    linear-gradient(var(--ebco) 40%, var(--livsmart) 50%); /* you can change the colors based on your preference */
+  background-clip: text; /*it defines how far the background should extend within an element, here we set it to text */
+  -webkit-background-clip: text; /*for browsers compatibility */
+  -webkit-text-fill-color: transparent; /* specifies the fill color of text characters. We use transparent to use the background as our text fill  */
+  animation: wave 2000ms ease alternate infinite;
+  transition: all 0.4s ease;
+}
+
+@keyframes wave {
+  0% {
+    background-position: 10 10;
+  }
+  100% {
+    background-position: 40vw 40px;
+  }
+}
+
 .newlaunch1{
   text-align: center; 
   margin: auto;
-  padding: 1% 0%; 
+  padding: 6% 0% 1% 0%; 
   font-weight: 400; 
   font-size: 48px; 
+}
+
+.newlaunch1head{
   color: var(--ebco);
 }
 
 .newlaunch1head:hover{
-  color: var(--livsmart);
+  padding: 8% 0% 0% 0%;
+  margin: auto;
+  text-align: center;
+
+  font-size: xxx-large;
+  color: var(--ebco);
+
+  background: linear-gradient(
+      to right,
+      rgba(255, 215, 255, 0) 0%,
+      rgba(225, 255, 255, 0.5) 20%,
+      rgba(255, 255, 255, 0) 61%
+    ),
+    linear-gradient(var(--ebco) 40%, var(--livsmart) 50%); /* you can change the colors based on your preference */
+  background-clip: text; /*it defines how far the background should extend within an element, here we set it to text */
+  -webkit-background-clip: text; /*for browsers compatibility */
+  -webkit-text-fill-color: transparent; /* specifies the fill color of text characters. We use transparent to use the background as our text fill  */
+  animation: wave 1000ms ease alternate infinite;
+  transition: all 0.4s ease;
 }
 
-
-#newlaunch1carousel{
-  width:100px;
-  height:10px;
+@keyframes wave {
+  0% {
+    background-position: 10 10;
+  }
+  100% {
+    background-position: 40vw 40px;
+  }
 }
 
-
-
-.carouselso {
-  position: absolute;
-  top: 0;
-}
-.bannerContainer {
-  position: relative;
+.newlaunch1desc{
+  text-align: center; 
+  padding: 1% 0% 0% 0%; 
+  font-weight: 200; 
+  font-size: 24px; 
+  color:black
 }
 
-/* Ebco CSS End */
-
-#no-underline {
-  text-decoration: none;
-}
 
 #color-ebco {
   color: var(--ebco);

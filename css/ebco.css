@@ -3,7 +3,8 @@
   --livsmart: #f36620;
   --worksmart: #696c6c;
   --logoheight: 84px;
-  --navbarcolor:rgba(39, 72, 137, 0.4);
+  /* --logoheight: 6vw; */
+  --navbarcolor: rgba(39, 72, 137, 0.4);
 }
 
 * {
@@ -328,22 +329,6 @@ h1 {
 }
  */
 
- @media only screen and (max-width: 992px) {
-  /* .circleimage{
-    width: 100%;
-  height:auto;
-  } */
-  #matchlogoheight {
-    background-color: none;
-  }
-}
-
-@media only screen and (max-width: 1360px) {
-  .circleimage {
-    display: none;
-  }
-}
-
 .carousel-caption {
   opacity: 0;
   -webkit-transition: all 0.4s;
@@ -394,11 +379,11 @@ h3 {
 /* .dropdown:hover .dropdown-menu {
   display: block;
 }
-
+*/
 .dropdown-menu {
-  margin-top: 0;
+  border-radius:0px;
 }
- */
+ 
 .navbar a {
   text-align: left;
   color: white;
@@ -410,9 +395,6 @@ h3 {
   top: 0;
   width: 100%;
 } */
-
-
-
 
 .navbar .navbar a:hover,
 .navbar .active,
@@ -438,7 +420,6 @@ h3 {
   border: none;
   /*     background: #fff; */
   background-color: rgba(
-    
     39,
     72,
     137,
@@ -451,6 +432,7 @@ h3 {
 .navbar .dropdown:hover > ul {
   /*     opacity: .6; */
   visibility: visible;
+  /* position:static; */
 
   /* Adjust height of hovered dropdown menus */
   /*   top:81px;  */
@@ -502,10 +484,10 @@ h3 {
 }
 
 .newlaunch1 {
-/*   display: inline-block; */ /* Newly added */
+  /*   display: inline-block; */ /* Newly added */
   text-align: center;
   margin: auto;
-  padding:  3%;
+  padding: 3%;
   font-weight: 400;
   vertical-align: top;
 }
@@ -565,13 +547,13 @@ h3 {
 
   padding-left: var(--logoheight);
   z-index: 4;
-  height: auto;  *//* Change this to match with logo height */
-  /* background-color for top navbar */
+  height: auto;  */ /* Change this to match with logo height */
+/* background-color for top navbar */
 
-  /* background-image: linear-gradient(to right, rgba(39,72,137, 1.0), rgba(39,72,137, 0.3), rgba(39,72,137, 0.1), rgba(39,72,137, 0.0)); */
-  /* background-color for top navbar with gradient effect*/
+/* background-image: linear-gradient(to right, rgba(39,72,137, 1.0), rgba(39,72,137, 0.3), rgba(39,72,137, 0.1), rgba(39,72,137, 0.0)); */
+/* background-color for top navbar with gradient effect*/
 
-  /*  background-color: var(--ebco); 
+/*  background-color: var(--ebco); 
  */ /*   opacity: .6;  */
 
 /* } */
@@ -579,11 +561,15 @@ h3 {
 #navbar-top-links {
   padding: 30px 20px;
   color: white;
-  width:fit-content;
+  width: fit-content;
 }
 
 #searchusercart {
+  display: inline-block;
   text-align: end;
+  margin: auto;
+  width: 180px;
+  color: white;
 }
 
 #matchlogoheight {
@@ -592,26 +578,17 @@ h3 {
   padding-top: 0%;
   padding-left: calc(var(--logoheight) + 40px);
   z-index: 4;
-/*   height: auto; */
-}
-
-
-@media only screen and (min-width: 992px) {
-#matchlogoheight {
-  background-color: var(--navbarcolor);
-}
+  /*   height: auto; */
 }
 
 article div ul li {
   margin: 2px 2px;
 }
 
-
-
 /* Image Grid CSS Start */
 
 div#quad {
-margin:auto;
+  margin: auto;
   width: 70vw;
   /* display: inline-block; */ /* Newly added */
   /* margin: 4% 0% 10% 7%; */
@@ -659,8 +636,8 @@ div#quad figure figcaption {
   font-family: system-ui;
   position: absolute;
   bottom: 0%;
-/*   width:fit-content; */
-  width:100%;
+  /*   width:fit-content; */
+  width: 100%;
   transition: 0.5s 0.5s opacity;
 }
 
@@ -689,3 +666,61 @@ div.full figure:not(.expanded) {
   } */
 
 /* Image Grid CSS End */
+/* only screen */
+@media all and (max-width: 992px) {      /* Screen width from 500px to 992px (Collapse mode active from here)*/
+  #matchlogoheight {
+    background-color: none;
+  }
+  .navbar .dropdown:hover > ul {
+    position: static;
+  }
+  .circleimage {
+    display: none;
+  }
+  #navbar-top-links {
+    padding: 10px 20px;
+  }
+  #searchusercart {
+    display: inline-block;
+    /*   text-align: end; */
+    margin: auto;
+    width: 180px;
+    color: white;
+
+    text-align: start;
+    padding-top: 5vw;
+  }
+
+  :root {
+    --logoheight: 48px;
+  }
+}
+
+
+
+@media all and (min-width: 992px) and (max-width: 1360px) {     /* Screen width from 992.01px to 1360px (Collapse mode active from here)*/
+  #matchlogoheight {
+    background-color: var(--navbarcolor);
+  }
+
+  :root {
+    --logoheight: 72px;
+  }
+
+  .circleimage {
+    display: none;
+  }
+
+  .navbar .dropdown:hover > ul {
+    top: calc(var(--logoheight) + 21px);
+  }
+
+
+
+}
+
+@media all and (min-width: 1360px) and (max-width: 1920px) {     /* Screen width from 992.01px to 1360px */
+  #matchlogoheight {
+    background-color: var(--navbarcolor);
+  }
+}

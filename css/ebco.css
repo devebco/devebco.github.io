@@ -674,7 +674,7 @@ div.full figure:not(.expanded) {
 /* ========================================================== smartphones, touchscreens ========================================================== */
 @media (hover: none) and (pointer: coarse) {
   :root {
-    --logoheight: 120px;
+    --logoheight: 20vw;
   }
 }
 

@@ -502,12 +502,11 @@ h3 {
 }
 
 .newlaunch1 {
-  display: inline-block; /* Newly added */
+/*   display: inline-block; */ /* Newly added */
   text-align: center;
   margin: auto;
-  padding: 17% 3%;
+  padding:  3%;
   font-weight: 400;
-  font-size: 55px;
   vertical-align: top;
 }
 
@@ -524,6 +523,7 @@ h3 {
   -webkit-text-fill-color: transparent; /* specifies the fill color of text characters. We use transparent to use the background as our text fill  */
   animation: wave 1000ms ease alternate infinite;
   transition: all 0.4s ease;
+  font-size: 4vw;
 }
 
 @keyframes wave {
@@ -539,7 +539,7 @@ h3 {
   text-align: center;
   padding: 1% 0% 0% 0%;
   font-weight: 200;
-  font-size: 24px;
+  font-size: 1.5vw;
   color: black;
 }
 
@@ -611,13 +611,13 @@ article div ul li {
 /* Image Grid CSS Start */
 
 div#quad {
-  font-size: 0;
-  width: 55%;
-  display: inline-block; /* Newly added */
-  margin: 4% 0% 10% 7%;
+margin:auto;
+  width: 70vw;
+  /* display: inline-block; */ /* Newly added */
+  /* margin: 4% 0% 10% 7%; */
 }
 div#quad figure {
-  margin: 3px;
+  margin: 0px;
   width: 49%;
   height: auto;
   transition: 0.3s;
@@ -654,13 +654,13 @@ div#quad figure figcaption {
   opacity: 0;
   background: rgba(0, 0, 0.1, 0.1);
   color: #fff;
-
-  padding: 0.3rem;
-  font-size: 0.8rem;
+  padding: 0.2rem;
+  font-size: 0rem;
   font-family: system-ui;
   position: absolute;
-  bottom: 1%;
-  width: 100%;
+  bottom: 0%;
+/*   width:fit-content; */
+  width:100%;
   transition: 0.5s 0.5s opacity;
 }
 

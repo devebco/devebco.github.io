@@ -3,6 +3,7 @@
   --livsmart: #f36620;
   --worksmart: #696c6c;
   --logoheight: 84px;
+  --navbarcolor:rgba(39, 72, 137, 0.4);
 }
 
 * {
@@ -319,6 +320,7 @@ h1 {
 
 .circleimage {
   margin: 8% 8%;
+  width: auto;
 }
 
 /* .circleimage:hover{
@@ -326,12 +328,21 @@ h1 {
 }
  */
 
-/* @media only screen and (max-width: 1008px) {
-  .circleimage{
+ @media only screen and (max-width: 992px) {
+  /* .circleimage{
     width: 100%;
   height:auto;
+  } */
+  #matchlogoheight {
+    background-color: none;
   }
-} */
+}
+
+@media only screen and (max-width: 1360px) {
+  .circleimage {
+    display: none;
+  }
+}
 
 .carousel-caption {
   opacity: 0;
@@ -548,9 +559,10 @@ h3 {
   color: var(--worksmart);
 }
 
-#navbar-menu-background {
-/*   background-color: rgba(39, 72, 137, 0.4);
+/* #navbar-menu-background { */
+/*   background-color: var(--navbarcolor);
   padding-top: 0%;
+
   padding-left: var(--logoheight);
   z-index: 4;
   height: auto;  *//* Change this to match with logo height */
@@ -562,7 +574,7 @@ h3 {
   /*  background-color: var(--ebco); 
  */ /*   opacity: .6;  */
 
-}
+/* } */
 
 #navbar-top-links {
   padding: 30px 20px;
@@ -577,11 +589,17 @@ h3 {
 #matchlogoheight {
   /*   height:79px; */
   height: var(--logoheight);
-  background-color: rgba(39, 72, 137, 0.4);
   padding-top: 0%;
   padding-left: calc(var(--logoheight) + 40px);
   z-index: 4;
 /*   height: auto; */
+}
+
+
+@media only screen and (min-width: 992px) {
+#matchlogoheight {
+  background-color: var(--navbarcolor);
+}
 }
 
 article div ul li {

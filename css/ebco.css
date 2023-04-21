@@ -322,6 +322,7 @@ h1 {
 .circleimage {
   margin: 8% 8%;
   width: auto;
+  display: none;
 }
 
 /* .circleimage:hover{
@@ -747,4 +748,12 @@ div.full figure:not(.expanded) {
   #matchlogoheight {
     background-color: var(--navbarcolor);
   }
+}
+
+
+.circleimage {
+  display: none;
+
+
+display: absolute;
 }

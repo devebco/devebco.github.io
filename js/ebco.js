@@ -43,4 +43,7 @@ function stickynavbar() {
 }
 window.addEventListener('scroll', stickynavbar);
 
+
+
+
 console.log("exit out of js");

@@ -1,0 +1,79 @@
+/* Image Grid CSS Start */
+
+div#quad {
+  font-size: 0;
+  width: 70%;
+  margin: 20px auto;    
+}
+div#quad figure {
+  margin: 3px;
+  width: 49%;
+  height: auto;
+  transition: 0.3s;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.9);
+}
+div#quad figure:hover {
+  cursor: pointer;
+  z-index: 4;
+  color: brown;
+}
+div#quad figure img {
+  width: 100%;
+  height: 100%;
+}
+div#quad figure:nth-child(1) {
+  transform-origin: top left;
+}
+div#quad figure:nth-child(2) {
+  transform-origin: top right;
+}
+div#quad figure:nth-child(3) {
+  transform-origin: bottom left;
+}
+div#quad figure:nth-child(4) {
+  transform-origin: bottom right;
+}
+
+
+div#quad figure figcaption {
+  margin: 0;
+  opacity: 0;
+  background: rgba(0, 0, 0.1, 0.1);
+  color: #fff;
+  padding: 0.3rem;
+  font-size: 0.8rem;
+  font-family: system-ui;
+  position: absolute;
+  bottom: 1%;
+  width: 100%;
+  transition: 0.5s 0.5s opacity;
+}
+
+/* div#quad figure figcaption:hover {
+    color: brown;
+    Not Working
+  } */
+
+.expanded {
+  transform: scale(2);
+  z-index: 5;
+  margin: 0px;
+}
+div#quad figure.expanded figcaption {
+  opacity: 1;
+}
+div.full figure:not(.expanded) {
+  pointer-events: none;
+  width: 100%;
+}
+
+/* #itemlink{
+    text-decoration: none !important; 
+    color: white !important;
+    Not Working
+  } */
+
+/* Image Grid CSS End */

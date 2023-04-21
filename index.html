@@ -10,12 +10,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/ebco.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
@@ -28,168 +31,177 @@
     </div>
     <!-- Logo End-->
     <!-- NavBar Start -->
-    <div class="content" id="navbar-menu-background">
-        <nav class="navbar navbar-expand-lg center-block" id="logoheight">
-            <div class="container-fluid">
-                <!-- Dropdown Start -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- style="color:white;" -->
-                    <!-- This is navbar text color -->
-                    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" role="button" aria-expanded="false" id="navbar-top-links">Office
-                                Furniture Fittings</a>
-                            <ul class="dropdown-menu">
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/office-furniture-accessories/height-adjustable-desks.html">Height
-                                        Adjustable Desks</a></li>
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/office-furniture-accessories/safe-drawers.html">Safe
-                                        Drawers</a></li>
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/office-furniture-accessories/monitor-holders.html">Monitor
-                                        Holders</a></li>
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/office-furniture-accessories/keyboard-trays.html">Keyboard
-                                        Trays</a></li>
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/office-furniture-accessories/cpu-stands.html">CPU
-                                        Stands</a></li>
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/office-furniture-accessories/cable-organization.html">Cable
-                                        Organization</a></li>
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/office-furniture-accessories/power-sockets-and-charging.html">Power
-                                        Sockets
-                                        & Charging</a></li>
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/office-furniture-accessories/workdesk-essentials.html">Workdesk
-                                        Essentials</a></li>
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/work-from-home-solutions.html">WFH
-                                        Solutions</a>
-                                </li>
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/office-furniture-accessories.html">All
-                                        Office
-                                        Furniture Fittings</a></li>
-                            </ul>
+    <!--     <div class="" id="navbar-menu-background"> -->
+    <nav class="navbar navbar-dark justify-content-end navbar-expand-lg center-block content" id="matchlogoheight">
+        <!--  <div class="container-fluid"> -->
+        <!-- Dropdown Collapse Start -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"><!-- aria-expanded="false" aria-label="Toggle navigation"> -->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Dropdown Collapse End -->
+        <!-- Dropdown Start -->
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"> <!-- style="color:white;" -->
+            <!-- This is navbar text color -->
+
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Ebco</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                <li class="nav-item dropdown">
+                    <button class="nav-link" role="button" aria-expanded="false" data-bs-toggle="offcanvas"
+                        id="navbar-top-links">Office&nbsp;Furniture Fittings</button>
+                    <!--                     <a class="nav-link" role="button" aria-expanded="false" id="navbar-top-links">Office
+                        Furniture Fittings</a> -->
+                    <ul class="dropdown-menu">
+                        <li><a target=”_blank” class="dropdown-item mt-3"
+                                href="https://shop.ebco.in/office-furniture-accessories/height-adjustable-desks.html">Height
+                                Adjustable Desks</a></li>
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/office-furniture-accessories/safe-drawers.html">Safe
+                                Drawers</a></li>
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/office-furniture-accessories/monitor-holders.html">Monitor
+                                Holders</a></li>
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/office-furniture-accessories/keyboard-trays.html">Keyboard
+                                Trays</a></li>
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/office-furniture-accessories/cpu-stands.html">CPU
+                                Stands</a></li>
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/office-furniture-accessories/cable-organization.html">Cable
+                                Organization</a></li>
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/office-furniture-accessories/power-sockets-and-charging.html">Power
+                                Sockets
+                                & Charging</a></li>
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/office-furniture-accessories/workdesk-essentials.html">Workdesk
+                                Essentials</a></li>
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/work-from-home-solutions.html">WFH
+                                Solutions</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" role="button" aria-expanded="false" id="navbar-top-links">Kitchen
-                                Accessories</a>
-                            <ul class="dropdown-menu">
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/kitchen-accessories/smart-step-ladders.html">Smart
-                                        Ladders</a></li>
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/kitchen-accessories/storage-organization.html">Storage
-                                        Organization</a>
-                                </li>
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/kitchen-accessories/waste-bins.html">Waste
-                                        Bins</a></li>
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/kitchen-accessories/kitchen-essentials.html">Other
-                                        Kitchen Essentials</a></li>
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/kitchen-accessories.html">All
-                                        Kitchen
-                                        Accessories</a></li>
-                            </ul>
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/office-furniture-accessories.html">All
+                                Office
+                                Furniture Fittings</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="nav-link" role="button" aria-expanded="false" id="navbar-top-links">Kitchen
+                        Accessories</button>
+                    <ul class="dropdown-menu">
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/kitchen-accessories/smart-step-ladders.html">Smart
+                                Ladders</a></li>
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/kitchen-accessories/storage-organization.html">Storage
+                                Organization</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" role="button" aria-expanded="false" id="navbar-top-links">Wordrobe
-                                Accessories</a>
-                            <ul class="dropdown-menu">
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/wardrobe-accessories/drawer-organisers.html">Wordrobe
-                                        Drawer Organizer</a>
-                                </li>
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/wardrobe-accessories/knobs-and-handles.html">Knobs
-                                        & Handles</a></li>
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/wardrobe-accessories/wardrobe-essentials.html">Wordrobe
-                                        Essentials</a></li>
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/wardrobe-accessories.html">All
-                                        Wordrobe
-                                        Accessories</a></li>
-                            </ul>
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/kitchen-accessories/waste-bins.html">Waste
+                                Bins</a></li>
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/kitchen-accessories/kitchen-essentials.html">Other
+                                Kitchen Essentials</a></li>
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/kitchen-accessories.html">All
+                                Kitchen
+                                Accessories</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="nav-link" role="button" aria-expanded="false" id="navbar-top-links">Wordrobe
+                        Accessories</button>
+                    <ul class="dropdown-menu">
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/wardrobe-accessories/drawer-organisers.html">Wordrobe
+                                Drawer Organizer</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" role="button" aria-expanded="false" id="navbar-top-links">General
-                                Hardware</a>
-                            <ul class="dropdown-menu">
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/general-hardware/magnetic-catches.html">Magnetic
-                                        Catch</a></li>
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/general-hardware/other-hardwares.html">Other
-                                        Hardware</a></li>
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/general-hardware/foldable-tables-and-tops.html">Foldable
-                                        Tables & Tops</a>
-                                </li>
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/furniture-safety-products.html">Furniture
-                                        Safety
-                                        Products</a></li>
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/general-hardware.html">All
-                                        General Hardware</a>
-                                </li>
-                            </ul>
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/wardrobe-accessories/knobs-and-handles.html">Knobs
+                                & Handles</a></li>
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/wardrobe-accessories/wardrobe-essentials.html">Wordrobe
+                                Essentials</a></li>
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/wardrobe-accessories.html">All
+                                Wordrobe
+                                Accessories</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="nav-link" role="button" aria-expanded="false" id="navbar-top-links">General
+                        Hardware</button>
+                    <ul class="dropdown-menu">
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/general-hardware/magnetic-catches.html">Magnetic
+                                Catch</a></li>
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/general-hardware/other-hardwares.html">Other
+                                Hardware</a></li>
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/general-hardware/foldable-tables-and-tops.html">Foldable
+                                Tables & Tops</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" role="button" aria-expanded="false" id="navbar-top-links">Furniture
-                                Lights</a>
-                            <ul class="dropdown-menu">
-                                <li><a target=”_blank” class="dropdown-item"
-                                        href="https://shop.ebco.in/furniture-lights.html">All Furniture Lights</a></li>
-                            </ul>
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/furniture-safety-products.html">Furniture
+                                Safety
+                                Products</a></li>
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/general-hardware.html">All
+                                General Hardware</a>
                         </li>
                     </ul>
-                    <!-- Dropdown End -->
-                    <!-- Dropdown Collapse Start -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <!-- Dropdown Collapse End -->
-                    <!-- Search, user, cart icons Start -->
-                    <div>
-                        <!--class="align-end" id="searchusercart" add this if only required-->
-                        <!-- <img data-v-f428a812="" src="img/icons/search.png" class="header-icon" height="26px"
-                            width="26px">
-                        <img data-v-f428a812="" src="img/icons/user.png" class="header-icon" height="26px" width="26px">
-                        <img data-v-f428a812="" src="img/icons/cart.png" class="header-icon" height="26px" width="26px"> -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                            class="bi bi-search" viewBox="0 0 16 16">
-                            <path
-                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                            class="bi bi-person-circle" viewBox="0 0 16 16">
-                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                            <path fill-rule="evenodd"
-                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                            class="bi bi-cart3" viewBox="0 0 16 16">
-                            <path
-                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                        </svg>
-
-                        <!-- </svg> -->
-
-                    </div>
-                    <!-- Search, user, cart icons End -->
+                </li>
+                <li class="nav-item dropdown">
+                    <button class="nav-link" role="button" aria-expanded="false" id="navbar-top-links">Furniture
+                        Lights</button>
+                    <ul class="dropdown-menu">
+                        <li><a target=”_blank” class="dropdown-item"
+                                href="https://shop.ebco.in/furniture-lights.html">All Furniture Lights</a></li>
+                    </ul>
+                </li>
+                <div style="display:inline-block ; text-align: end; margin: auto; width:180px; color: white"> <!-- background-color: antiquewhite; Remove color -->
+                    <!--class="align-end" id="searchusercart" add this if only required-->
+                    <!-- <img data-v-f428a812="" src="img/icons/search.png" class="header-icon" height="26px"
+                                width="26px">
+                            <img data-v-f428a812="" src="img/icons/user.png" class="header-icon" height="26px" width="26px">
+                            <img data-v-f428a812="" src="img/icons/cart.png" class="header-icon" height="26px" width="26px"> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-search"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                        class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                        <path fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-cart3"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+    
+                    <!-- </svg> -->
+    
                 </div>
-            </div>
-        </nav>
-    </div>
+            </ul>
+            <!-- Dropdown End -->
+            <!-- Search, user, cart icons Start -->
+            
+            <!-- Search, user, cart icons End -->
+        </div>
+        <!-- </div> -->
+    </nav>
+    <!-- </div> -->
     <!-- NavBar End -->
     <!-- Carousel Start -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -302,7 +314,8 @@
         </button>
     </div> -->
 
-    <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2000" loop>
+    <div id="carouselExampleControls" style="padding: 2% 0%" class="carousel slide carousel-fade" data-ride="carousel"
+        data-interval="2000" autoplay loop>
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="img/banner/cr1.jpeg" alt="First slide">
@@ -310,16 +323,16 @@
             <div class="carousel-item">
                 <img class="d-block w-100" src="img/banner/cr2.jpeg" alt="Second slide">
             </div>
-            <div class="carousel-item">
+            <!--             <div class="carousel-item">
                 <img class="d-block w-100" src="img/banner/cr3.jpeg" alt="Third slide">
-            </div>
+            </div> -->
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-<!--             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <!--             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span> -->
         </a>
         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-<!--             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <!--             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span> -->
         </a>
     </div>
@@ -327,12 +340,7 @@
 
     <!-- Carousel2 End -->
 
-    <!-- New Launch Heading Start -->
-    <div class="newlaunch1">
-        <span class="newlaunch1head">New Launches</span>
-        <div class="newlaunch1desc">We always coming with newbies, every week!</div>
-    </div>
-    <!-- New Launch Heading End -->
+
     <!-- Hover to big Start -->
     <!--     <div class="newlaunch">
         Our New Launches
@@ -364,7 +372,7 @@
     </div> -->
     <!-- Hover to big End -->
     <!-- Image Grid Started -->
-    <article class="flow">
+    <!-- <article class="flow">
         <div class="team">
             <ul class="auto-grid" role="list">
                 <li>
@@ -415,11 +423,63 @@
                 </li>
             </ul>
         </div>
-    </article>
+    </article> -->
+    <!-- New Grid Start -->
+
+    <div id="quad">
+        <figure>
+            <img src="img/products/horizontal/flat-screen-holder-single-arm-edge-mount.jpg"
+                alt="Flat Screen Holder - Single Arm Edge Mount">
+            <figcaption><a href="https://ebco.in/flat-screen-holder-single-arm-edge-mount"
+                    style="text-decoration: none; color: white;" target="_blank">Flat Screen Holder - Single Arm Edge
+                    Mount</a>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="img/products/horizontal/smart-lift-single-leg-gas-lift-centre-pole-tilt-with-tabletop.jpg"
+                alt="Smart Life Single Leg - Gas Lift Center Pole Tilt with Tabletop">
+            <figcaption><a href="https://ebco.in/smart-lift-single-leg-gas-lift-centre-pole-tilt-with-tabletop"
+                    style="text-decoration: none; color: white;" target="_blank">Smart Life Single Leg - Gas Lift Center
+                    Pole Tilt with Tabletop</a></figcaption>
+        </figure>
+        <figure>
+            <img src="img/products/horizontal/foldable-bed.jpg" alt="Foldable Bed">
+            <figcaption><a href="https://ebco.in/foldable-bed" style="text-decoration: none; color: white;"
+                    target="_blank">Foldable Bed</a></figcaption>
+        </figure>
+        <figure>
+            <img src="img/products/horizontal/wireless-charger.jpg" alt="Wireless Charger">
+            <figcaption><a href="https://ebco.in/wireless-charger" style="text-decoration: none; color: white;"
+                    target="_blank">Wireless Charger</a></figcaption>
+        </figure>
+    </div>
+
+    <!-- New Grid End -->
+
+
+    <!-- New Launch Heading Start -->
+    <div class="newlaunch1">
+        <span class="newlaunch1head">New Launches</span>
+        <div class="newlaunch1desc">We always coming with newbies, <br>every week!</div>
+    </div>
+    <!-- New Launch Heading End -->
+
+
     <!-- Image Grid End -->
+
+
+
+
+
+
+
+
     <!-- Footer Start -->
 
     <!-- Footer End -->
+
+    <script type="text/javascript" src="js/index.js"></script>
+
 </body>
 
 </html>

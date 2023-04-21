@@ -666,8 +666,23 @@ div.full figure:not(.expanded) {
   } */
 
 /* Image Grid CSS End */
-/* only screen */
-@media all and (max-width: 992px) {      /* Screen width from 500px to 992px (Collapse mode active from here)*/
+
+
+/* ======================================================== Device Specific Media Queries ======================================================== */
+
+
+/* ========================================================== smartphones, touchscreens ========================================================== */
+@media (hover: none) and (pointer: coarse) {
+  :root {
+    --logoheight: 120px;
+  }
+}
+
+
+
+/* ====================================== Screen width from 500px to 992px (Collapse mode active from here) ====================================== */
+
+@media only screen and (min-width: 500px) and (max-width: 992px) {      
   #matchlogoheight {
     background-color: none;
   }
@@ -682,11 +697,9 @@ div.full figure:not(.expanded) {
   }
   #searchusercart {
     display: inline-block;
-    /*   text-align: end; */
     margin: auto;
     width: 180px;
     color: white;
-
     text-align: start;
     padding-top: 5vw;
   }
@@ -697,8 +710,8 @@ div.full figure:not(.expanded) {
 }
 
 
-
-@media all and (min-width: 992px) and (max-width: 1360px) {     /* Screen width from 992.01px to 1360px (Collapse mode active from here)*/
+/* ==================================== Screen width from 992.01px to 1360px (Collapse mode active from here) ==================================== */
+@media only screen and (min-width: 992px) and (max-width: 1360px) {     
   #matchlogoheight {
     background-color: var(--navbarcolor);
   }
@@ -714,12 +727,10 @@ div.full figure:not(.expanded) {
   .navbar .dropdown:hover > ul {
     top: calc(var(--logoheight) + 21px);
   }
-
-
-
 }
 
-@media all and (min-width: 1360px) and (max-width: 1920px) {     /* Screen width from 992.01px to 1360px */
+/* ==================================================== Screen width from 992.01px to 1360px ==================================================== */
+@media only screen and (min-width: 1360px) and (max-width: 1920px) {     
   #matchlogoheight {
     background-color: var(--navbarcolor);
   }

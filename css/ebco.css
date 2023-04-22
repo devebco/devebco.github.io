@@ -760,6 +760,7 @@ div.full figure:not(.expanded) {
     margin: auto;
     color: white;
     text-align: start;
+    padding-top: 5vw;
   }
 }
 

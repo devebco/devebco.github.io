@@ -734,7 +734,7 @@ display:block;
 
 
 /* ========================================================== smartphones, touchscreens ========================================================== */
-@media (hover: none) and (pointer: coarse) and (orientation: portrait) {
+@media /* (hover: none) and (pointer: coarse) and */ (orientation: portrait) {
   :root {
     --logoheight: 10vw;
   }

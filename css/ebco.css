@@ -673,7 +673,7 @@ div.full figure:not(.expanded) {
 /* ========================================================== smartphones, touchscreens ========================================================== */
 @media (hover: none) and (pointer: coarse) {
   :root {
-    --logoheight: 10vw;
+    --logoheight: 5vw;
   }
 
   .navbar .dropdown:hover > ul {
@@ -743,7 +743,7 @@ div.full figure:not(.expanded) {
   }
 }
 
-/* ==================================================== Screen width from 992.01px to 1360px ==================================================== */
+/* ==================================================== Screen width from 1360.01px to 1920px ==================================================== */
 @media only screen and (min-width: 1360px) and (max-width: 1920px) {
   #matchlogoheight {
     background-color: var(--navbarcolor);
@@ -752,8 +752,8 @@ div.full figure:not(.expanded) {
 
 
 .circleimage {
-  display: none;
-
-
-display: absolute;
+display:block;
 }
+
+
+

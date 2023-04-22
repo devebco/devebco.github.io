@@ -1,3 +1,6 @@
+console.log("entered into js");
+
+
 window.onload = function(){ 
     //now that the window has loaded we add our event listeners to the videos.
     //When video1 has ended, play video2 etc
@@ -11,8 +14,6 @@ function playVideo(videoID){
     var videoElement = document.getElementById(videoID);
     videoElement.play();
 }
-
-console.log("entered into js");
 
 
 let clip = document.querySelector(".vid")
@@ -28,14 +29,12 @@ function clickme(){
     })
 }
 
-/* clickme(); */
-
 
 
 const navbar = document.querySelector('#NavBar');
-let top = navbar.offsetTop;
+/* let top = navbar.offsetTop; */
 function stickynavbar() {
-  if (window.scrollY >= top) {    
+  if (window.scrollY >= navbar.offsetTop) {    
     navbar.classList.add('sticky');
   } else {
     navbar.classList.remove('sticky');    

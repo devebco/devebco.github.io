@@ -676,10 +676,10 @@ div.full figure:not(.expanded) {
     background-color: var(--navbarcolor);
   }
 }
-
+/* 
 .circleimage {
   display: block;
-}
+} */
 
 /* ==================================== Screen width from 992.01px to 1360px (Collapse mode active from here) ==================================== */
 @media only screen and (min-width: 992px) and (max-width: 1360px) {

@@ -31,10 +31,11 @@ function clickme(){
 
 
 
+
 const navbar = document.querySelector('#NavBar');
-/* let top = navbar.offsetTop; */
+let top = navbar.offsetTop;
 function stickynavbar() {
-  if (window.scrollY >= navbar.offsetTop) {    
+  if (window.scrollY >= top) {    
     navbar.classList.add('sticky');
   } else {
     navbar.classList.remove('sticky');    

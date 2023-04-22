@@ -670,31 +670,6 @@ div.full figure:not(.expanded) {
 
 /* ======================================================== Device Specific Media Queries ======================================================== */
 
-/* ========================================================== smartphones, touchscreens ========================================================== */
-@media (hover: none) and (pointer: coarse) {
-  :root {
-    --logoheight: 5vw;
-  }
-
-  .navbar .dropdown:hover > ul {
-    position: static;
-  }
-
-  .circleimage {
-    display: none;
-  }
-  #navbar-top-links {
-    padding: 10px 20px;
-  }
-  #searchusercart {
-    display: inline-block;
-    margin: auto;
-    color: white;
-    text-align: start;
-
-  }
-}
-
 /* ====================================== Screen width from 500px to 992px (Collapse mode active from here) ====================================== */
 
 @media only screen and (min-width: 500px) and (max-width: 992px) {
@@ -757,3 +732,30 @@ display:block;
 
 
 
+
+/* ========================================================== smartphones, touchscreens ========================================================== */
+@media (hover: none) and (pointer: coarse) and (orientation: portrait) {
+  :root {
+    --logoheight: 10vw;
+  }
+
+  .navbar .dropdown:hover > ul {
+    position: static;
+  }
+
+  .circleimage {
+    display: none;
+/*     visibility: hidden; */
+  }
+
+  #navbar-top-links {
+    padding: 10px 20px;
+  }
+  #searchusercart {
+    display: inline-block;
+    margin: auto;
+    color: white;
+    text-align: start;
+
+  }
+}

@@ -66,6 +66,7 @@ body {
   /* position: absolute; */
   position: fixed;
   left: var(--logoleft);
+  z-index:99999;
 }
 
 .mainnavbar {
@@ -89,6 +90,11 @@ button.link {
   height: var(--headerheight);
   /* width:var(--headerheight); */
   
+}
+
+
+#links-link:hover{
+  color:var(--ebcocolor);
 }
 
 .dropdown-heading {

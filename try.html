@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar-links {
+		max-width: 700px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+.links-to li {
+		display: inline-block;
+		min-width: 150px;
+		text-align: center;
+    position: static;
+		margin-left: -5px;
+		color: #828282;
+		margin-top: -16px;
+	}
+	.links-to li .main-links {
+		display: block;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border: 1px solid green;
+		overflow: hidden;
+	}
+	.links-to li a:hover {
+		color: #eb0028;
+		cursor: pointer;
+	}
+
+#navbar-dropdown-toggle{
+  position: absolute;
+}
+
+.dropdown-label-navbar {
+	height: 100%;
+	width: 100%;
+	display: block;
+	position: relative;
+	background: red;
+  top: 0;
+  left: 0;
+}
+
+	.entire-block {
+    width: 100%;
+		height: 150px;
+		position: relative;
+		display: block;
+		margin: 0 auto;
+		padding: 0;
+		margin-top: 10px;
+    text-align:left;
+	}
+
+	.dropdown-menu {
+		width: 100vw;
+		opacity: 0;
+		background: white;
+		position: absolute;
+		margin: 0;
+		padding: 0;
+		left: 0;
+		right: 0;
+		border: 1px solid red;
+		max-height: 20px;
+        box-sizing: border-box;
+		overflow: hidden;
+	}
+
+	.navbar-dropdown:checked ~ .dropdown-menu {
+		display: block;
+		transition: max-height 1s;
+		max-height: 300px;
+		opacity: 1.0;
+	}
+    </style>
+</head>
+<body>
+    <div class="navbar-links" id="menu">
+        <ul class="links-to">
+            <li class="main-nav">
+                <a href="#99" class="main-links">Home</a>
+            </li>
+
+            <li class="main-nav">
+                <a href="#99" class="main-links">Shoes</a>
+            </li>
+
+            <li class="main-nav">
+                <input id="navbar-dropdown-toggle" type="checkbox" class="navbar-dropdown"/>
+                <label class="dropdown-label-navbar" id="checkboxNavbar" for="navbar-dropdown-toggle"></label>
+
+                <a href="#99" class="main-links">Store</a>
+                <ul class="dropdown-menu" id="checkboxDropdown">
+                    <div class="entire-block">
+                        <div class="dropdown-image-block">
+                        </div>
+                        <li class="list-of-dropdown">
+                            <div class="dropdown-list"><a href="#99">Apple</a></div>
+                            <div class="dropdown-list"><a href="#99">Banana</a></div>
+                            <div class="dropdown-list"><a href="#99">Christus</a></div>
+                        </li>
+                    </div>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>

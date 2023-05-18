@@ -1,0 +1,810 @@
+@font-face {
+  font-family: "Uniform";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/font/Uniform.otf") format("opentype");
+}
+
+body {
+  margin: 0;
+  font-family: "Uniform", /* "Nunito", Tahoma, */ cursive;
+}
+
+:root {
+  --headercolor: rgba(39, 72, 137, 0.9);
+  /* --headercolor : linear-gradient(to right, red , yellow);  change background-color to background-image*/
+  --linkscolor: white;
+  --headingcolor: rgb(228, 135, 98);
+  --ebcocolor: #274889;
+  --livsmartcolor: #f36620;
+  --worksmartcolor: #696c6c;
+  --headerheight: 5vw;
+  --logowidth: calc(var(--headerheight) * 1.3);
+  --mainnavbarwidth: auto;
+  --rightnavbarwidth: 19vw;
+  --carousel2width: 100%;
+  /* --carousel2height: 90vh; */
+  /* --carousel2height: calc(var(--carousel2width) * 0.5625 ); */ /* 16:9 video ratio */
+  /* --carousel2height: calc(var(--carousel2width) * 0.5067 ); */ /* 1200:608 video ratio */
+  --carousel2height: calc(100vh - var(--headerheight) );
+}
+
+/* @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap"); */
+
+/* ========================================================= Header Start ========================================================= */
+
+/* @font-face {
+  font-family: 'Uniform';
+  font-style: normal;
+  font-weight: normal;
+  src: url("font/Uniform.otf") format("opentype");
+} */
+
+.header {
+  background-color: var(--headercolor);
+  height: var(--headerheight);
+  grid-template-columns: var(--logowidth) auto var(--rightnavbarwidth);
+  z-index: 999;
+  display: grid;
+  width: 100%;
+}
+
+.logo,
+.logo-img {
+  width: var(--logowidth);
+  height: var(--headerheight);
+  /* position: absolute; */
+  position: fixed;
+}
+
+.mainnavbar {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+}
+
+.mainnavbarlinklabel {
+  align-self: center;
+  padding: 0 15px;
+  color: var(--linkscolor);
+}
+
+button.link {
+  height: var(--headerheight);
+  /* width:var(--headerheight); */
+  padding: 0 0 0 25px;
+}
+
+.dropdown-heading {
+  padding-bottom: 0.8em;
+  margin-bottom: 0.8em;
+  color: var(--headingcolor);
+  border-bottom: var(--headingcolor) 1px solid;
+  font-weight: bold;
+  font-size: 1.0em;
+}
+
+.link {
+  background: none;
+  border: none;
+  text-decoration: none;
+  /*   color: #777; */
+  color: var(--linkscolor);
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 0;
+  width: auto;
+}
+
+/* Replace hover with active for click operations */
+.dropdown:hover > .link,
+.link:hover {
+  color: var(--headingcolor);
+  /* color: orangered; */
+}
+
+.dropdown {
+  position: relative;
+}
+
+/* Link hover changes */
+
+.dropdown-links > .link {
+  box-shadow: inset 0 0 0 0 white;
+  color: white;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.dropdown-links > .link:hover {
+  box-shadow: inset 40em 0 0 0 white;
+  color: var(--ebcocolor);
+}
+
+/* Link hover changes */
+
+
+.dropdown-menu {
+  /* display: none; */
+  /* position: absolute; */
+  left: 0;
+  top: var(--headerheight);
+  /* width: 80vw; */ /* Width of submenu links mainnavbar */
+  /* width: auto; */
+  background-color: var(--headercolor);
+  padding: 0.75rem;
+  /* border-radius: 0.25rem; */
+  /* box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.1); */
+  opacity: 0;
+  /* transform: translateY(-35px); */
+  /* transform: translateY(calc(        55px                     - var(--headerheight))); */
+  transform: translateY(
+    calc(calc(var(--headerheight) - 10px) - var(--headerheight))
+  );
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+  pointer-events: none;
+
+  position: fixed;
+  /* left: 0px; */
+  /* top: 38px; */
+  width: 100%;
+  justify-content: center;
+}
+
+/* :hover for hover oprations & .active for click operations */
+.dropdown:hover > .link + .dropdown-menu {
+  /* Use hover for click operation */
+  opacity: 1;
+  transform: translateY(0);
+
+  pointer-events: auto;
+  /* background-color: rgba(0,0,0,0.1); */
+  background-color: var(--headercolor);
+
+  /* position: fixed;
+      left: 0px;
+      top: 38px; */
+
+  position: fixed;
+  /* position: absolute; */ /* ============ =========Dropdown Up========= Try changing this ============================== */
+  left: 0px;
+  top: var(--headerheight);
+  width: 100%;
+  /* justify-content: center; */
+}
+
+.information-grid {
+
+  /* position: absolute; */ /* =====================Dropdown Down========= Try changing this ============================== */
+  display: grid;
+  grid-template-columns: repeat(8, max-content); /* This needs to be dynamic */
+  gap: 1rem;
+  width: 100%;
+  /* position: fixed; */
+  /* left:-50px; */ /* Work needed */
+}
+
+.dropdown-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+/* .logn-form > input {
+    margin-bottom: 0.5rem;
+    justify-content: center;
+  } */
+
+.rightnavbar {
+  /* display: inline-block; */
+  /* background-color: var(--headercolor); */
+  display: flex;
+  justify-content: end;
+  padding: 0 1vw 0 0;
+}
+
+.login-form {
+  text-align: end;
+  padding: 0 0;
+}
+
+.login-form-label {
+  color: var(--linkscolor);
+  padding: 0 15px;
+}
+
+form.input {
+  margin: 4px 0;
+}
+
+.loginbtn,
+.searchbtn {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 8px 12px;
+  margin: 10px 0;
+  color: white;
+  border: none;
+  font-size: 1em;
+}
+
+.search-text {
+  width: 20%;
+  height: 27px;
+  padding-top: 3px;
+  padding-right: 5px;
+}
+
+.registerlink {
+  text-decoration: none;
+  color: white;
+}
+
+/* ========================================================= Header End ========================================================= */
+/* ========================================================= Carousel1 Start ========================================================= */
+
+/* 
+#slider {
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 400%; // Multiply 100% with images count
+  margin: 0;
+  left: 0;
+  animation: 24s slider infinite; // Change time for change interval
+}
+
+#slider figure a img {
+  float: left;
+  width: 25%; // Divide 100% by images count 
+  height: 75vh;
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  25% {
+    left: 0;
+  }
+  30% {
+    left: -100%;
+  }
+  50% {
+    left: -100%;
+  }
+  55% {
+    left: -200%;
+  }
+  75% {
+    left: -200%;
+  }
+  80% {
+    left: -300%;
+  }
+  100% {
+    left: -300%;
+  }
+} */
+
+/* ========================================================= Carousel1 End ========================================================= */
+/* ========================================================= Carousel2 Start ========================================================= */
+
+.carousel2slider {
+  width: var(--carousel2width);
+  height: var(--carousel2height);
+  /*   display: grid; */
+  place-items: center;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel2slide {
+  width: var(--carousel2width);
+  height: var(--carousel2height);
+  position: absolute;
+  transition: all 1s;
+}
+
+video {
+  width: var(--carousel2width);
+  height: var(--carousel2height);
+  object-fit: fill;
+}
+
+.carousel2slide img {
+  width: var(--carousel2width);
+  height: var(--carousel2height);
+  object-fit: fill;
+}
+
+.btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 18px;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
+
+.btn-prev {
+  top: 45%;
+  left: 2%;
+}
+
+.btn-next {
+  top: 45%;
+  right: 2%;
+}
+
+/* ========================================================= Carousel2 End ========================================================= */
+/* ========================================================= Livsmart Area Start ========================================================= */
+.livsmart-area-body {
+  margin: 5px 0;
+  height: 70vh;
+  /* height: 70vh; */
+  /* background-color: rgb(223, 155, 86); */
+  background-image: url("/img/banner/cr5.jpeg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  padding: 0 0 3vh 0;
+}
+
+.livsmart-heading {
+  text-align: end;
+  padding: 3% 3% 0 0;
+  margin-block-start: 0em;
+}
+
+.livsmart-heading button {
+  margin: 3% 0 0 0;
+}
+
+/* ============================= Explore Button start ============================= */
+
+/* html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+ */
+.glow-on-hover {
+  font-family: "Uniform", /* "Nunito", Tahoma, */ cursive;
+/*     width: 220px;
+    height: 50px; */
+    padding:1% 2%;
+    border: none;
+    outline: none;
+/*     color: #fff;
+    background: #111; */
+    color: black;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background-color: var(--livsmartcolor);
+/*     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); */
+    position: absolute;
+/*     top: -2px;
+    left:-2px; */
+    left: 0;
+    top: 0;
+    background-size: 100%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+/* .glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+} */
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+/* .glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+} */
+
+.glow-on-hover:after {
+z-index: -1;
+content: '';
+position: absolute;
+width: 100%;
+height: 100%;
+background: white;
+left: 0;
+top: 0;
+border-radius: 1px;
+border: 2px solid black;
+}
+/* 
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+} */
+
+/* ============================= Explore Button End ============================= */
+
+/* ========================================================= Livsmart Area End ========================================================= */
+
+/* ========================================================= Worksmart Start ========================================================= */
+
+.worksmart-area-body {
+  margin: 5px 0;
+  height: 70vh;
+  /* height: 70vh; */
+  /* background-color: rgb(223, 155, 86); */
+  background-image: url("/img/banner/cr4.jpeg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  padding: 0 0 3vh 0;
+}
+
+.worksmart-heading {
+  text-align: start;
+  padding: 3% 0 0 3%;
+  margin-block-start: 0em;
+}
+
+.worksmart-heading button {
+  margin: 3% 0 0 0;
+}
+
+/* ========================================================= Worksmart End ========================================================= */
+/* ========================================================= New Launches Start ========================================================= */
+.new-launches-heading {
+  text-align: center;
+  font-size: xxx-large;
+  padding: 5vh 0 0 0;
+}
+.new-launches-subheading {
+  text-align: center;
+  font-size: x-large;
+  padding: 2vh 0 5vh 0;
+}
+
+/* ========================================================= New Launches End ========================================================= */
+/* ========================================================= Icon Box Slider Start ========================================================= */
+.iconboxslider {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  /* height: 200px; */
+  height: auto;
+  max-height: auto;
+  overflow-y: hidden;
+  overflow-x: scroll !important;
+  padding: 16px;
+  transform: scroll(calc(var(--i, 0) / var(--n) * -100%));
+  scroll-behavior: smooth;
+  /* z-index: 5; */
+}
+.iconboxslider::-webkit-scrollbar {
+  height: 5px;
+  width: 150px;
+  display: none;
+}
+.iconboxslider::-webkit-scrollbar-track {
+  background: transparent;
+}
+.iconboxslider::-webkit-scrollbar-thumb {
+  background: #888;
+}
+.iconboxslider::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.iconboxslider img:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.iconboxslide {
+  position: relative;
+}
+.iconboxslide img {
+  height: 300px;
+  width: 300px;
+  margin: 0 5px;
+  object-fit: cover;
+  /* border-radius: 15px; */
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.control-prev-btn ,.control-next-btn {
+  position: absolute;
+  margin: 125px 0;
+  background-color: rgba(255, 255, 255, 0.8);
+/*   height: 100px;
+  line-height: 100px; */
+  height: 40px;
+  line-height: 40px;
+  border-radius: 40px;
+  width: 40px;
+  text-align: center;
+  box-shadow: 0 1px 3px #888;
+  user-select: none;
+  color: #444;
+  cursor: pointer;
+  z-index: 55;
+}
+
+.control-prev-btn {
+  left: 0;
+}
+
+.control-next-btn {
+  right: 0;
+}
+
+/* 
+.btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 18px;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.btn:active {
+  transform: scale(1.1);
+}
+
+.btn-prev {
+  top: 45%;
+  left: 2%;
+}
+
+.btn-next {
+  top: 45%;
+  right: 2%;
+}
+ */
+
+.iconboxslide img.zoomed {
+  width: 500px;
+  height: 600px;
+  position: fixed;
+  left: 25%;
+  top: 0%;
+  z-index: 1000;
+  transform: scale(1) translatey(0) !important;
+}
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  top: 0;
+  display: none;
+}
+.overlay.active {
+  display: block;
+}
+@media only screen and (max-width: 420px) {
+  .iconboxslider {
+    padding: 0;
+  }
+  .iconboxslide {
+    padding: 16px 10px;
+  }
+  .iconboxslide img {
+    margin: 0;
+  }
+  .control-prev-btn {
+    top: 37%;
+  }
+  .control-next-btn {
+    top: 37%;
+  }
+}
+
+.img_label {
+  text-align: center;
+  margin: 2% 10%;
+}
+
+/* @import "https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap";
+ body {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   font-family: open sans;
+   /* background: #f8f8f8; */
+
+/*} */
+/* h3 {
+   text-align: center;
+   margin: 6% auto;
+   font-size: 1.8rem;
+   font-weight: 800;
+   color: #444;
+} */
+
+/* ========================================================= Icon Box Slider End ========================================================= */
+/* ========================================================= Random Grid Start ========================================================= */
+/* .random-grid-heading {
+  color: white;
+  text-align: center;
+} */
+/* 
+.random-grid-body {
+
+  height: 100vh;
+  display: flex;
+  display: none;
+}
+
+.random-grid-body .wrapper div {
+  transition: 0.25s ease-in-out;
+}
+
+.random-grid-body .wrapper div:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 22% 22% 22% 22%;
+  margin: 0%;
+  padding: 4%;
+}
+
+.wrapper div {
+  border: 1px solid black;
+  height: 295px;
+  width: 295px;
+  margin: 5px;
+  color: black;
+  text-decoration: inherit;
+  text-align: center;
+  background-color: darkgray;
+  background-size: cover;
+}
+
+.random-grid-element-caption{
+  color:white;
+  display: block;
+  width: inherit;
+  position: absolute;
+  padding: 0 auto;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  background-color:#888;
+}
+
+ */
+.random-grid-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* padding: 0 1% 2% 1%; */
+ /*  justify-content: space-between; */
+}
+
+.random-grid-item {
+/*   flex-basis:100px; */
+  /* flex-grow: 0; */
+  /* flex-shrink:0; */
+  display: block;
+  margin: 0.3%;
+  background-color: #888;
+  background-size:cover;
+  background-repeat: no-repeat;
+  width: 48.5vw;
+  min-width:200px;
+  height: 27.28125vw;
+  min-height:200px;
+  /* min-height:100px */;
+  /* justify-content: center; */
+  text-align: center;
+  /* padding-bottom: 24%; */ /* Same as width, sets height */
+  /* margin-bottom: 1%; */ /* (100-24*4)/2 */
+  position: relative;
+  transition: 0.25s ease-in-out;
+}
+
+.random-grid-item:hover {
+  transform: scale(1.02);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.random-grid-item img{
+  width:20vw;
+  height:20vw;
+  left: 0px;
+  position:absolute; 
+}
+
+.random-grid-item label{
+  color:black; 
+  background-color: rgba(255,255,255,0.8); 
+  padding: 0 25px 5px 25px;
+  font-size: larger;
+}
+
+.random-grid-item span{
+  width:100%; 
+  height:100%; 
+  position: absolute; 
+  left:0;
+}
+
+/* ========================================================= Random Grid End ========================================================= */
+/* ========================================================= Footer Start ========================================================= */
+
+.footer-heading {
+  color: white;
+  text-align: center;
+  padding:3vh 0 7vh 0;
+}
+
+.footer-body {
+  height: 20vh;
+  background-color: rgb(59, 68, 68);
+}
+
+
+/* ========================================================= Footer End ========================================================= */

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EBCO</title>
+  <link rel="shortcut icon" href="#">
+  <script src="https://use.fontawesome.com/c58334dbd3.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></script> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
+  <!-- iconboxslider part -->
+  <!-- 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script> -->
+  <!-- iconboxslider part -->
+
+  <!-- Header Part -->
+  <!--   <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function () {
+            if (this.readyState == 4) {
+              if (this.status == 200) { elmnt.innerHTML = this.responseText; }
+              if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+  </script> -->
+</head>
+
+<body>
+  <!-- ============================================== Header Start ============================================== -->
+  <div style="display: flex">
+    <div class="header" > <!-- check this ---------------- style="display: flex;" -->
+      <!-- =============== Logo Start =============== -->
+      <div class="logo">
+        <a href="http://127.0.0.1:5500/" class="logo">
+          <img class="logo-img" src="img/logo/ebco_blue_logo.png" alt="Logo">
+        </a>
+      </div>
+      <!-- =============== Logo End =============== -->
+      <!-- =============== Central Navbar Start =============== -->
+      <div class="mainnavbar">
+        <!-- <label class="mainnavbarlinklabel">Our Brands: </label> -->
+        <div class="dropdown" data-dropdown>
+
+          <a class="link" data-dropdown-button style="display:grid; grid-auto-flow: column;text-align:center; align-items:center; padding:0px 15px; height: var(--headerheight)">Core Hardware <br>For Furnitures
+            <img src="/img/logo/general_hardware.png" alt="Ebco" style="height: calc(var(--headerheight) * 0.6)" data-dropdown-button
+              width=50px srcset="" /></a>
+
+<!-- 
+          <div class="main-menu link" style="height:5vw">
+            <button class="link" data-dropdown-button>Core Hardware <br>For Furnitures </button>
+            <img src="/img/logo/general_hardware.png" alt="Ebco" style="float: right; margin:13px 0;"
+              data-dropdown-button width=50px srcset="" />
+          </div>
+ -->
+
+          <div class="dropdown-menu information-grid">
+
+            <div>
+              <div class="dropdown-heading">Drawer Slides & Hinges</div>
+              <div class="dropdown-links">
+                <a href="#" class="link">Drawer Slides</a>
+                <a href="#" class="link">Hinges </a>
+              </div>
+            </div>
+
+            <div>
+              <div class="dropdown-heading">General Hardware</div>
+              <div class="dropdown-links">
+                <a href="#" class="link">Machines, Jigs and Cutters</a>
+                <a href="#" class="link">Plinths, Furnfelt & Bumpers</a>
+                <a href="#" class="link">Cabinet & Glass Shelf Support</a>
+                <a href="#" class="link">Ironing Board</a>
+                <a href="#" class="link">Other Hardware</a>
+                <a href="#" class="link">Magnetic Catch - Ultra Slim</a>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown-heading">Joinery Fittings & Screws</div>
+              <div class="dropdown-links">
+                <a href="#" class="link">Screws</a>
+                <a href="#" class="link">Joinery Fitting</a>
+                <a href="#" class="link">Mini Fix</a>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown-heading">Furniture Locks</div>
+              <div class="dropdown-links">
+                <a href="#" class="link">SecuTek Locks</a>
+                <a href="#" class="link">Premium Locks</a>
+                <a href="#" class="link">Speciality Locks</a>
+                <a href="#" class="link">Target Series</a>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown-heading">Retail Display Systems</div>
+              <div class="dropdown-links">
+                <a href="#" class="link">Pole Shelving Systems</a>
+                <a href="#" class="link">Display Shelving Systems - Vertical</a>
+                <a href="#" class="link">Display Shelving Systems - Horizontal</a>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown-heading">Window, Door & Glass Hardware
+              </div>
+              <div class="dropdown-links">
+                <a href="#" class="link">Sliding Door Systems</a>
+                <a href="#" class="link">Window Fittings</a>
+                <a href="#" class="link">Sliding Window Latches</a>
+                <a href="#" class="link">Door Fittings</a>
+                <a href="#" class="link">Door Closers</a>
+                <a href="#" class="link">Floor Springs</a>
+                <a href="#" class="link">Glass Door Handles</a>
+                <a href="#" class="link">Patch Fittings</a>
+                <a href="#" class="link">Glass Connectors</a>
+                <a href="#" class="link">Glass Door Locks</a>
+                <a href="#" class="link">Shower Hinges</a>
+                <a href="#" class="link">Shower Fittings</a>
+                <a href="#" class="link">Shower Sliding Fittings</a>
+                <a href="#" class="link">Plastic Seals</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="dropdown" data-dropdown>
+
+          
+
+          <a class="link" data-dropdown-button style="display:grid; grid-auto-flow: column; text-align:center; align-items:center; padding:0px 15px; height: var(--headerheight)">Ergonomic Hardware <br>for Offices
+            <img src="/img/logo/worksmart.png" alt="worksmart" style="height: calc(var(--headerheight) * 0.6)" data-dropdown-button
+              width=50px srcset="" /></a>
+
+
+          <!-- <button class="link" data-dropdown-button>Ergonomic Hardware for Offices <img src="/img/logo/worksmart.png" alt="Worksmart" width=50px srcset=""/></button> -->
+
+          <div class="dropdown-menu information-grid">
+            <div>
+              <div class="dropdown-heading">Office Furniture Fittings</div>
+              <div class="dropdown-links">
+                <!-- <a href="#" class="link">Smart Lifts</a>
+                <a href="#" class="link">Safe Drawers</a>
+                <a href="#" class="link">Articulated Keyboard Stations</a>
+                <a href="#" class="link">Computer Wall Station</a>
+                <a href="#" class="link">Keyboard Trays</a>
+                <a href="#" class="link">Computer Monitor Arms</a>
+                <a href="#" class="link">CPU Stands</a>
+                <a href="#" class="link">Office Furniture Essentials</a> -->
+                <a href="#" class="link">Smart Lifts</a>
+                <a href="#" class="link">Monitor Arms</a>
+                <a href="#" class="link">Keyboard Station & Trays</a>
+                <a href="#" class="link">CPU Stands & Stations</a>
+                <a href="#" class="link">Safe Drawers</a>
+                <a href="#" class="link">Office Furniture Essentials</a>
+                <a href="#" class="link">Computer Wall Station</a>
+                <a href="#" class="link">Electric Boxes & Chargers</a>
+                <a href="#" class="link">Cable Organiser</a>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown" data-dropdown>
+
+          <a class="link" data-dropdown-button style="display:grid; grid-auto-flow: column;text-align:center; align-items:center; padding:0px 15px;height: var(--headerheight);">Intelligent Hardware <br>for Homes
+            <img src="/img/logo/livsmart.png" alt="livsmart" style="height: calc(var(--headerheight) * 0.6)" data-dropdown-button
+              width=50px srcset="" /></a>
+
+          <div class="dropdown-menu information-grid">
+            <div>
+              <div class="dropdown-heading">Kitchen Systems & Accessories and Peka</div>
+              <div class="dropdown-links">
+                <a href="#" class="link">Kitchen Systems & Accessories</a>
+                <a href="#" class="link">Peka</a>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown-heading">Aluminium Profiles and Handles</div>
+              <div class="dropdown-links">
+                <a href="#" class="link">Aluminium Profiles</a>
+                <a href="/iconboxslider/iconboxslider.html" class="link">Handles and Knobs</a>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown-heading">Bed & Wardrobe Fittings and Accessories</div>
+              <div class="dropdown-links">
+                <a href="#" class="link">Hi Slides Wardrobe Sliding Systems</a>
+                <a href="#" class="link">Wardrobe Accessories</a>
+                <a href="#" class="link">Bed Fittings</a>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown-heading">Furniture Lights - LED</div>
+              <div class="dropdown-links">
+                <a href="#" class="link">Spot Lights (24V)</a>
+                <a href="#" class="link">Linear Lights (24V)</a>
+                <a href="#" class="link">Furniture Lights Accessories (24V)</a>
+                <a href="#" class="link">Furniture Lights LED - 12V</a>
+                <a href="#" class="link">Luminor</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- =============== Central Navbar End =============== -->
+      <!-- =============== Right Navbar Start =============== -->
+      <div class="rightnavbar">
+
+        <div class="dropdown" data-dropdown>
+          <button class="link" data-dropdown-button>Search <i class="fa fa-search"></i></button>
+          <div class="dropdown-menu">
+            <form class="login-form" style="padding: 0 2%;">
+              <input type="search-text" class="search-text" id="search-text">
+              <button type="submit" class="searchbtn"><i class="fa fa-search"></i></button><br>
+            </form>
+          </div>
+        </div>
+        <div class="dropdown" data-dropdown>
+          <button class="link" data-dropdown-button>Links <i class="fa fa-link"></i></button>
+          <div class="dropdown-menu information-grid">
+            <div>
+              <div class="dropdown-heading">About Us</div>
+              <div class="dropdown-links">
+                <a href="#" class="link">Company</a>
+                <a href="#" class="link">Certifications</a>
+                <a href="#" class="link">Sustainability@Ebco</a>
+                <a href="#" class="link">Initiatives</a>
+                <a href="#" class="link">Investor Relations</a>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown-heading">Distribution Network</div>
+              <div class="dropdown-links">
+                <a href="#" class="link">India</a>
+                <a href="#" class="link">International</a>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown-heading">Downloads</div>
+              <div class="dropdown-links">
+                <a href="#" class="link">Brochures / Leaflets</a>
+                <a href="#" class="link">Export Catalogues</a>
+                <a href="#" class="link">E-mail Newsletter</a>
+                <a href="#" class="link">Peka</a>
+                <a href="#" class="link">Packing Chart</a>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown-heading">Videos</div>
+              <div class="dropdown-links">
+                <a href="#" class="link">Commercials</a>
+                <a href="#" class="link">Peka</a>
+                <a href="#" class="link">Product Videos</a>
+                <a href="#" class="link">Fitting Instructions</a>
+              </div>
+            </div>
+            <div>
+              <div class="dropdown-heading">News & Events</div>
+              <div class="dropdown-heading">Careers</div>
+              <div class="dropdown-heading">Contact Us</div>
+              <div class="dropdown-heading">Visit Display Center</div>
+            </div>
+            <div>
+              <div class="dropdown-heading" style="text-align: end;">Distributor Login</div>
+              <div class="dropdown-links">
+                <form class="login-form">
+                  <label for="email" class="login-form-label">Email</label>
+                  <input type="email" class="email" id="email" autocomplete="off" style="margin: 7px 0; padding: 5px 0"><br>
+                  <label for="password" class="login-form-label">Password</label>
+                  <input type="password" class="password" id="password" style="margin: 7px 0; padding: 5px 0"><br>
+                  <a href="#" class="registerlink">Register&nbsp; &nbsp;</a> <button type="submit" class="loginbtn">Log in</button><br>
+                  <br>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- <div class="dropdown" data-dropdown>
+          <button class="link" data-dropdown-button>Login <i class="fa fa-user"></i></button>
+          <div class="dropdown-menu">
+            <form class="login-form">
+              <label for="email" class="login-form-label">Email</label>
+              <input type="email" class="email" id="email"><br>
+              <label for="password" class="login-form-label">Password</label>
+              <input type="password" class="password" id="password"><br>
+              <button type="submit" class="loginbtn">Log in</button><br>
+              <a href="#" class="registerlink">Register&nbsp;</a><br>
+            </form>
+          </div>
+        </div> -->
+        <div class="dropdown" data-dropdown>
+          <button class="link" data-dropdown-button> Shop
+            <i class="fa fa-shopping-cart"></i>
+          </button>
+        </div>
+      </div>
+      <!-- =============== Right Navbar End =============== -->
+    </div>
+  </div>
+  <!-- ================================================ Header End ================================================ -->
+  <!-- ============================================== Carousel1 Start ============================================== -->
+  <!--   <div id="slider" style="display:none">
+    <figure>
+      <a href="#"><img src="img/banner/cr1.jpeg" alt=""></a>
+      <a href="#"><img src="img/banner/cr2.jpeg" alt=""></a>
+      <a href="#"><img src="img/banner/cr3.jpeg" alt=""></a>
+      <a href="#"><img src="img/banner/cr1.jpeg" alt=""></a>
+    </figure>
+  </div> -->
+  <!-- ============================================== Carousel1 End ============================================== -->
+  <!-- ============================================== Carousel2 Start ============================================== -->
+  <div class="carousel2slider">
+    <div class="carousel2slide">
+      <video src="vid/furniture_lights_ad.mp4" autoplay type="video/mp4" muted class="vid" loop></video>
+      <!-- <img src="https://source.unsplash.com/random?landscape,mountain" alt="" /> -->
+    </div>
+    <div class="carousel2slide">
+      <video src="vid/girl_ad.mp4" autoplay type="video/mp4" muted class="vid" loop></video>
+      <!-- <img src="https://source.unsplash.com/random?landscape,cars" alt="" /> -->
+    </div>
+    <div class="carousel2slide">
+      <video src="vid/sardarji_ad.mp4" autoplay type="video/mp4" muted class="vid" loop></video>
+      <!-- <img src="https://source.unsplash.com/random?landscape,night" alt="" /> -->
+    </div>
+    <!--     <div class="carousel2slide">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/owPKeoUZJK8"></iframe> -->
+    <!-- frameborder="0" allowfullscreen title="Ebco Brand TVC - #LiveEffortless" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  -->
+    <!--     </div> -->
+    <div class="carousel2slide">
+      <video src="vid/shelf_tray_17152.mp4" autoplay type="video/mp4" muted class="vid" loop></video>
+      <!-- <img src="https://source.unsplash.com/random?landscape,city" alt="" /> -->
+    </div>
+    <div class="carousel2slide">
+      <video src="vid/smart_lift_single_leg_11520.mp4" autoplay type="video/mp4" muted class="vid" loop></video>
+      <!-- <img src="https://source.unsplash.com/random?landscape,city" alt="" /> -->
+    </div>
+    <div class="carousel2slide">
+      <video src="vid/table_lift_200_with_damper_5696.mp4" autoplay type="video/mp4" muted class="vid" loop></video>
+      <!-- <img src="https://source.unsplash.com/random?landscape,city" alt="" /> -->
+    </div>
+
+    <button class="btn btn-prev"><!-- &lt; --><i class="fa fa-arrow-left"></i></button>
+    <button class="btn btn-next"><!-- &gt; --><i class="fa fa-arrow-right"></i></button>
+  </div>
+  <!-- ============================================== Carousel2 End ============================================== -->
+  <!-- =========================================== Livsmart Area Start =========================================== -->
+  <div class="livsmart-area-body">
+    <div class="livsmart-heading">
+      <!-- <h1>"Livsmart Heading"</h1> -->
+      <img src="img/logo/Livsmart_logo.png" alt="Livsmart" width="20%" height="20%">
+      <h3>"Some Text Here"</h3>
+
+      <!-- ============================= Test ============================= -->
+
+      <button class="glow-on-hover" type="button" onclick="window.location.href='https://ebco.in/livsmart'"
+        target=".blank"><strong>Explore</strong></button>
+
+      <!-- <button onclick="window.location.href='https://ebco.in/livsmart'">Explore</button> -->
+      <!-- ============================= Test ============================= -->
+
+
+    </div>
+  </div>
+  <!-- =========================================== Livsmart Area End =========================================== -->
+  <!-- =========================================== Worksmart Area Start =========================================== -->
+  <div class="worksmart-area-body">
+    <div class="worksmart-heading">
+      <!-- <h1>"Worksmart Heading"</h1> -->
+      <img src="img/logo/Worksmart_logo.png" alt="Livsmart" width="20%" height="20%">
+      <h3>"Some Text Here"</h3>
+      <!-- <button onclick="window.location.href='https://ebco.in/worksmart'">Explore</button> -->
+      <button class="glow-on-hover" type="button" onclick="window.location.href='https://ebco.in/worksmart'"
+        target=".blank"><strong>Explore</strong></button>
+    </div>
+  </div>
+  <!-- =========================================== Worksmart Area End =========================================== -->
+
+  <!-- =========================================== New Launches Start =========================================== -->
+  <!--   <div class="new-launches-heading">Shop by Category</div>
+  <div class="new-launches-subheading">"some text here"</div> -->
+  <!-- =========================================== New Launches End =========================================== -->
+  <!-- =========================================== Random Grid Start =========================================== -->
+  <!--   <div class="random-grid-body">
+    <div class="wrapper">
+
+      <a href="/html/work-from-home-1.html" target="_blank">
+        <div class="wrapper-div" style="background-image: url(img/thumbnail/work-from-home-1.png);">
+          <label class="random-grid-element-caption">Work From Home</label>
+        </div>
+      </a>
+      <a href="/html/bedroom.html" target="_blank">
+        <div class="wrapper-div" style="background-image: url(img/thumbnail/bedroom-1.png);">Bedroom</div>
+      </a>
+      <a href="/html/kitchen.html" target="_blank">
+        <div class="wrapper-div" style="background-image: url(img/thumbnail/kitchen-1.png);">Kitchen</div>
+      </a>
+      <div style="background-color:bisque">Dining Area</div>
+      <div style="background-color:aquamarine">Living Room</div>
+      <div style="background-color:khaki">Bathroom</div>
+      <div style="background-color:cornsilk">Product Seven</div>
+      <div style="background-color:ghostwhite">Product Eight</div>
+    </div>
+  </div> -->
+  <!-- =========================================== New Launches Start =========================================== -->
+  <div class="new-launches-heading">Discover More</div>
+  <div class="new-launches-subheading">"some text here"</div>
+  <!-- =========================================== New Launches End =========================================== -->
+  <!-- =================================================== Grid 2 =================================================== -->
+  <div class="random-grid-body">
+    <div class="random-grid-item" style="background-image: url(img/thumbnail/bedroom-1.png);">
+      <a href="/html/bedroom.html" target="_blank"><span></span></a><label>Bedroom</label>
+    </div>
+    <div class="random-grid-item" style="background-image: url(img/thumbnail/work-from-home-1.png);">
+      <a href="/html/work-from-home-1.html" target="_blank"><span></span></a><label>Work From Home</label>
+    </div>
+    <div class="random-grid-item" style="background-image: url(img/thumbnail/kitchen-1-16x9.png);">
+      <a href="/html/kitchen.html" target="_blank"><span></span></a><label>Kitchen</label>
+    </div>
+    <div class="random-grid-item" style="background-image: url(img/thumbnail/living-room-16x9.png);">
+      <!-- <a href="#"> --><span></span></a><label>Living Room*</label>
+    </div>
+    <!-- <div class="random-grid-item" style="background-image: url(img/thumbnail/wordrobe-16x9.jpg);">
+      <span></span></a><label>Wordrobe*</label>
+    </div>
+    <div class="random-grid-item" style="background-image: url(img/thumbnail/Kitchen-pulldown-system.png);">
+      <span></span></a><label>Kitchen*</label>
+    </div> -->
+    <!-- <div class="random-grid-item"><label>Dining Area</label></div> -->
+    <!-- <div class="random-grid-item"><label>Bathroom</label></div> -->
+    <!--     <div class="random-grid-item"><label>Category-7</label></div>
+    <div class="random-grid-item"><label>Category-8</label></div> -->
+  </div>
+  <!-- =========================================== Random Grid End =========================================== -->
+  <!-- =========================================== New Launches Start =========================================== -->
+  <div class="new-launches-heading">New Launches</div>
+  <div class="new-launches-subheading">"some text here"</div>
+  <!-- =========================================== New Launches End =========================================== -->
+  <!-- =========================================== Icon Box Slider Start =========================================== -->
+  <div id="iconboxslider-container" style="padding: 1vh 0 7vh 0;" class="iconboxslider"> <!-- "padding: 0 0 10vh 0;" -->
+    <div class="iconboxslide">
+      <a href="https://ebco.in/4-digital-combination-lock" target="_blank">
+        <img src="img/new_launches/4-digital-combination-lock.jpg" alt=""></a>
+      <div class="img_label">4 digital combination lock</div>
+    </div>
+    <div class="iconboxslide">
+      <a href="https://ebco.in/detergent-caddie" target="_blank">
+        <img src="img/new_launches/detergent-caddie.jpg" alt=""></a>
+      <div class="img_label">Detergent Caddie</div>
+    </div>
+    <div class="iconboxslide">
+      <a href="https://ebco.in/kitchen-midway-rack-set" target="_blank">
+        <img src="img/new_launches/kitchen-midway-rack-set.jpg" alt=""></a>
+      <div class="img_label">Kitchen Midway Rack Set</div>
+    </div>
+    <div class="iconboxslide">
+      <a href="https://ebco.in/linear-slim-7mm" target="_blank">
+        <img src="img/new_launches/linear-slim-7mm.jpg" alt=""></a>
+      <div class="img_label">Linear Slim 7mm</div>
+    </div>
+    <div class="iconboxslide">
+      <a href="https://ebco.in/base-pullout-max-45" target="_blank">
+        <img src="img/new_launches/base-pullout-max-45.jpg" alt=""></a>
+      <div class="img_label">Base Pullout Max 45</div>
+    </div>
+    <div class="iconboxslide">
+      <a href="https://ebco.in/zinc-handle-and-knob-v" target="_blank">
+        <img src="img/new_launches/zinc-handle-and-knob-v.jpg" alt=""></a>
+      <div class="img_label">Zinc Handle & Knob V</div>
+    </div>
+    <div onclick="prev()" class="control-prev-btn">
+      <i class="fa fa-arrow-left"></i>
+    </div>
+    <div onclick="next()" class="control-next-btn">
+      <i class="fa fa-arrow-right"></i>
+    </div>
+    <!--     <button class="btn iconboxslider-btn-next">&gt;</button>
+    <button class="btn iconboxslider-btn-prev">&lt;</button> -->
+  </div>
+  <div class="overlay"></div>
+  
+  <!-- =========================================== Icon Box Slider End =========================================== -->
+  <!-- =========================================== Footer Start =========================================== -->
+  <div class="footer-body">
+    <div class="footer-heading">Footer Area</h2>
+    </div>
+  </div>
+  <!-- =========================================== Footer End =========================================== -->
+
+
+
+
+  <!--   <div include-html="carousel1/carousel1.html"></div> -->
+
+  <!--   <div include-html="livsmart-area/livsmart-area.html"></div> -->
+
+  <!--   <div include-html="worksmart-area/worksmart-area.html"></div> -->
+
+  <!--   -->
+
+  <!--   <div include-html="iconboxslider/iconboxslider.html">
+    <script src="iconboxslider/iconboxslider.js"></script>
+  </div> -->
+
+  <!--   <div include-html="random-grid/random-grid.html">
+    <script type="text/javascript" src="random-grid/random-grid.js"></script>
+  </div> -->
+
+  <!--   <div include-html="footer/footer.html"></div>
+ -->
+  <!--   <script>
+    includeHTML();
+  </script> -->
+
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>

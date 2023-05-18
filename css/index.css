@@ -19,15 +19,17 @@ body {
   --livsmartcolor: #f36620;
   --worksmartcolor: #696c6c;
   --headerheight: 5vw;
-
-  --logowidth: calc(var(--headerheight) * 1.3);
+  --logowidth: 7vw;
+  /* --logowidth: calc(var(--headerheight) * 1.3); */
   --mainnavbarwidth: auto;
   --rightnavbarwidth: 19vw;
+
   --carousel2width: 100%;
+  --carousel2height: 100vh;
   /* --carousel2height: 90vh; */
   /* --carousel2height: calc(var(--carousel2width) * 0.5625 ); */ /* 16:9 video ratio */
   /* --carousel2height: calc(var(--carousel2width) * 0.5067 ); */ /* 1200:608 video ratio */
-  --carousel2height: calc(100vh - var(--headerheight) );
+  
 }
 
 /* @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap"); */
@@ -44,10 +46,11 @@ body {
 .header {
   /* background-color: var(--navbarcolor); */
   height: var(--headerheight);
-  grid-template-columns: var(--logowidth) auto var(--rightnavbarwidth);
+  grid-template-columns: var(--logowidth) var(--mainnavbarwidth) var(--rightnavbarwidth);
   z-index: 999;
   display: grid;
   width: 100%;
+  position: absolute; /* Remove this to get carousel below header */
 }
 
 .logo,
@@ -56,7 +59,7 @@ body {
   height: var(--logowidth);
   /* position: absolute; */
   position: fixed;
-  left: 1em;
+  left: 1.5em;
 }
 
 .mainnavbar {

@@ -31,10 +31,10 @@ body {
   --rightnavbarwidth: 20vw;
   /* --rightnavbarwidth: fit-content; */
 
-  --carousel2width: 100%;
-  --carousel2height: 100vh;
+  --carousel2width: 100vw;
+/*   --carousel2height: 100vh; */
   /* --carousel2height: 90vh; */
-  /* --carousel2height: calc(var(--carousel2width) * 0.5625 ); */
+  --carousel2height: calc(var(--carousel2width) * 0.5625 );
   /* 16:9 video ratio */
   /* --carousel2height: calc(var(--carousel2width) * 0.5067 ); */
   /* 1200:608 video ratio */

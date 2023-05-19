@@ -76,7 +76,11 @@ body {
   /* position: absolute; */
   position: fixed;
   left: var(--logoleft);
+<<<<<<< HEAD
   z-index: 99999;
+=======
+  z-index:99999;
+>>>>>>> bb64e808b2e42ba98aa757c281505decefbd8eac
 }
 
 .mainnavbar {
@@ -111,6 +115,11 @@ button.link {
 
 #links-link:hover {
   color: var(--ebcocolor);
+}
+
+
+#links-link:hover{
+  color:var(--ebcocolor);
 }
 
 .dropdown-heading {

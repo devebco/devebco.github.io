@@ -14,7 +14,7 @@ body {
 }
 
 :root {
-  --navbarcolor: rgba(39, 72, 137, 0.7);
+  --navbarcolor: rgba(39, 72, 137, 0.8);
   --linkscolor: white;
   --ebcocolor: #274889;
   --livsmartcolor: #f36620;
@@ -75,7 +75,7 @@ body {
 }
 
 .mainnavbar {
-  background-color: var(--navbarcolor);
+  /* background-color: var(--navbarcolor); */
   /* margin: 0 0 0 3em; */
   /* Shift navbar to right */
   grid-column-start: 2;
@@ -190,7 +190,7 @@ button.link {
   position: fixed;
   /* left: 0px; */
   /* top: 38px; */
-  width: 110%;
+  width: 100%;
   justify-content: center;
 }
 
@@ -236,7 +236,7 @@ button.link {
   } */
 
 .rightnavbar {
-  background-color: var(--navbarcolor);
+  /* background-color: var(--navbarcolor); */
   /* display: inline-block; */
   /* background-color: var(--navbarcolor); */
   display: flex;

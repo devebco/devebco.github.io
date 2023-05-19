@@ -218,12 +218,12 @@ button.link {
   top: var(--headerheight);
   width: 100%;
   /* height: 50vh; */
-  max-height: 50vh;
+  /* max-height: 50vh; */
   /* justify-content: center; */
 }
 
 .dropdown-area{
-  width: 12.5vw;
+  width: 12.25vw;
 }
 
 .dropdown-links {

@@ -384,9 +384,9 @@ form.input {
 
 .carousel2slider {
   width: var(--carousel2width);
-  max-width: 1920px;
+  /* max-width: 1920px; */
   height: var(--carousel2height);
-  max-height: 1080px;
+  /* max-height: 1080px; */
   /*   display: grid; */
   place-items: center;
   margin: 0;

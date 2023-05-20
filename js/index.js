@@ -1,5 +1,6 @@
 /* ========================================================= Header Start ========================================================= */
 /* console.log("entry : header"); */
+/* This block of code is for only when navbar is working on click action only, hover makes another action which ends click action */
 
 document.addEventListener('click', e => {
     const isDropdownButton = e.target.matches("[data-dropdown-button]");
@@ -10,11 +11,13 @@ document.addEventListener('click', e => {
     if (isDropdownButton) {
         currentDropdown = e.target.closest('[data-dropdown]')
         currentDropdown.classList.toggle('active')
+        /* console.log("PQR"); */
     }
 
     document.querySelectorAll("[data-dropdown].active").forEach(dropdown => {
         if (dropdown === currentDropdown) return
         dropdown.classList.remove('active');
+        /* console.log("XYZ"); */
     })
 })
 

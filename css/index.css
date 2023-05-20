@@ -31,10 +31,10 @@ body {
   --rightnavbarwidth: 20vw;
   /* --rightnavbarwidth: fit-content; */
 
-  --carousel2width: 100vw;
-/*   --carousel2height: 100vh; */
+/*   --carousel2width: 100vw; */
+  /*   --carousel2height: 100vh; */
   /* --carousel2height: 90vh; */
-  --carousel2height: calc(var(--carousel2width) * 0.5625 );
+/*   --carousel2height: calc(var(--carousel2width) * 0.5625); */
   /* 16:9 video ratio */
   /* --carousel2height: calc(var(--carousel2width) * 0.5067 ); */
   /* 1200:608 video ratio */
@@ -222,7 +222,7 @@ button.link {
   /* justify-content: center; */
 }
 
-.dropdown-area{
+.dropdown-area {
   width: 12.25vw;
 }
 
@@ -383,27 +383,37 @@ form.input {
 /* ========================================================= Carousel2 Start ========================================================= */
 
 .carousel2slider {
-  width: var(--carousel2width);
-  /* max-width: 1920px; */
-  height: var(--carousel2height);
-  /* max-height: 1080px; */
-  /*   display: grid; */
+  width: 100%;
+  padding-top: 56.25%;
+  height: 0px;
+  position: relative;
   place-items: center;
   margin: 0;
   position: relative;
   overflow: hidden;
 }
 
+
 .carousel2slide {
-  width: var(--carousel2width);
-  height: var(--carousel2height);
   position: absolute;
   transition: all 1s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: fill;
 }
 
-video {
-  width: var(--carousel2width);
+.carousel2slide > video {
+  /*   width: var(--carousel2width);
   height: var(--carousel2height);
+ */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   object-fit: fill;
 }
 
@@ -449,14 +459,16 @@ video {
 .cover-grid-area {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  /* border: 1px solid red; */
   /* margin-top: 2%; */
+  padding: 0.5% 0 0 0;
 }
 
 .all-area-body {
   height: 30vw;
   /* border: 1px solid black; */
   text-align: end;
-  margin: 3px;
+  /*   margin: 3px; */
   padding: 0% 1% 0 0;
   background-repeat: no-repeat;
   background-position: center;
@@ -464,53 +476,59 @@ video {
   /* margin-block-start: 0em; */
 }
 
-.sub-title-div{
-  margin-bottom: 4%;  
+.sub-title-div {
+  margin-bottom: 4%;
+
 }
 
 .sub-title-span {
   /* display: inline-block; */
   color: white;
   font-size: 1em;
-/*   background-color: rgba(0, 0, 0, 0.6); */
-background-color: var(--navbarcolor);
-  
+  /*   background-color: rgba(0, 0, 0, 0.6); */
+  /* background-color: var(--navbarcolor); */
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .ebco-area-body {
-  background-image: url("/img/banner/ebco-4x3.png");
-
+  background-image: url("/img/ebco/ebco-4x3.png");
+  margin-right: 0.5%;
+  margin-bottom: 1%;
 }
 
 .worksmart-area-body {
   background-image: url("/img/cover/worksmart-cover-img.png");
+  margin-left: 0.5%;
+  margin-bottom: 1%;
 }
 
 .livsmart-area-body {
-  background-image: url("/img/banner/cr5.jpeg");
+  background-image: url("/img/livsmart/livsmart.png");
   grid-column: span 2;
+  margin-bottom: 1%;
 }
 
 .all-area-explore {
-/*   width: 10vw; */
+  /*   width: 10vw; */
   /* margin-top: 5%; */
   text-decoration: none;
   color: black;
   padding: 0.5% 2%;
   cursor: pointer;
   font-weight: bold;
-/*   height: 2vw; */
-  border:solid 2px black;
+  /*   height: 2vw; */
+  border: solid 2px black;
   border-radius: 2px;
-  background: rgba(255, 255, 255,0);
+  /* background: rgba(255, 255, 255,0); */
+  background-color: rgba(255, 255, 255, 0.3);
   /* font-size: 25px; */
   font-size: 1em;
 }
 
 .all-area-explore:hover {
-  background:rgba(0, 0, 0, 0.5);
-  border:solid 1px rgba(0, 0, 0, 0.5);
-  color:white; 
+  background: rgba(0, 0, 0, 0.3);
+  border: solid 1px rgba(0, 0, 0, 0.3);
+  color: white;
 }
 
 /* ========================================================== Cover Grid Area End ========================================================== */

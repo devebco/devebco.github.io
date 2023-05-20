@@ -11,46 +11,15 @@
   <!-- <script src="/js/jquery/jquery-3.7.0.min.js"></script> -->
   <link rel="stylesheet" href="css/index.css">
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></script> -->
-
   <!-- iconboxslider part -->
   <!-- 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"
       integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script> -->
   <!-- iconboxslider part -->
-
-  <!-- Header Part -->
-  <!--   <script>
-    function includeHTML() {
-      var z, i, elmnt, file, xhttp;
-      /* Loop through a collection of all HTML elements: */
-      z = document.getElementsByTagName("*");
-      for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        /*search for elements with a certain atrribute:*/
-        file = elmnt.getAttribute("include-html");
-        if (file) {
-          /* Make an HTTP request using the attribute value as the file name: */
-          xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function () {
-            if (this.readyState == 4) {
-              if (this.status == 200) { elmnt.innerHTML = this.responseText; }
-              if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
-              /* Remove the attribute, and call this function once more: */
-              elmnt.removeAttribute("include-html");
-              includeHTML();
-            }
-          }
-          xhttp.open("GET", file, true);
-          xhttp.send();
-          /* Exit the function: */
-          return;
-        }
-      }
-    }
-  </script> -->
 </head>
 
 <body>
-  <!-- ============================================== Header Start ============================================== -->
+  <!-- ================================================================ Header Start ================================================================ -->
+  <!-- ================================================================ Logo Start ================================================================ -->
   <div style="display: flex">
     <div class="header"> <!-- check this ---------------- style="display: flex;" -->
       <!-- =============== Logo Start =============== -->
@@ -59,28 +28,18 @@
           <img class="logo-img" src="img/logo/ebco_blue_logo.png" alt="Logo">
         </a>
       </div>
-      <!-- =============== Logo End =============== -->
-      <!-- =============== Central Navbar Start =============== -->
+      <!-- ================================================================ Logo End ================================================================ -->
+      <!-- ========================================================== Central Navbar Start ========================================================== -->
       <div class="mainnavbar">
         <!-- <label class="mainnavbarlinklabel">Our Brands: </label> -->
         <div class="dropdown" data-dropdown>
 
           <a class="link" data-dropdown-button
-            style="display:grid; grid-auto-flow: column;text-align:center; align-items:center; padding:0px 15px 0px 100px; height: var(--headerheight)"><!-- Ebco <br>Fittings -->
+            style="display:grid; grid-auto-flow: column;text-align:center; align-items:center; padding:0px 15px 0px 100px; height: var(--headerheight)">
             Ebco
             <img src="/img/logo/general_hardware.png" alt="Ebco" class="mainnavbar-btn-logo" data-dropdown-button
               width=50px srcset="" /></a>
-
-          <!-- 
-          <div class="main-menu link" style="height:5vw">
-            <button class="link" data-dropdown-button>Core Hardware <br>For Furnitures </button>
-            <img src="/img/logo/general_hardware.png" alt="Ebco" style="float: right; margin:13px 0;"
-              data-dropdown-button width=50px srcset="" />
-          </div>
- -->
-
           <div class="dropdown-menu">
-
             <div class="dropdown-area">
               <div class="dropdown-heading">Drawer Slides & Hinges</div>
               <div class="dropdown-links">
@@ -88,7 +47,6 @@
                 <a href="#" class="link">Hinges </a>
               </div>
             </div>
-
             <div class="dropdown-area">
               <div class="dropdown-heading">General Hardware</div>
               <div class="dropdown-links">
@@ -146,20 +104,11 @@
             </div>
           </div>
         </div>
-
-
         <div class="dropdown" data-dropdown>
-
-
-
           <a class="link" data-dropdown-button
             style="display:grid; grid-auto-flow: column; text-align:center; align-items:center; padding:0px 15px; height: var(--headerheight)"><!-- Fittings <br>for Offices -->Worksmart
             <img src="/img/logo/worksmart.png" alt="worksmart" class="mainnavbar-btn-logo" data-dropdown-button
               width=50px srcset="" /></a>
-
-
-          <!-- <button class="link" data-dropdown-button>Ergonomic Hardware for Offices <img src="/img/logo/worksmart.png" alt="Worksmart" width=50px srcset=""/></button> -->
-
           <div class="dropdown-menu">
             <div class="dropdown-area">
               <div class="dropdown-heading">Office Furniture Fittings</div>
@@ -181,20 +130,15 @@
                 <a href="#" class="link">Computer Wall Station</a>
                 <a href="#" class="link">Electric Boxes & Chargers</a>
                 <a href="#" class="link">Cable Organiser</a>
-
-
               </div>
             </div>
           </div>
         </div>
-
         <div class="dropdown" data-dropdown>
-
           <a class="link" data-dropdown-button
             style="display:grid; grid-auto-flow: column;text-align:center; align-items:center; padding:0px 100px 0px 15px;height: var(--headerheight);"><!-- Intelligent Hardware <br>for Homes -->Livsmart
             <img src="/img/logo/livsmart.png" alt="livsmart" class="mainnavbar-btn-logo" data-dropdown-button width=50px
               srcset="" /></a>
-
           <div class="dropdown-menu">
             <div class="dropdown-area">
               <div class="dropdown-heading">Kitchen Systems & Accessories and Peka</div>
@@ -230,10 +174,9 @@
             </div>
           </div>
         </div>
-
       </div>
-      <!-- =============== Central Navbar End =============== -->
-      <!-- =============== Right Navbar Start =============== -->
+      <!-- =========================================================== Central Navbar End =========================================================== -->
+      <!-- =========================================================== Right Navbar Start =========================================================== -->
       <div class="rightnavbar">
 
         <div class="dropdown" data-dropdown> <!-- style="background-color: var(--navbarcolor);" -->

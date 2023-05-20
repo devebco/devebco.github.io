@@ -449,7 +449,7 @@ video {
 .cover-grid-area {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-top: 2%;
+  /* margin-top: 2%; */
 }
 
 .all-area-body {
@@ -464,13 +464,17 @@ video {
   /* margin-block-start: 0em; */
 }
 
-span.sub-title {
+.sub-title-div{
+  margin-bottom: 4%;  
+}
+
+.sub-title-span {
   /* display: inline-block; */
   color: white;
   font-size: 1em;
 /*   background-color: rgba(0, 0, 0, 0.6); */
 background-color: var(--navbarcolor);
-  margin-bottom: 4%;
+  
 }
 
 .ebco-area-body {
@@ -487,11 +491,14 @@ background-color: var(--navbarcolor);
   grid-column: span 2;
 }
 
-.all-area-button {
+.all-area-explore {
 /*   width: 10vw; */
-  margin-top: 5%;
-  padding: 0.5% 4%;
+  /* margin-top: 5%; */
+  text-decoration: none;
+  color: black;
+  padding: 0.5% 2%;
   cursor: pointer;
+  font-weight: bold;
 /*   height: 2vw; */
   border:solid 2px black;
   border-radius: 2px;
@@ -500,7 +507,7 @@ background-color: var(--navbarcolor);
   font-size: 1em;
 }
 
-.all-area-button:hover {
+.all-area-explore:hover {
   background:rgba(0, 0, 0, 0.5);
   border:solid 1px rgba(0, 0, 0, 0.5);
   color:white; 

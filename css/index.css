@@ -31,10 +31,10 @@ body {
   --rightnavbarwidth: 24vw;
   /* --rightnavbarwidth: fit-content; */
 
-/*   --carousel2width: 100vw; */
+  /*   --carousel2width: 100vw; */
   /*   --carousel2height: 100vh; */
   /* --carousel2height: 90vh; */
-/*   --carousel2height: calc(var(--carousel2width) * 0.5625); */
+  /*   --carousel2height: calc(var(--carousel2width) * 0.5625); */
   /* 16:9 video ratio */
   /* --carousel2height: calc(var(--carousel2width) * 0.5067 ); */
   /* 1200:608 video ratio */
@@ -60,10 +60,13 @@ body {
   grid-template-columns: calc(var(--logoleft) + var(--logowidth)) var(--mainnavbarwidth) var(--rightnavbarwidth);
   z-index: 999;
   display: grid;
+  position: fixed;
 
-  position: absolute;
+  /*   position: absolute; */
   /* Remove this to get carousel below header */
 }
+
+
 
 .logo,
 .logo-img {
@@ -89,36 +92,43 @@ body {
   /* padding: 0 0 0 2em; */
 }
 
+
+/* div.mainnavbar:hover +  .rightnavbar  {
+    visibility: hidden;
+  }
+ */
+
+
 .mainnavbarlinklabel {
   align-self: center;
   padding: 0 15px;
   color: var(--linkscolor);
 }
 
-#mainnavbar-ebco{
-  display:grid; 
+#mainnavbar-ebco {
+  display: grid;
   grid-auto-flow: column;
-  text-align:center; 
-  align-items:center; 
-  padding:0px 15px 0px 100px; 
+  text-align: center;
+  align-items: center;
+  padding: 0px 15px 0px 100px;
   height: var(--headerheight)
 }
 
-#mainnavbar-worksmart{
-  display:grid; 
-  grid-auto-flow: column; 
-  text-align:center; 
-  align-items:center; 
-  padding:0px 15px; 
+#mainnavbar-worksmart {
+  display: grid;
+  grid-auto-flow: column;
+  text-align: center;
+  align-items: center;
+  padding: 0px 15px;
   height: var(--headerheight)
 }
 
-#mainnavbar-livsmart{
-  display:grid; 
+#mainnavbar-livsmart {
+  display: grid;
   grid-auto-flow: column;
-  text-align:center; 
-  align-items:center; 
-  padding:0px 100px 0px 15px;
+  text-align: center;
+  align-items: center;
+  padding: 0px 100px 0px 15px;
   height: var(--headerheight);
 }
 
@@ -133,11 +143,17 @@ button.link {
   width: calc(var(--headerheight) * 0.55);
   max-height: 70px;
   padding: 0 0 0 5px;
-  
+
 }
 
 #links-link:hover {
   color: var(--ebcocolor);
+}
+
+.dropdown:hover>.link,
+.link:hover {
+  color: var(--ebcocolor);
+  /* color: orangered; */
 }
 
 .dropdown-heading {
@@ -434,7 +450,7 @@ form.input {
   object-fit: fill;
 }
 
-.carousel2slide > video {
+.carousel2slide>video {
   /*   width: var(--carousel2width);
   height: var(--carousel2height);
  */

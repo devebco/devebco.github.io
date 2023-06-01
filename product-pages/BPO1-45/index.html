@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebco</title>
+    <link rel="shortcut icon" href="#">
+    <script src="https://use.fontawesome.com/c58334dbd3.js"></script>
+    <!-- <script src="/js/jquery/jquery-3.7.0.min.js"></script> -->
+    <link rel="stylesheet" href="index.css">
+
+    <!--     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+
+</head>
+
+<body>
+    <div class="main-body">
+        <span id="product-logo">
+            <img src="img/logo/livsmart_logo.png" alt="Logo">
+        </span>
+        <!-- ========================================================= Carousel Start ========================================================= -->
+        <div class="slider">
+            <div class="slide">
+                <img src="img/product-img/BPO1-45-po-1.jpg" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/product-img/BPO1-45-po-2.jpg" alt="" />
+            </div>
+            <button class="btn btn-prev"><!-- &lt; --><i class="fa fa-arrow-left"></i></button>
+            <button class="btn btn-next"><!-- &gt; --><i class="fa fa-arrow-right"></i></button>
+        </div>
+        <!-- ========================================================= Carousel End ========================================================= -->
+        <!-- ========================================================= Accordion Start ========================================================= -->
+        <div class="container">
+            <div class="product-title"><label id="product-title">Base Pullout Max 45</label></div>
+            <div class="element">
+                <div class="question">
+                    <div id="desc-title">Description :
+                        <button><i class="fa fa-plus-circle"></i></button>
+                    </div>
+                </div>
+                <div id="product-desc" class="answer hideText">
+                    <ul>
+                        <li>Organize your kitchen essentials at ease with this multipurpose, compact, and flexible storage unit</li>
+                        <li>Easy access to content from all three sides</li>
+                        <li>Suitable for miscellaneous storage including bottles, jars, knives, ladles, chopping board, gloves etc.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="element">
+                <div class="question">
+                    <div id="specs-title">Specification :
+                    <button><i class="fa fa-plus-circle"></i></button></div>
+                </div>
+                <div class="answer hideText">
+                    <table id="product-specs">
+                        <tbody>
+                            <tr>
+                                <td>Item</td>
+                                <td>Item Code</td>
+                                <td>Size (mm)</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Base Pullout Max 45
+                                </td>
+                                <td>BPO1-45</td>
+                                <td>
+                                    450mm
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="element">
+                <div class="question">
+                    <div id="fit-instruct-title">Fitting Instructions : 
+                    <button><i class="fa fa-plus-circle"></i></button></div>
+                </div>
+                <div class="answer hideText">
+                    <div id="product-fits">
+                        <img src="img/fit-instru-img/BPO1-45-1.jpg" alt="image1">
+                        <img src="img/fit-instru-img/BPO1-45-2.jpg" alt="image2">
+                        <img src="img/fit-instru-img/BPO1-45-3.jpg" alt="image3">
+
+                    </div>
+                </div>
+            </div>
+            <div class="btn-area">
+                <button id="inquiry-btn"><i class="fa fa-envelope"></i> &nbsp;Send an inquiry</button>
+
+                <!-- <iframe srcdoc='<h1 style="color: red">Hello</h1> world' src="/abc.html" name="frame"></iframe> -->
+                <iframe src="/product-pages/BPO1-45/BPO1-45-fi.html" name="frame"></iframe>
+                <button id="download-btn" onclick="frames['frame'].print()" value="print-brochure"><i
+                        class="fa fa-download"></i> &nbsp;Download Brochure</button>
+
+                <button id="buy-btn"><i class="fa fa-cart-plus"></i> &nbsp;Buy Now</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- ========================================================= Accordion Start ========================================================= -->
+    </div>
+    <script src="index.js" defer></script>
+</body>
+
+</html>

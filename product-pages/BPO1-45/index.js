@@ -14,13 +14,13 @@ $.ajax({
 }); */
 
 // Select all slides
-const slides = document.querySelectorAll(".slide");
+const slides = document.querySelectorAll(".product-imgs");
 
 // loop through slides and set each slides translateX property to index * 100% 
 slides.forEach((slide, indx) => {
     slide.style.transform = `translateX(${indx * 100}%)`;
     slide.style.transitionDuration = "10ms";
-    slide.style.transitionDelay = "-2s";    
+    slide.style.transitionDelay = "-2s";
 });
 
 // select prev slide button
@@ -47,7 +47,7 @@ nextSlideBtn.addEventListener("click", function () {
         slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
         slide.style.transitionDuration = "500ms";
         slide.style.transitionDelay = "1ms";
-        
+
         if (curSlide != 0) {
             prevSlideBtn.style.visibility = "visible";
         }
@@ -57,11 +57,11 @@ nextSlideBtn.addEventListener("click", function () {
     });
 });
 
-
-
+// If current slide is the first slide
 if (curSlide === 0) {
     prevSlideBtn.style.visibility = "hidden";
 }
+
 // add event listener and navigation functionality
 prevSlideBtn.addEventListener("click", function () {
     // check if current slide is the first and reset current slide to last
@@ -87,21 +87,19 @@ prevSlideBtn.addEventListener("click", function () {
     });
 });
 
-
-
 /* ========================================================= Carousel End ========================================================= */
 /* ========================================================= Accordion Start ========================================================= */
 const elements = document.querySelectorAll('.element');
 
 elements.forEach(element => {
-    let btn = element.querySelector('.question div');
-    let icon = element.querySelector('.question div i');
+    let btn = element.querySelector('.question');
+    let icon = element.querySelector('.question i');
     var answer = element.lastElementChild;
     var answers = document.querySelectorAll('.element .answer');
 
     btn.addEventListener('click', () => {
         answers.forEach(ans => {
-            let ansIcon = ans.parentElement.querySelector('div i');
+            let ansIcon = ans.parentElement.querySelector('i');
             if (answer !== ans) {
                 ans.classList.add('hideText');
                 ansIcon.className = 'fa fa-plus-circle';

@@ -5,25 +5,19 @@
     src: url("/font/Uniform.otf") format("opentype");
 }
 
+:root {
+    --ebcocolor: #124f90;
+}
+
 * {
     font-family: "Uniform", calibri;
 }
 
-:root {
-    --img-count: 3;
-}
-
-.product-title {
-    margin-top: 2em;
-    margin-bottom: 1em;
-    font-size: 2.5em;
-    font-weight: bold;
-}
-
-.main-body {
+body {
     width: 100%;
 }
 
+/* ============================================================== Logo Start ============================================================== */
 
 #product-logo {
     display: none;
@@ -35,7 +29,7 @@
     height: 70px;
 }
 
-/* ======================================================= Carousel Start ======================================================= */
+/* ======================================================= Logo End | Carousel Start ======================================================= */
 
 .slider {
     margin: 0 1vw 0 0.5vw;
@@ -49,7 +43,7 @@
     border-radius: 3px;
 }
 
-.slide {
+.product-imgs {
     width: 29vw;
     max-width: 800px;
     height: 29vw;
@@ -57,27 +51,10 @@
     transition: all 0.5s;
 }
 
-.slide img {
+.product-imgs img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-}
-
-.btn {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    border: none;
-    border-radius: 50%;
-    z-index: 10px;
-    cursor: pointer;
-    background-color: #fff;
-    font-size: 18px;
-}
-
-.btn:active {
-    transform: scale(1.1);
 }
 
 .btn {
@@ -93,12 +70,12 @@
     font-size: 18px;
 }
 
-.btn:hover {
-    transform: scale(1.1);
+.btn:active {
+    transform: scale(1.15);
 }
 
-.btn:active {
-    transform: scale(1.1);
+.btn:hover {
+    transform: scale(1.15);
 }
 
 .btn-prev {
@@ -111,49 +88,29 @@
     right: 2%;
 }
 
-
-/* div#desc-title {
-    box-shadow: inset 0 0 0 0 #124f90;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-  }
-  
-  div#desc-title:hover {
-    box-shadow: inset 40em 0 0 0 #124f90;
-    color: white;
-  } */
-
-
-
-/* 
-div#desc-title:hover{
-    color: red;
-    box-shadow: inset 40em 0 0 0 black;
-} */
-
-
-
-/* ======================================================= Carousel End ======================================================= */
-/* ======================================================= Accordion Start ======================================================= */
+/* ==================================================== Carousel End | Accordion Start ==================================================== */
 
 .container {
     margin: 4vw 0 0 0.5vw;
-    /* float: right; */
-    /* border: 2px dashed black; */
     margin-left: 30vw;
     width: 68vw;
     max-width: 68vw;
-    /* height: auto; */
-    /*     height: -webkit-fill-available;
-    padding: 5em 1em 0 1em; */
 }
 
+.product-title {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--ebcocolor);
+}
 
 .element {
-    padding-left: 10px;
+    padding-left: 1vw;
     background: white;
-    color: #124f90;
+    color: var(--ebcocolor);
     margin: 5px 15px 5px 0;
-    border-top: 1px double #124f90;
+    border-top: 1px solid var(--ebcocolor);
     border-radius: 0px;
 }
 
@@ -163,49 +120,52 @@ div#desc-title:hover{
     padding-left: 10px;
 }
 
-.question h3 {
-    font-family: sans-serif;
-    font-weight: bold;
-    text-transform: capitalize;
-    font-size: 17px;
-    text-align: center;
-}
-
 #desc-title,
 #specs-title,
-#fit-instruct-title {
+#fit-instruct-title,
+#pack-chart-title {
     font-weight: bold;
     font-size: 1.2em;
     padding: 15px 0;
     width: 100%;
 }
 
-.question div{
+.question label {
     cursor: pointer;
-/*     box-shadow: inset 0 0 0 0 rgba(18, 79, 144, 0.9);
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out; */
 }
 
-.question div:hover{
-/*     box-shadow: inset 40em 0 0 0 rgba(18, 79, 144, 0.9);
-    color: white; */
+/* .question label{
+     box-shadow: inset 0 0 0 0 rgba(18, 79, 144, 0.9);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-
-
+.question label:hover{
+     box-shadow: inset 40em 0 0 0 rgba(18, 79, 144, 0.9);
+    color: white;
+} */
 
 .question button {
-/*     padding-left: 80%; */
     border: none;
     outline: none;
     background: none;
-
     float: right;
 }
 
 .question i {
-    color: 124f90;
+    color: var(--ebcocolor);
     font-size: 20px;
+}
+
+#product-specs, 
+#product-pack-chart {
+    width: 95%;
+    min-height: 5vw;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td {
+    border: 1px solid black;
 }
 
 .element .answer {
@@ -229,8 +189,9 @@ div#desc-title:hover{
     }
 }
 
-td {
-    border: 1px solid black;
+#product-fit-instru img {
+    padding-top: 1vw;
+    max-width: 80%;
 }
 
 .btn-area {
@@ -245,25 +206,14 @@ td {
     font-weight: bold;
 }
 
-
-table#product-specs {
-    width: 95%;
-    min-height: 5vw;
+.btn-area button label{
+    padding-left: 7px;
 }
 
-#product-specs {
-    text-align: center;
-    vertical-align: middle;
-}
-
-#product-fits img{
-    padding-top: 1vw;
-    max-width: 80%; 
-}
-
-/* ======================================================= Accordion End ======================================================= */
-
+/* ========================================== Accordion End | Download Brouchure Page Start ========================================== */
 
 iframe {
     display: none;
 }
+
+/* =================================================== Download Brouchure Page End =================================================== */

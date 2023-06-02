@@ -114,7 +114,7 @@
             </button>
         </div>
     </div>
-    <!-- ====================================== Accordion End | Download Brouchure Page Start ====================================== -->
+    <!-- ========================================== Accordion End | Download Brouchure Page Start ========================================== -->
     <iframe srcdoc='
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
                 <script>
@@ -133,13 +133,16 @@
                     });
                 </script>
                 <style>
+                    :root {
+                        --ebcocolor: #124f90;
+                    }
+                    
                     .main {
                         font-family: calibri;
                         display: flex;
                         flex-direction: column;
                         gap: 1px;
                         /* padding: 4vw; */
-                        color: #124f90;
                     }
                     
                     #product-logo {
@@ -147,54 +150,93 @@
                     }
                     
                     #product-logo img {
-                        width: 24vw;
-                        height: 6vw;
+                        width: 20vw;
+                        height: 5vw;
                     }
                     
                     #product-title {
-                        font-size: 5vw;
+                        font-size: 4vw;
                         float: left;
-                        font-weight: bold;
+                        /*     font-weight: bold; */
                         padding: 1.5vw 0;
+                        color: var(--ebcocolor);
                     }
                     
-                    #desc-title, 
-                    #fit-instruct-title, 
+                    #desc-title,
+                    #fit-instruct-title,
                     #specs-title,
-                    #pack-chart-title{
-                        font-weight: bold;
-                        font-size: 1.2em;
+                    #pack-chart-title {
+                        /*     font-weight: bold; */
+                        font-size: 1.1em;
+                        color: var(--ebcocolor);
                     }
                     
                     #desc-title {
                         padding: 3vw 0 0 0;
                     }
                     
-                    #fit-instruct-title{
+                    #fit-instruct-title {
                         padding: 5vw 0 3vw 0;
                     }
                     
                     #specs-title {
                         padding: 3vw 0 2.5vw 0;
                     }
-
+                    
                     #pack-chart-title {
                         padding: 4vw 0 3vw 0;
                     }
-
                     
-                    #product-specs, 
+                    ul{
+                        padding-inline-start: 2.3vw;
+                    }
+                    
+                    #product-desc,
+                    #product-fit-instru{
+                        font-size: 0.9em;
+                    }
+                    
+                    #product-specs,
                     #product-pack-chart {
                         max-width: 80vw;
                         text-align: center;
-                        min-width: 60vw; 
-                        min-height: 5vw; 
+                        min-width: 40vw;
+                        min-height: 5vw;
+                        font-size: 0.9em;
                     }
                     
-                    td {
-                        border: 1px solid;
+                    /* All border */
+                    /* table, tr, td {
+                        border: 1px solid black;
                         padding: 2px 8px;
+                        border-collapse: collapse;
                     }
+                     */
+                    
+                    table, tbody, tr, td {
+                        padding: 1.2vw 3.5vw;
+                    }
+                    
+                    /* Inner line border */
+                    table {
+                        border-collapse: collapse;
+                    }
+                    table td {
+                        border: 1px solid var(--ebcocolor);
+                    }
+                    table tr:first-child td {
+                        border-top: 0;
+                    }
+                    table tr td:first-child {
+                        border-left: 0;
+                    }
+                    table tr:last-child td {
+                        border-bottom: 0;
+                    }
+                    table tr td:last-child {
+                        border-right: 0;
+                    }
+                    
                     
                     #product-imgs {
                         display: flex;
@@ -202,16 +244,16 @@
                     
                     #product-imgs img {
                         padding: 5px;
-                        max-height: 20vw;
-                        max-width: 20vw;
+                        max-height: 25vw;
+                        max-width: 25vw;
                     }
                     
-                    div button{
-                        display: none; 
+                    div button {
+                        display: none;
                     }
                     
-                    #product-fit-instru img{
-                        max-width: 90vw;   
+                    #product-fit-instru img {
+                        max-width: 90vw;
                     }
                 </style>
                 

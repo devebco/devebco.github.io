@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <title>Ebco</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#product-title").load("index.html #product-title");
+            $("#product-logo").load("index.html #product-logo");
+            $("#product-imgs").load("index.html .product-imgs");
+            $("#desc-title").load("index.html #desc-title");
+            $("#product-desc").load("index.html #product-desc");
+            $("#specs-title").load("index.html #specs-title");
+            $("#product-specs").load("index.html #product-specs");
+            $("#fit-instruct-title").load("index.html #fit-instruct-title");
+            $("#product-fit-instru").load("index.html #product-fit-instru");
+            $("#pack-chart-title").load("index.html #pack-chart-title");
+            $("#product-pack-chart").load("index.html #product-pack-chart");
+        });
+    </script>
+    <link rel="stylesheet" href="BPO1-45-fi.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div id="product-title"></div>
+            <div id="product-logo"></div>
+        </div>
+        <div id="product-imgs"></div>
+        <div id="desc-title"></div>
+        <div id="product-desc"></div>
+        <div id="specs-title"></div>
+        <div id="product-specs"></div>
+        <div id="fit-instruct-title"></div>
+        <div id="product-fit-instru"></div>
+        <div id="pack-chart-title"></div>
+        <div id="product-pack-chart"></div>
+    </div>
+
+</body>
+
+</html>

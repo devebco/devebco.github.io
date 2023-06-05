@@ -5,12 +5,12 @@
     src: url("/font/Uniform.otf") format("opentype");
 }
 
-:root {
-    --ebcocolor: #124f90;
-}
-
 * {
     font-family: "Uniform", calibri;
+}
+
+:root {
+    --ebcocolor: #124f90;
 }
 
 body {

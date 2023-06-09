@@ -1,20 +1,16 @@
 /* ========================================================= Carousel Start ========================================================= */
-/* var dir = "img/img/";
-var fileextension = ".jpg";
-$.ajax({
-    //This will retrieve the contents of the folder if the folder is configured as 'browsable'
-    url: dir,
-    success: function (data) {
-        //List all .jpg file names in the page
-        $(data).find("a:contains(" + fileextension + ")").each(function () {
-            var filename = this.href.replace(window.location.host, "").replace("http://", "");
-            $(".img-viewer").append("<img src='" + filename + "'>");
-        });
-    }
-}); */
+
+/* console.log("Entry in JS "); */
+
+/* var img_count = 2;
+var i = 1;
+while (i <= img_count) {
+    $(".product-imgs").append("<img src=img/product-img/BPO1-45-po-" + i + ".jpg>");
+    i++;
+} */
 
 // Select all slides
-const slides = document.querySelectorAll(".product-imgs");
+const slides = document.querySelectorAll(".product-imgs img");
 
 // loop through slides and set each slides translateX property to index * 100% 
 slides.forEach((slide, indx) => {
@@ -87,8 +83,7 @@ prevSlideBtn.addEventListener("click", function () {
     });
 });
 
-/* ========================================================= Carousel End ========================================================= */
-/* ========================================================= Accordion Start ========================================================= */
+/* ========================================================= Carousel End | Accordion Start ========================================================= */
 const elements = document.querySelectorAll('.element');
 
 elements.forEach(element => {
@@ -96,6 +91,8 @@ elements.forEach(element => {
     let icon = element.querySelector('.question i');
     var answer = element.lastElementChild;
     var answers = document.querySelectorAll('.element .answer');
+/*     var plusIcon = 'plus-ico.png';
+    var minusIcon = 'minus-ico.png'; */
 
     btn.addEventListener('click', () => {
         answers.forEach(ans => {
@@ -103,12 +100,41 @@ elements.forEach(element => {
             if (answer !== ans) {
                 ans.classList.add('hideText');
                 ansIcon.className = 'fa fa-plus-circle';
+
             }
         });
 
         answer.classList.toggle('hideText');
-        icon.className === 'fa fa-plus-circle' ? icon.className = 'fa fa-minus-circle'
-            : icon.className = 'fa fa-plus-circle';
+        icon.className === 'fa fa-plus-circle' ? icon.className = 'fa fa-minus-circle' : icon.className = 'fa fa-plus-circle';
     });
+    /* btn.addEventListener('click', () => {
+        
+        answers.forEach(ans => {
+            let ansIcon = ans.parentElement.querySelector('i');
+            if (answer !== ans) {
+                ans.classList.add('hideText');
+                ansIcon.className = 'fa fa-plus-circle';
+                console.log("ansIcon --> "+ansIcon);
+                ansIcon.src = plusIcon;
+                console.log("ansIcon.src --> "+ansIcon.src);
+            }
+        });
+
+        answer.classList.toggle('hideText');
+
+        console.log("answer.className --> "+answer.className);
+
+        if(answer.className == "hideText"){
+            console.log("Inside if");
+            icon.src === minusIcon
+        }
+        else{
+            console.log("Inside else");
+            icon.src === plusIcon
+        }
+
+        icon.src === plusIcon ? icon.src =  minusIcon: icon.src = plusIcon; 
+
+    });*/
 });
 /* ========================================================= Accordion Start ========================================================= */

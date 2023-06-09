@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <!-- <script src="/js/jquery/jquery-3.7.0.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <title>Load images from folder</title>
+    <style>
+        img {
+            width: 400px;
+            height: 400px;
+            padding: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        //function gets the count of the file collection // in a specified folder. 
+        /*         function getCount(foldername) {
+                    console.log("Entry2");
+                    var myObject, f, filesCount;
+                    // Create an instance of the FileSystemObject 
+                    myObject = new ActiveXObject("Scripting.FileSystemObject");
+                    f = myObject.GetFolder(foldername);
+                    // gets the number of files in a folder 
+                    filesCount = f.files.Count;
+                    document.write("The number of files in this folder is: " + filesCount);
+                    console.log(filesCount);
+                } */
+
+        /* 
+                let path = "img/product-img/";
+                const fs = require('fs');
+                const dir = 'img/product-img/';
+                console.log(path, fs, dir);
+                fs.readdir(dir, (err, files) => {
+                    console.log(files.length);
+                });
+        */
+        var i = 1;
+        while (i < 3) {
+            document.write("<img src=img/product-img/BPO1-45-po-" + i + ".jpg>");
+            i++;
+        }
+
+
+    </script>
+</body>
+
+</html>

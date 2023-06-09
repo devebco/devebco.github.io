@@ -15,17 +15,18 @@
   <!-- 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"
       integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script> -->
   <!-- iconboxslider part -->
+  <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
   <!-- ================================================================ Header Start ================================================================ -->
   <!-- ================================================================ Logo Start ================================================================ -->
-  <div style="display: flex">
+  <div style="display: flex" id="header-parent-div">
     <div class="header"> <!-- check this ---------------- style="display: flex;" -->
       <!-- =============== Logo Start =============== -->
       <div class="logo">
         <a href="#" class="logo">
-          <img class="logo-img" src="img/logo/ebco_blue_logo.png" alt="Logo">
+          <img class="logo-img" src="/img/logo/ebco_blue_logo.png" alt="Logo">
         </a>
       </div>
       <!-- ================================================================ Logo End ================================================================ -->
@@ -35,8 +36,8 @@
         <div class="dropdown" data-dropdown>
 
           <a class="link" data-dropdown-button id="mainnavbar-ebco">Ebco
-            <img src="/img/logo/general_hardware.png" alt="Ebco" class="mainnavbar-btn-logo" data-dropdown-button
-              width=50px srcset="" />
+            <!-- <img src="/img/logo/general_hardware.png" alt="Ebco" class="mainnavbar-btn-logo" data-dropdown-button
+              width=50px srcset="" /> -->
           </a>
           <div class="dropdown-menu">
             <div class="dropdown-area">
@@ -105,7 +106,7 @@
         </div>
         <div class="dropdown" data-dropdown>
           <a class="link" data-dropdown-button id="mainnavbar-worksmart">Worksmart
-            <img src="/img/logo/worksmart.png" alt="worksmart" class="mainnavbar-btn-logo" data-dropdown-button width=50px srcset="" />
+            <!-- <img src="/img/logo/worksmart.png" alt="worksmart" class="mainnavbar-btn-logo" data-dropdown-button width=50px srcset="" /> -->
           </a>
           <div class="dropdown-menu">
             <div class="dropdown-area">
@@ -134,7 +135,7 @@
         </div>
         <div class="dropdown" data-dropdown>
           <a class="link" data-dropdown-button id="mainnavbar-livsmart">Livsmart
-            <img src="/img/logo/livsmart.png" alt="livsmart" class="mainnavbar-btn-logo" data-dropdown-button width=50px srcset="" />
+            <!-- <img src="/img/logo/livsmart.png" alt="livsmart" class="mainnavbar-btn-logo" data-dropdown-button width=50px srcset="" /> -->
           </a>
           <div class="dropdown-menu">
             <div class="dropdown-area">
@@ -325,17 +326,17 @@
   <div class="cover-grid-area">
     <div class="ebco-area-body all-area-body">
       <img src="img/logo/ebco_blue_logo.png" alt="Ebco" width="10%" height="17%">
-      <div class="sub-title-div"><span class="sub-title-span">Intelligent Furniture Hardware & Accessories</span></div>
+      <div class="sub-title-div"><!-- <span class="sub-title-span">Intelligent Furniture Hardware & Accessories</span> --></div>
       <a class="all-area-explore" type="button" href='https://ebco.in/ebco' target=".blank">Explore</a>
     </div>
     <div class="worksmart-area-body all-area-body">
       <img src="img/logo/Worksmart_logo.png" alt="Worksmart" width="30%" height="10%">
-      <div class="sub-title-div"><span class="sub-title-span">Ergonomic Hardware for Offices</span></div>
+      <div class="sub-title-div"><!-- <span class="sub-title-span">Ergonomic Hardware for Offices</span> --></div>
       <a class="all-area-explore" type="button" href='https://ebco.in/worksmart' target=".blank">Explore</a>
     </div>
     <div class="livsmart-area-body all-area-body">
       <img src="img/logo/Livsmart_logo.png" alt="Livsmart" width="14.5%" height="10%">
-      <div class="sub-title-div"><span class="sub-title-span">Intelligent Hardware for Homes</span></div>
+      <div class="sub-title-div"><!-- <span class="sub-title-span">Intelligent Hardware for Homes</span> --></div>
       <a class="all-area-explore" type="button" href='https://ebco.in/livsmart' target=".blank">Explore</a>
     </div>
   </div>
@@ -423,9 +424,7 @@
       <div class="img_label">Linear Slim 7mm</div>
     </div>
     <div class="iconboxslide">
-      <!-- <a href="https://ebco.in/base-pullout-max-45" target="_blank"> -->
-        <!-- <a href="http://127.0.0.1:5503/product-pages/BPO1-45/index.html" target="_blank"></a> -->
-        <a href="/product-pages/BPO1-45/index.html" class="link" target="_blank">
+        <a href="/product-pages/BPO1-45/BPO1-45.html" class="link" target="_blank">
         <img src="img/new_launches/base-pullout-max-45.jpg" alt=""></a>
       <div class="img_label">Base Pullout Max 45*</div>
     </div>
@@ -447,7 +446,7 @@
 
   <!-- =========================================== Icon Box Slider End =========================================== -->
   <!-- =========================================== Footer Start =========================================== -->
-  <div class="footer-body">
+  <div id="footer-body">
     <div class="footer-heading">
       <!-- <a href="product1.html"> -->
         <h2>Footer Area</h2>

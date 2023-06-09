@@ -14,7 +14,7 @@ body {
 }
 
 :root {
-  --navbarcolor: rgba(39, 72, 137, 0.9);
+  --navbarcolor: rgba(39, 72, 137, 0.8);
   --linkscolor: white;
   --ebcocolor: #274889;
   --livsmartcolor: #f36620;
@@ -66,6 +66,9 @@ body {
   /* Remove this to get carousel below header */
 }
 
+/* .header:hover{
+  background-color: var(--navbarcolor);
+} */
 
 
 .logo,
@@ -895,7 +898,7 @@ form.input {
   padding: 3vh 0 7vh 0;
 }
 
-.footer-body {
+#footer-body {
   height: 20vh;
   background-color: rgb(59, 68, 68);
 }

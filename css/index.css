@@ -142,10 +142,10 @@ button.link {
 }
 
 .mainnavbar-btn-logo {
-  height: calc(var(--headerheight) * 0.55);
-  width: calc(var(--headerheight) * 0.55);
+  height: calc(var(--headerheight) * 0.4);
+  width: calc(var(--headerheight) * 0.4);
   max-height: 70px;
-  padding: 0 0 0 5px;
+  padding: 0 0 0 10px;
 
 }
 

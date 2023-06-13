@@ -23,10 +23,11 @@ document.addEventListener('click', e => {
 
 /* console.log("exit : header"); */
 /* ========================================================= Header End ========================================================= */
-/* ======================================================= Carousel2 Start ======================================================= */
+/* ======================================================= Carousel1 Start ======================================================= */
 
 // Select all slides
 const slides = document.querySelectorAll(".carousel2slide");
+console.log("slides -->",slides);
 // loop through slides and set each slides translateX property to index * 100% 
 slides.forEach((carousel2slide, indx) => {
     carousel2slide.style.transform = `translateX(${indx * 100}%)`;
@@ -87,7 +88,7 @@ prevSlide.addEventListener("click", function () {
 });
 
 
-/* ======================================================= Carousel2 End ======================================================= */
+/* ======================================================= Carousel1 End ======================================================= */
 /* ========================================================= Icon Box Slider Start ========================================================= */
 /* console.log("Entry : iconboxslider"); */
 

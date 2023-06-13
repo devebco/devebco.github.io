@@ -348,15 +348,15 @@ form.input {
     position: absolute;
     z-index: -1;
     content: "";
-    right: -10%;
+    right: -23%;
     top: 0;
     height: 100%;
     width: 100%;
     background-color: inherit;
-    -webkit-transform: skewX(-10deg);
-    -moz-transform: skewX(-10deg);
-    -ms-transform: skewX(-10deg);
-    transform: skewX(-10deg);
+    -webkit-transform: skewX(-23deg);
+    -moz-transform: skewX(-23deg);
+    -ms-transform: skewX(-23deg);
+    transform: skewX(-23deg);
   }
 }
 
@@ -365,15 +365,15 @@ form.input {
     z-index: -1;
     content: "";
     position: absolute;
-    left: -10%;
+    left: -23%;
     top: 0;
     height: 100%;
     width: 100%;
     background-color: inherit;
-    -webkit-transform: skewX(-10deg);
-    -moz-transform: skewX(-10deg);
-    -ms-transform: skewX(-10deg);
-    transform: skewX(-10deg);
+    -webkit-transform: skewX(-23deg);
+    -moz-transform: skewX(-23deg);
+    -ms-transform: skewX(-23deg);
+    transform: skewX(-23deg);
   }
 }
 
@@ -427,8 +427,6 @@ form.input {
   }
 } */
 
-/* ========================================================= Carousel1 End ========================================================= */
-/* ========================================================= Carousel2 Start ========================================================= */
 
 .carousel2slider {
   width: 100%;
@@ -502,7 +500,7 @@ form.input {
   right: 2%;
 }
 
-/* ========================================================= Carousel2 End ========================================================= */
+/* ========================================================= Carousel1 End ========================================================= */
 /* ========================================================== Cover Grid Area Start ========================================================== */
 .cover-grid-area {
   display: grid;
@@ -589,7 +587,7 @@ form.input {
 
 .new-launches-subheading {
   text-align: center;
-  font-size: 2em;
+  font-size: 1.8em;
   padding: 2vh 0 5vh 0;
 }
 

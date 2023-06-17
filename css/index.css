@@ -19,11 +19,12 @@ body {
   --worksmartcolor: #696c6c;
   --headerheight: 4vw;
   --headerwidth: 100%;
-  /* --logowidth: calc(var(--headerheight) * 1.3); */
   --logoleft: 1.5vw;
   --logowidth: 7.5vw;
   --mainnavbarwidth: auto;
   --rightnavbarwidth: 24vw;
+  
+    /* --logowidth: calc(var(--headerheight) * 1.3); */
   /* --rightnavbarwidth: fit-content; */
   /*   --carousel2width: 100vw; */
   /*   --carousel2height: 100vh; */
@@ -295,9 +296,6 @@ button.link {
   /* padding: 0 1vw 0 0; */
 }
 
-/* ============================================================ Try Start ============================================================ */
-
-
 .searchBox {
   position: absolute;
   top: 50%;
@@ -351,8 +349,6 @@ button.link {
 .searchBox:hover i {
   color: #fff;
 }
-
-/* ============================================================ Try End ============================================================ */
 
 .login-form {
   text-align: end;
@@ -649,7 +645,123 @@ form.input {
 }
 
 /* ========================================================= New Launches End ========================================================= */
+/* ========================================================= Random Grid Start ========================================================= */
+/* .random-grid-heading {
+  color: white;
+  text-align: center;
+} */
+/* 
+.random-grid-body {
+
+  height: 100vh;
+  display: flex;
+  display: none;
+}
+
+.random-grid-body .wrapper div {
+  transition: 0.25s ease-in-out;
+}
+
+.random-grid-body .wrapper div:hover {
+  transform: scale(1.05);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 22% 22% 22% 22%;
+  margin: 0%;
+  padding: 4%;
+}
+
+.wrapper div {
+  border: 1px solid black;
+  height: 295px;
+  width: 295px;
+  margin: 5px;
+  color: black;
+  text-decoration: inherit;
+  text-align: center;
+  background-color: darkgray;
+  background-size: cover;
+}
+
+.random-grid-element-caption{
+  color:white;
+  display: block;
+  width: inherit;
+  position: absolute;
+  padding: 0 auto;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  background-color:#888;
+}
+
+ */
+.random-grid-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* padding: 0 1% 2% 1%; */
+  /*  justify-content: space-between; */
+}
+
+.random-grid-item {
+  /*   flex-basis:100px; */
+  /* flex-grow: 0; */
+  /* flex-shrink:0; */
+  display: block;
+  margin: 0.3%;
+  background-color: #888;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 48.5vw;
+  min-width: 200px;
+  height: 27.28125vw;
+  min-height: 200px;
+  /* min-height:100px */
+  ;
+  /* justify-content: center; */
+  text-align: center;
+  /* padding-bottom: 24%; */
+  /* Same as width, sets height */
+  /* margin-bottom: 1%; */
+  /* (100-24*4)/2 */
+  position: relative;
+  transition: 0.25s ease-in-out;
+}
+
+.random-grid-item:hover {
+  transform: scale(1.02);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.random-grid-item img {
+  width: 20vw;
+  height: 20vw;
+  left: 0px;
+  position: absolute;
+}
+
+.random-grid-item label {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0 25px 5px 25px;
+  font-size: 1.2em;
+}
+
+.random-grid-item span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+/* ========================================================= Random Grid End ========================================================= */
 /* ========================================================= Icon Box Slider Start ========================================================= */
+
 .iconboxslider {
   width: 100%;
   margin: auto;
@@ -830,121 +942,6 @@ form.input {
 } */
 
 /* ========================================================= Icon Box Slider End ========================================================= */
-/* ========================================================= Random Grid Start ========================================================= */
-/* .random-grid-heading {
-  color: white;
-  text-align: center;
-} */
-/* 
-.random-grid-body {
-
-  height: 100vh;
-  display: flex;
-  display: none;
-}
-
-.random-grid-body .wrapper div {
-  transition: 0.25s ease-in-out;
-}
-
-.random-grid-body .wrapper div:hover {
-  transform: scale(1.05);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
-}
-
-.wrapper {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 22% 22% 22% 22%;
-  margin: 0%;
-  padding: 4%;
-}
-
-.wrapper div {
-  border: 1px solid black;
-  height: 295px;
-  width: 295px;
-  margin: 5px;
-  color: black;
-  text-decoration: inherit;
-  text-align: center;
-  background-color: darkgray;
-  background-size: cover;
-}
-
-.random-grid-element-caption{
-  color:white;
-  display: block;
-  width: inherit;
-  position: absolute;
-  padding: 0 auto;
-  text-align: center;
-  margin: auto;
-  text-decoration: none;
-  background-color:#888;
-}
-
- */
-.random-grid-body {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* padding: 0 1% 2% 1%; */
-  /*  justify-content: space-between; */
-}
-
-.random-grid-item {
-  /*   flex-basis:100px; */
-  /* flex-grow: 0; */
-  /* flex-shrink:0; */
-  display: block;
-  margin: 0.3%;
-  background-color: #888;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 48.5vw;
-  min-width: 200px;
-  height: 27.28125vw;
-  min-height: 200px;
-  /* min-height:100px */
-  ;
-  /* justify-content: center; */
-  text-align: center;
-  /* padding-bottom: 24%; */
-  /* Same as width, sets height */
-  /* margin-bottom: 1%; */
-  /* (100-24*4)/2 */
-  position: relative;
-  transition: 0.25s ease-in-out;
-}
-
-.random-grid-item:hover {
-  transform: scale(1.02);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
-}
-
-.random-grid-item img {
-  width: 20vw;
-  height: 20vw;
-  left: 0px;
-  position: absolute;
-}
-
-.random-grid-item label {
-  color: black;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 0 25px 5px 25px;
-  font-size: 1.2em;
-}
-
-.random-grid-item span {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-}
-
-/* ========================================================= Random Grid End ========================================================= */
 /* ========================================================= Footer Start ========================================================= */
 
 .footer-heading {
@@ -960,3 +957,8 @@ form.input {
 
 
 /* ========================================================= Footer End ========================================================= */
+
+/* ================================================= Shop by room grid area Start ================================================= */
+
+
+/* ================================================= Shop by room grid area Start ================================================= */

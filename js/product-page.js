@@ -1,3 +1,9 @@
+$(document).ready(function () {
+    $("<link/>", { rel: "stylesheet", type: "text/css", href: "../../css/index.css" }).appendTo("head");
+    $("#header-parent-div").load("/index.html #header-parent-div");
+    $("#footer-body").load("/index.html #footer-body");
+});
+
 /* ========================================================= Carousel Start ========================================================= */
 
 /* console.log("Entry in JS "); */

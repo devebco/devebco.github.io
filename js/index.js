@@ -27,7 +27,7 @@ document.addEventListener('click', e => {
 
 // Select all slides
 const slides = document.querySelectorAll(".carousel2slide");
-console.log("slides -->",slides);
+/* console.log("slides -->",slides); */
 // loop through slides and set each slides translateX property to index * 100% 
 slides.forEach((carousel2slide, indx) => {
     carousel2slide.style.transform = `translateX(${indx * 100}%)`;

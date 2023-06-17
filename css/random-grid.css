@@ -71,7 +71,7 @@ body {
   left: 10px;
   /* position: absolute; */
   position: fixed;
-  z-index: 2;
+  z-index: 555;
 }
 
 

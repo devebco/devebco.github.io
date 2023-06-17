@@ -138,8 +138,13 @@ body {
 button.link {
   height: var(--headerheight);
   /* width:var(--headerheight); */
-
 }
+
+/* button.link svg {
+  height: 20px;
+  width: 20px;
+  padding: 2px 2px 2px 2px;
+} */
 
 .mainnavbar-btn-logo {
   height: calc(var(--headerheight) * 0.4);
@@ -184,7 +189,7 @@ button.link {
 /* Replace hover with active for click operations */
 .dropdown:hover>.link,
 .link:hover {
-  color: var(--headingcolor);
+  color: var(--ebcocolor);
   /* color: orangered; */
 }
 
@@ -296,6 +301,63 @@ button.link {
   /* padding: 0 1vw 0 0; */
 }
 
+/* ============================================================ Try Start ============================================================ */
+
+
+.searchBox {
+  position: absolute;
+  top: 50%;
+  left: 87%;
+  transform: translate(-100%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBox input {
+  background-color: transparent;
+  border: 1px solid white;
+  outline: none;
+  width: 0;
+  padding: 0;
+  opacity: 0;
+  border-radius: 2px;
+  line-height: 35px;
+  font-size: 18px;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.searchBox input::placeholder {
+  color: rgba(255, 255, 255, .5);
+  font-weight: 400;
+}
+
+.searchBox svg {
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  padding: 1px 0 0 10px;
+  border-radius: 5%;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.searchBox:hover input {
+  width: 15vw;
+  opacity: 1;
+  padding: 5px 20px;
+}
+
+.searchBox:hover i {
+  color: #fff;
+}
+
+/* ============================================================ Try End ============================================================ */
 
 .login-form {
   text-align: end;

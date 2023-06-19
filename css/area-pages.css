@@ -170,9 +170,9 @@ body {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
-.iconboxslider img:hover + .pimg1 {
+/* .iconboxslider img:hover + .pimg1 {
   background-image: url(/img/banner/bed-plank-and-slats.jpg);
-}
+} */
 
 .iconboxslide {
   position: relative;

@@ -590,19 +590,19 @@ form.input {
 }
 
 .ebco-area-body {
-  background-image: url("/img/ebco/ebco-4x3.png");
+  background-image: url("/img/brand-pages/ebco/ebco-4x3.png");
   margin-right: 0.5%;
   margin-bottom: 1%;
 }
 
 .worksmart-area-body {
-  background-image: url("/img/cover/worksmart-cover-img.png");
+  background-image: url("/img/brand-pages/worksmart/worksmart-4x3.png");
   margin-left: 0.5%;
   margin-bottom: 1%;
 }
 
 .livsmart-area-body {
-  background-image: url("/img/livsmart/livsmart.png");
+  background-image: url("/img/brand-pages/livsmart/livsmart-16x9.png");
   grid-column: span 2;
   margin-bottom: 1%;
 }

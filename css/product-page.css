@@ -34,6 +34,18 @@ body {
     height: 100vh;
 }
 
+/* Hide scrollbar for Chrome */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body{
+  -ms-overflow-style: none;
+  scrollbar-width: none;  
+}
+
 
 /* ============================================================== Logo Start ============================================================== */
 
@@ -139,8 +151,8 @@ body {
     /* margin: 4vw 0 0 0.5vw; */
     justify-self: right;
     /* width: 68vw; */
-    width: 69vw;
-    max-width: 70vw;
+    width: 68vw;
+    max-width: 69vw;
 }
 
 .product-title {

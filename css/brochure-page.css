@@ -16,9 +16,7 @@
     --title-border-bottom: linear-gradient(to right, var(--ebcocolor) 80%, var(--livsmartcolor) 50%, var(--worksmartcolor));
 }
 
-/* *{
-    border: 1px solid red;
-} */
+
 
 .main {
     font-family: calibri;

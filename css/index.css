@@ -9,7 +9,10 @@ body {
   margin: 0;
   font-size: 1em;
   font-family: "Uniform",/*"Nunito",Tahoma,*/ cursive;
+  scrollbar-width: thin;
 }
+
+
 
 :root {
   --navbarcolor: rgba(39, 72, 137, 0.8);
@@ -35,6 +38,43 @@ body {
   /* 1200:608 video ratio */
   /* --navbarcolor : linear-gradient(to right, red , yellow);  change background-color to background-image*/
 }
+
+/* Scrollbar CSS */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+ background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+ background: #bec4c4;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-webkit-scrollbar-corner { 
+  background: rgba(0,0,0,0.5); 
+}
+
+/* Hide scrollbar for Chrome */
+/* body::-webkit-scrollbar {
+  display: none;
+  
+} */
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+/* body{
+-ms-overflow-style: none;
+scrollbar-width: none;  
+} */
 
 /* @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap"); */
 
@@ -483,7 +523,7 @@ form.input {
 
 .carousel2slider {
   width: 100%;
-  padding-top: 56.25%;
+  padding-top: 95vh;
   height: 0px;
   position: relative;
   place-items: center;
@@ -554,6 +594,20 @@ form.input {
 }
 
 /* ========================================================= Carousel1 End ========================================================= */
+
+.arrow-container { 
+	padding: 20px;
+	background-color: white; 
+}
+
+
+.arrow-6 {
+	color: black;
+	height: 50px; width: 50px;
+	transform: rotate(270deg);
+}
+
+
 /* ========================================================== Cover Grid Area Start ========================================================== */
 .cover-grid-area {
   display: grid;
@@ -634,13 +688,13 @@ form.input {
 /* ========================================================= New Launches Start ========================================================= */
 .new-launches-heading {
   text-align: center;
-  font-size: 4em;
+  font-size: 3em;
   padding: 12vh 0 0 0;
 }
 
 .new-launches-subheading {
   text-align: center;
-  font-size: 1.8em;
+  font-size: 1.5em;
   padding: 2vh 0 5vh 0;
 }
 

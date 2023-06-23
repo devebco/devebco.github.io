@@ -1,0 +1,296 @@
+@font-face {
+    font-family: "Uniform";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/font/Uniform.otf") format("opentype");
+}
+
+* {
+    font-family: "Uniform", calibri;
+}
+
+:root {
+    --ebcocolor: #124f90;
+    --navbarcolor: rgba(39, 72, 137, 0.9);
+    --linkscolor: white;
+    --ebcocolor: #274889;
+    --livsmartcolor: #f36620;
+    --worksmartcolor: #696c6c;
+    --headingcolor: rgb(228, 135, 98);
+    --headerheight: 4vw;
+    --headerwidth: 100%;
+
+    /* --logowidth: calc(var(--headerheight) * 1.3); */
+
+    --logoleft: 1.5vw;
+    --logowidth: 7.5vw;
+    --mainnavbarwidth: auto;
+    --rightnavbarwidth: 24vw;
+}
+
+body {
+    /* width: 100%; */
+    margin: 0;
+    height: 100vh;
+}
+
+/* Hide scrollbar for Chrome */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body{
+  -ms-overflow-style: none;
+  scrollbar-width: none;  
+}
+
+
+/* ============================================================== Logo Start ============================================================== */
+
+#product-logo {
+    display: none;
+    float: right;
+}
+
+#product-logo img {
+    width: 280px;
+    height: 70px;
+}
+
+/* ======================================================= Logo End | Carousel Start ======================================================= */
+
+.container-grid {
+    margin-top: 10vw;
+    display: grid;
+    grid-template-columns: 30vw 70vw;
+    grid-template-rows: 1fr 0.5fr;
+}
+
+.carousel1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: 0 0 0 0.5vw;
+    /* margin: 8vw 1vw 0 0.5vw; */
+    /* justify-self: left; */
+    width: 29vw;
+    max-width: 30vw;
+    height: 29vw;
+    max-width: 29vw;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.product-imgs img {
+    width: 29vw;
+    max-width: 800px;
+    height: 29vw;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.product-imgs img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.btn {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    z-index: 10px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+}
+
+.btn img {
+    position: absolute;
+    width: 22px;
+    left: 9px;
+    top: 13px;
+}
+
+.btn:active {
+    transform: scale(1.15);
+}
+
+.btn:hover {
+    transform: scale(1.15);
+}
+
+.btn-prev {
+    top: 45%;
+    left: 2%;
+}
+
+.btn-next {
+    top: 45%;
+    right: 2%;
+}
+
+
+
+/* ==================================================== Carousel End | Accordion Start ==================================================== */
+
+.container {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+    position: absolute;
+    /* margin: 4vw 0 0 0.5vw; */
+    justify-self: right;
+    /* width: 68vw; */
+    width: 68vw;
+    max-width: 69vw;
+}
+
+.product-title {
+    /* margin-top: 2em; */
+    margin-bottom: 1em;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: var(--ebcocolor);
+}
+
+.element {
+    padding-left: 1vw;
+    background: white;
+    color: var(--ebcocolor);
+    margin: 5px 15px 5px 0;
+    border-top: 1px solid var(--ebcocolor);
+    border-radius: 0px;
+}
+
+.element .question {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+#desc-title,
+#specs-title,
+#fit-instruct-title,
+#pack-chart-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.question label {
+    cursor: pointer;
+}
+
+/* .question label{
+     box-shadow: inset 0 0 0 0 rgba(18, 79, 144, 0.9);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.question label:hover{
+     box-shadow: inset 40em 0 0 0 rgba(18, 79, 144, 0.9);
+    color: white;
+} */
+
+.question button {
+    border: none;
+    outline: none;
+    background: none;
+    float: right;
+}
+
+.question i {
+    color: var(--ebcocolor);
+    font-size: 20px;
+}
+
+#product-specs,
+#product-pack-chart {
+    border: 1px solid var(--ebcocolor); 
+/*     width: 75%; */
+    min-width: 60%;
+    min-height: 5vw;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td {
+    border: 1px solid var(--ebcocolor);
+    color: black;
+    border-collapse: collapse;
+}
+
+.element .answer {
+    padding: 1px 20px 5px 20px;
+    animation: animate .7s;
+    color: black;
+}
+
+.hideText {
+    display: none;
+}
+
+@keyframes animate {
+    from {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#product-fit-instru img {
+    padding-top: 1vw;
+    max-width: 80%;
+}
+
+.btn-area {
+    padding: 5em 1em 1em 0em;
+}
+
+.btn-area button {
+    text-transform: uppercase;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.btn-area button label {
+    padding-left: 7px;
+}
+
+/* ========================================== Accordion End | Empty Area Start ========================================== */
+.empty-area{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+/* ========================================== Empty Area End | Button Area Start ========================================== */
+.btn-area{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}   
+/* ========================================== Button Area End | Iframe Area Start ========================================== */
+
+iframe {
+    display: none;
+}
+
+/* =================================================== Iframe Area End =================================================== */

@@ -14,7 +14,6 @@
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
 </head>
-
 <body>
     <!-- ========================================================= Logo Start ========================================================= -->
     <span id="product-logo"><img src="../../img/logo/Livsmart_logo.png" alt="Logo"></span>
@@ -115,21 +114,27 @@
             <div class="empty-area"></div>
             <div class="btn-area">
                 <button id="inquiry-btn">
+                    <!-- <i class="fa fa-envelope"></i> -->
                     <img src="/img/logo/email-ico.png" style="width:20px" alt="" srcset="">
                     <label>Send an inquiry</label>
                 </button>
-                <button id="download-btn">
+                <button id="download-btn" onclick="frames['frame'].print()" value="print-brochure">
+                    <!-- <i class="fa fa-download"></i> -->
                     <img src="/img/logo/download-ico.png" style="width: 15px" alt="" srcset="">
                     <label>Download Brochure</label>
                 </button>
                 <button id="buy-btn">
+                    <!-- <i class="fa fa-cart-plus"></i> -->
                     <img src="/img/logo/cart-ico.png" style="width: 15px" alt="" srcset="">
                     <label>Buy Now</label>
                 </button>
             </div>
         </div>
     </div>
-    <!-- ========================================== Accordion End ========================================== -->
+    <!-- ========================================== Accordion End | Download Brouchure Page Start ========================================== -->
+
+    <iframe src="BPO1-45-br-page.html" name="frame"></iframe>
+    <!-- =================================================== Download Brouchure Page End =================================================== -->
     <div id="footer-body" style="display:none"></div>
 </body>
 

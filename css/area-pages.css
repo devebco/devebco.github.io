@@ -179,8 +179,10 @@ body {
 }
 
 .iconboxslide img {
-  height: 300px;
-  width: 300px;
+  /* height: 300px;
+  width: 300px; */
+  height: 18vw;
+  width: 18vw;
   margin: 0 5px;
   object-fit: cover;
   /* border-radius: 15px; */

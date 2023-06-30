@@ -12,8 +12,6 @@ body {
   scrollbar-width: thin;
 }
 
-
-
 :root {
   --navbarcolor: rgba(39, 72, 137, 0.8);
   --linkscolor: white;
@@ -236,8 +234,7 @@ button.link {
 /* Replace hover with active for click operations */
 .dropdown:hover>.link,
 .link:hover {
-  color: var(--livsmartcolor);
-  /* color: orangered; */
+  color: var(--ebcocolor);
 }
 
 .dropdown {

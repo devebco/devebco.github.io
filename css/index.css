@@ -8,14 +8,23 @@
 body {
   margin: 0;
   font-size: 1em;
-  font-family: "Uniform",Tahoma,'calibri';
+  font-family: "Uniform", Tahoma, 'calibri';
   scrollbar-width: thin;
 }
+
+/* @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap"); */
+
+/* @font-face {
+  font-family: 'Uniform';
+  font-style: normal;
+  font-weight: normal;
+  src: url("font/Uniform.otf") format("opentype");
+} */
 
 :root {
   --navbarcolor: rgba(39, 72, 137, 0.8);
   --linkscolor: white;
-  --ebcocolor: #274889; 
+  --ebcocolor: #274889;
   --livsmartcolor: #f36620;
   --worksmartcolor: #696c6c;
   --headerheight: 3em;
@@ -24,8 +33,7 @@ body {
   --logowidth: 7.5vw;
   --mainnavbarwidth: auto;
   --rightnavbarwidth: 40vw;
-  
-    /* --logowidth: calc(var(--headerheight) * 1.3); */
+  /* --logowidth: calc(var(--headerheight) * 1.3); */
   /* --rightnavbarwidth: fit-content; */
   /*   --carousel2width: 100vw; */
   /*   --carousel2height: 100vh; */
@@ -37,55 +45,46 @@ body {
   /* --navbarcolor : linear-gradient(to right, red , yellow);  change background-color to background-image*/
 }
 
-/* Scrollbar CSS */
+/* ======================================== Scrollbar CSS Start ======================================== */
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
 }
+
 /* Track */
 ::-webkit-scrollbar-track {
- background: #f1f1f1;
+  background: transparent
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
- background: #bec4c4;
+  background: #bec4c4;
+  border-radius: 2px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+  border-radius: 2px;
 }
 
-::-webkit-scrollbar-corner { 
-  background: rgba(0,0,0,0.5); 
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 /* Hide scrollbar for Chrome */
 /* body::-webkit-scrollbar {
-  display: none;
-  
+  display: none;  
 } */
-
 
 /* Hide scrollbar for IE, Edge and Firefox */
 /* body{
 -ms-overflow-style: none;
 scrollbar-width: none;  
 } */
+/* =========================================================Scrollbar CSS End | Header Start ========================================================= */
 
-/* @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap"); */
-
-/* ========================================================= Header Start ========================================================= */
-
-/* @font-face {
-  font-family: 'Uniform';
-  font-style: normal;
-  font-weight: normal;
-  src: url("font/Uniform.otf") format("opentype");
-} */
-
-#header-parent-div{
+#header-parent-div {
   display: flex;
 }
 
@@ -98,8 +97,7 @@ scrollbar-width: none;
   z-index: 999;
   display: flex;
   position: fixed;
-
-  /*   position: absolute; */
+  /* position: absolute; */
   /* Remove this to get carousel below header */
 }
 
@@ -107,7 +105,7 @@ scrollbar-width: none;
   background-color: var(--navbarcolor);
 } */
 
-.logo-area{
+.logo-area {
   display: flex;
   width: 50%;
 }
@@ -137,12 +135,10 @@ scrollbar-width: none;
   /* padding: 0 0 0 2em; */
 }
 
-
 /* div.mainnavbar:hover +  .rightnavbar  {
     visibility: hidden;
   }
  */
-
 
 .mainnavbarlinklabel {
   align-self: center;
@@ -150,35 +146,18 @@ scrollbar-width: none;
   color: var(--linkscolor);
 }
 
-#mainnavbar-ebco {
-  display: grid;
-  align-self: center;
-  grid-auto-flow: column;
-  text-align: center;
-  align-items: center;
-  padding: 0px 15px;
-  height: var(--headerheight)
-}
-
-#mainnavbar-worksmart {
-  display: grid;
-  grid-auto-flow: column;
-  align-self: center;
-  text-align: center;
-  align-items: center;
-  padding: 0px 15px;
-  height: var(--headerheight)
-}
-
+#mainnavbar-ebco,
+#mainnavbar-worksmart,
 #mainnavbar-livsmart {
   display: grid;
+  align-self: center;
   grid-auto-flow: column;
   text-align: center;
   align-items: center;
-  align-self: center;
   padding: 0px 15px;
-  height: var(--headerheight);
+  height: var(--headerheight)
 }
+
 
 button.link {
   height: var(--headerheight);
@@ -196,17 +175,44 @@ button.link {
   width: calc(var(--headerheight) * 0.4);
   max-height: 70px;
   padding: 0 0 0 10px;
-
 }
 
-#links-link:hover {
-  color: var(--ebcocolor);
-}
-
-.dropdown:hover>.link,
+/* Imp : Replace hover with active for click operations */
+/* Below is for all applying same color for all link  */
+/* .dropdown:hover>.link,
 .link:hover {
-  color: var(--ebcocolor);
-  /* color: orangered; */
+  color: var(--livsmartcolor);
+}*/
+
+/* Imp : Replace hover with active for click operations */
+/* Below is for giving separate color for all link */
+.dropdown:hover>#mainnavbar-ebco,
+#mainnavbar-ebco:hover {
+  color: var(--livsmartcolor)
+}
+
+.dropdown:hover>#mainnavbar-worksmart,
+#mainnavbar-worksmart:hover {
+  color: var(--livsmartcolor)
+}
+
+.dropdown:hover>#mainnavbar-livsmart,
+#mainnavbar-livsmart:hover {
+  color: var(--livsmartcolor)
+}
+
+#rightnavbar-links {
+  padding: 0 5px;
+}
+
+.dropdown:hover>#rightnavbar-links,
+#rightnavbar-links:hover {
+  color: var(--ebcocolor)
+}
+
+.dropdown:hover>#rightnavbar-shop,
+#rightnavbar-shop:hover {
+  color: var(--livsmartcolor)
 }
 
 .dropdown-heading {
@@ -229,12 +235,6 @@ button.link {
   cursor: pointer;
   padding: 0;
   width: auto;
-}
-
-/* Replace hover with active for click operations */
-.dropdown:hover>.link,
-.link:hover {
-  color: var(--ebcocolor);
 }
 
 .dropdown {
@@ -341,7 +341,7 @@ button.link {
   /* display: inline-block; */
   /* background-color: var(--navbarcolor); */
   display: flex;
-  width:120%;
+  width: 120%;
   flex-direction: row;
   justify-content: right;
   /* padding: 0 1vw 0 0; */
@@ -483,22 +483,22 @@ form.input {
   }
 }
 
-.slant-div-1 button{
+.slant-div-1 button {
   justify-content: center;
   align-self: center;
-  
+
 }
 
-.slant-div-2{
+.slant-div-2 {
   width: 5em;
   padding-left: 30px;
   display: flex;
 }
 
-.slant-div-2 button{
+.slant-div-2 button {
   justify-content: center;
   align-self: center;
-  
+
 }
 
 
@@ -638,10 +638,10 @@ form.input {
 	transform: rotate(270deg);
 } */
 
-.scroll-down-arrow{
+.scroll-down-arrow {
   opacity: 0.8;
   color: white;
-  font-size:48px;
+  font-size: 48px;
   position: absolute;
   margin-top: -48px;
   z-index: 4;
@@ -1002,7 +1002,9 @@ form.input {
 }
 
 @media only screen and (max-width: 880px) {
-  .mainnavbar, .rightnavbar{
+
+  .mainnavbar,
+  .rightnavbar {
     display: none;
   }
 }

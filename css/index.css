@@ -597,18 +597,26 @@ form.input {
 
 /* ========================================================= Carousel1 End ========================================================= */
 
-.arrow-container { 
+/* .arrow-container { 
 	padding: 20px;
 	background-color: white; 
 }
-
 
 .arrow-6 {
 	color: black;
 	height: 50px; width: 50px;
 	transform: rotate(270deg);
-}
+} */
 
+.scroll-down-arrow{
+  opacity: 0.8;
+  color: white;
+  font-size:48px;
+  position: absolute;
+  margin-top: -48px;
+  z-index: 4;
+  left: 50vw;
+}
 
 /* ========================================================== Cover Grid Area Start ========================================================== */
 .cover-grid-area {
@@ -629,6 +637,14 @@ form.input {
   background-position: center;
   background-size: cover;
   /* margin-block-start: 0em; */
+  transition: 0.25s ease-in-out;
+}
+
+
+
+.all-area-body:hover {
+  transform: scale(1.02);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
 }
 
 .sub-title-div {
@@ -691,7 +707,7 @@ form.input {
 .new-launches-heading {
   text-align: center;
   font-size: 3em;
-  padding: 12vh 0 0 0;
+  padding: 1.5em 0 0 0;
 }
 
 .new-launches-subheading {
@@ -863,9 +879,9 @@ form.input {
 .iconboxslide img {
   /* height: 300px;
   width: 300px; */
-  height: 18vw;
-  width: 18vw;
-  margin: 0 5px;
+  height: 20vw;
+  width: 20vw;
+  margin: 0 4px;
   object-fit: cover;
   /* border-radius: 15px; */
   cursor: pointer;
@@ -1005,7 +1021,7 @@ form.input {
 .footer-heading {
   color: white;
   text-align: center;
-  padding: 3vh 0 7vh 0;
+  padding: 3vh 0 5vh 0;
 }
 
 #footer-body {

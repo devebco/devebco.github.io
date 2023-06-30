@@ -9,6 +9,8 @@
   <link rel="shortcut icon" href="#">
   <script src="https://use.fontawesome.com/c58334dbd3.js"></script>
   <!-- <script src="/js/jquery/jquery-3.7.0.min.js"></script> -->
+  <link rel="stylesheet" href="css/navbar-toggle-demo.css">
+  <link rel="stylesheet" href="css/navbar-toggle-style.css">
   <link rel="stylesheet" href="css/index.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"> -->
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></script> -->
@@ -16,14 +18,13 @@
   <!-- 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"
       integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script> -->
   <!-- iconboxslider part -->
-  <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
   <!-- ================================================================ Header Start ================================================================ -->
   <!-- ================================================================ Logo Start ================================================================ -->
   <!-- <div id="header-parent-div"> -->
-  <div class="header"> <!-- check this ---------------- style="display: flex;" -->
+  <nav class="header"> <!-- check this ---------------- style="display: flex;" -->
     <!-- =============== Logo Start =============== -->
     <div class="logo-area">
       <a href="/" class="logo">
@@ -34,7 +35,7 @@
     <!-- ========================================================== Central Navbar Start ========================================================== -->
     <div class="mainnavbar">
       <!-- <label class="mainnavbarlinklabel">Our Brands: </label> -->
-      <div class="dropdown" data-dropdown style="display: flex;">
+      <div class="dropdown" data-dropdown >
 
         <a class="link" data-dropdown-button id="mainnavbar-ebco">Ebco
           <img src="/img/logo/ebco-white.png" alt="Ebco" class="mainnavbar-btn-logo" data-dropdown-button />
@@ -104,7 +105,7 @@
           </div>
         </div>
       </div>
-      <div class="dropdown" data-dropdown style="display: flex;">
+      <div class="dropdown" data-dropdown id="mainnavbar-worksmart-outerdiv">
         <a class="link" data-dropdown-button id="mainnavbar-worksmart">Worksmart
           <img src="/img/logo/worksmart-white.png" alt="worksmart" class="mainnavbar-btn-logo" data-dropdown-button
             width=50px srcset="" />
@@ -134,7 +135,7 @@
           </div>
         </div>
       </div>
-      <div class="dropdown" data-dropdown style="display: flex;">
+      <div class="dropdown" data-dropdown id="mainnavbar-livsmart-outerdiv">
         <a class="link" data-dropdown-button id="mainnavbar-livsmart">Livsmart
           <img src="/img/logo/livsmart-white.png" alt="livsmart" class="mainnavbar-btn-logo" data-dropdown-button
             width=50px srcset="" />
@@ -202,7 +203,7 @@
       </div>
       <!-- Try End -->
 
-      <div class="dropdown slant-div-1" data-dropdown style="background-color: var(--livsmartcolor);">
+      <div class="dropdown slant-div-1" data-dropdown>
         <button id="rightnavbar-links" class="link" data-dropdown-button>Links
           <i class="fa fa-link"></i>
           <!-- <svg fill="#ffffff" viewBox="0 0 30 30"><path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"/></svg> -->
@@ -255,12 +256,9 @@
             <div class="dropdown-links">
               <form class="login-form">
                 <!-- <label for="email" class="login-form-label">Email</label> -->
-                <input type="email" class="email" id="email" placeholder="Email :" autocomplete="off"
-                  style="margin: 2px 0; padding: 5px 0; font-size: 0.8em; width: -webkit-fill-available;"><br>
+                <input type="email" class="email" id="email" placeholder="Email :" autocomplete="off"><br>
                 <!-- <label for="password" class="login-form-label">Password</label> -->
-                <input type="password" class="password" id="password" placeholder="Password: "
-                  style="margin: 2px 0; padding: 5px 0; font-size: 0.8em; width: -webkit-fill-available; ">
-                <br>
+                <input type="password" class="password" id="password" placeholder="Password: "><br>
                 <a href="#" class="registerlink">Register</a>
                 <button type="submit" class="loginbtn">Login</button><br>
                 <br>
@@ -284,14 +282,17 @@
           </div>
         </div> -->
 
-      <div class="dropdown slant-div-2" data-dropdown style="background-color: var(--worksmartcolor);">
+      <div class="dropdown slant-div-2" data-dropdown >
         <button id="rightnavbar-shop" class="link" data-dropdown-button> Shop
           <i class="fa fa-shopping-cart"></i>
         </button>
       </div>
     </div>
     <!-- =============== Right Navbar End =============== -->
-  </div>
+    <button class="nav-toggler">
+      <span></span>
+    </button>
+  </nav>
   <!-- </div> -->
   <!-- ================================================ Header End ================================================ -->
   <!-- ============================================== Carousel1 Start ============================================== -->
@@ -315,7 +316,7 @@
     <button class="btn btn-next"><!-- &gt; --><i class="fa fa-arrow-right"></i></button>
   </div>
   <!-- ============================================== Carousel1 End ============================================== -->
-  <div class="scroll-down-arrow" style="text-align: center;">
+  <div class="scroll-down-arrow" >
     <i class="fa fa-angle-double-down fa-arrow-circle-down"></i>
   </div>
   <!--  <div class="arrow-container">			
@@ -376,16 +377,16 @@
   <!-- =========================================== New Launches End =========================================== -->
   <!-- =================================================== Grid 2 =================================================== -->
   <div class="random-grid-body">
-    <div class="random-grid-item" style="background-image: url(img/area-pages/bedroom/bedroom-1.jpg);">
+    <div class="random-grid-item" id="random-grid-bedroom">
       <a href="/area-pages/bedroom.html" target="_blank"><span></span></a><label>Bedroom**</label>
     </div>
-    <div class="random-grid-item" style="background-image: url(img/area-pages/wfh/wfh-11.jpg);">
+    <div class="random-grid-item" id="random-grid-wfh">
       <a href="/area-pages/work-from-home-1.html" target="_blank"><span></span></a><label>Work From Home</label>
     </div>
-    <div class="random-grid-item" style="background-image: url(img/area-pages/kitchen/kitchen-11-16x9.jpg);">
+    <div class="random-grid-item" id="random-grid-kitchen">
       <a href="/area-pages/kitchen.html" target="_blank"><span></span></a><label>Kitchen</label>
     </div>
-    <div class="random-grid-item" style="background-image: url(img/area-pages/living/living-16x9.jpg);">
+    <div class="random-grid-item" id="random-grid-living">
       <a href="/area-pages/living-room.html" target="_blank"><span></span></a><label>Living Room</label>
     </div>
     <!-- <div class="random-grid-item" style="background-image: url(img/thumbnail/wordrobe-16x9.jpg);">
@@ -405,7 +406,7 @@
   <div class="new-launches-subheading">"some text here"</div>
   <!-- =========================================== New Launches End =========================================== -->
   <!-- =========================================== Icon Box Slider Start =========================================== -->
-  <div id="iconboxslider-container" style="padding: 1vh 0 7vh 0;" class="iconboxslider"> <!-- "padding: 0 0 10vh 0;" -->
+  <div id="iconboxslider-container" class="iconboxslider"> <!-- "padding: 0 0 10vh 0;" -->
     <div class="iconboxslide">
       <a href="https://ebco.in/4-digital-combination-lock" target="_blank">
         <img src="img/new-launches/4-digital-combination-lock.jpg" alt=""></a>
@@ -478,7 +479,7 @@
     includeHTML();
   </script> -->
 
-
+  <script src="js/navbar-toggle.js"></script>
   <script src="js/index.js"></script>
 </body>
 

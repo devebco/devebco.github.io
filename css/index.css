@@ -149,7 +149,8 @@ scrollbar-width: none;
 #mainnavbar-ebco,
 #mainnavbar-worksmart,
 #mainnavbar-livsmart {
-  display: grid;
+  display: flex;
+  /* display: grid; -->  grid also fits well*/
   align-self: center;
   grid-auto-flow: column;
   text-align: center;
@@ -158,6 +159,11 @@ scrollbar-width: none;
   height: var(--headerheight)
 }
 
+/* ================================================ Check this ================================================ */
+/* #mainnavbar-worksmart-outerdiv,
+#mainnavbar-livsmart-outerdiv{
+  display: flex;
+} */
 
 button.link {
   height: var(--headerheight);
@@ -441,6 +447,7 @@ form.input {
 }
 
 .slant-div-1 {
+  background-color: var(--livsmartcolor);
   width: 5em;
   position: relative;
   /* background: maroon; */
@@ -490,10 +497,16 @@ form.input {
 
 }
 
+#email, #password{
+margin: 2px 0; padding: 5px 0; font-size: 0.8em; width: -webkit-fill-available;
+}
+
+
 .slant-div-2 {
   width: 5em;
   padding-left: 30px;
   display: flex;
+  background-color: var(--worksmartcolor);
 }
 
 .slant-div-2 button {
@@ -585,6 +598,7 @@ form.input {
   margin-top: -48px;
   z-index: 4;
   left: 50vw;
+  text-align: center;
 }
 
 /* ========================================================== Cover Grid Area Start ========================================================== */
@@ -800,6 +814,18 @@ form.input {
   left: 0;
 }
 
+#random-grid-bedroom{
+  background-image: url("../img/area-pages/bedroom/bedroom-1.jpg");
+}
+#random-grid-wfh{
+background-image: url("/img/area-pages/wfh/wfh-11.jpg");
+}
+#random-grid-kitchen{
+background-image: url("/img/area-pages/kitchen/kitchen-11-16x9.jpg");
+}
+#random-grid-living{
+background-image: url("/img/area-pages/living/living-16x9.jpg");
+}
 /* ========================================================= Random Grid End ========================================================= */
 /* ========================================================= Icon Box Slider Start ========================================================= */
 
@@ -812,10 +838,11 @@ form.input {
   max-height: auto;
   overflow-y: hidden;
   overflow-x: scroll !important;
-  padding: 16px;
+  /* padding: 16px; */
   transform: scroll(calc(var(--i, 0) / var(--n) * -100%));
   scroll-behavior: smooth;
   /* z-index: 5; */
+  padding: 1em 0 3em 0;
 }
 
 .iconboxslider::-webkit-scrollbar {
@@ -1004,6 +1031,7 @@ form.input {
   height: 6vw;
   background-color: var(--worksmartcolor);
 }
+
 
 
 /* ========================================================= Footer End ========================================================= */

@@ -8,7 +8,7 @@
 body {
   margin: 0;
   font-size: 1em;
-  font-family: "Uniform",/*"Nunito",Tahoma,*/ cursive;
+  font-family: "Uniform",Tahoma,'calibri';
   scrollbar-width: thin;
 }
 
@@ -17,10 +17,10 @@ body {
 :root {
   --navbarcolor: rgba(39, 72, 137, 0.8);
   --linkscolor: white;
-  --ebcocolor: #274889;
+  --ebcocolor: #274889; 
   --livsmartcolor: #f36620;
   --worksmartcolor: #696c6c;
-  --headerheight: 4vw;
+  --headerheight: 3em;
   --headerwidth: 100%;
   --logoleft: 1.5vw;
   --logowidth: 7.5vw;
@@ -87,6 +87,10 @@ scrollbar-width: none;
   src: url("font/Uniform.otf") format("opentype");
 } */
 
+#header-parent-div{
+  display: flex;
+}
+
 .header {
   background-color: var(--navbarcolor);
   height: var(--headerheight);
@@ -94,7 +98,7 @@ scrollbar-width: none;
   width: var(--headerwidth);
   grid-template-columns: calc(var(--logoleft) + var(--logowidth)) var(--mainnavbarwidth) var(--rightnavbarwidth);
   z-index: 999;
-  display: grid;
+  display: flex;
   position: fixed;
 
   /*   position: absolute; */
@@ -105,12 +109,17 @@ scrollbar-width: none;
   background-color: var(--navbarcolor);
 } */
 
+.logo-area{
+  display: flex;
+  width: 50%;
+}
 
 .logo,
 .logo-img {
   width: var(--logowidth);
   height: var(--logowidth);
-  min-height: 52px;
+  min-height: 64px;
+  min-width: 64px;
   /* position: absolute; */
   position: fixed;
   left: var(--logoleft);
@@ -124,7 +133,7 @@ scrollbar-width: none;
   grid-column-start: 2;
   grid-column-end: 3;
   display: flex;
-  width: auto;
+  width: 100%;
   justify-content: center;
   /* Align main-navbar link to left, center or right */
   /* padding: 0 0 0 2em; */
@@ -145,16 +154,18 @@ scrollbar-width: none;
 
 #mainnavbar-ebco {
   display: grid;
+  align-self: center;
   grid-auto-flow: column;
   text-align: center;
   align-items: center;
-  padding: 0px 15px 0px 100px;
+  padding: 0px 15px;
   height: var(--headerheight)
 }
 
 #mainnavbar-worksmart {
   display: grid;
   grid-auto-flow: column;
+  align-self: center;
   text-align: center;
   align-items: center;
   padding: 0px 15px;
@@ -166,7 +177,8 @@ scrollbar-width: none;
   grid-auto-flow: column;
   text-align: center;
   align-items: center;
-  padding: 0px 100px 0px 15px;
+  align-self: center;
+  padding: 0px 15px;
   height: var(--headerheight);
 }
 
@@ -303,7 +315,8 @@ button.link {
   /* position: absolute; */
   /* ============ =========Dropdown Up========= Try changing this ============================== */
   left: 0px;
-  top: var(--headerheight);
+  /* top: var(--headerheight); */
+  top: calc(var(--headerheight)*3.25/3);
   width: 100%;
   /* height: 50vh; */
   /* max-height: 50vh; */
@@ -331,6 +344,7 @@ button.link {
   /* display: inline-block; */
   /* background-color: var(--navbarcolor); */
   display: flex;
+  width:120%;
   flex-direction: row;
   justify-content: right;
   /* padding: 0 1vw 0 0; */
@@ -429,13 +443,13 @@ form.input {
 }
 
 .slant-div-1 {
+  width: 5em;
   position: relative;
   /* background: maroon; */
-  display: inline-block;
+  display: flex;
   /* color: white; */
   /* padding: .24em .3em .25em; */
   z-index: 9;
-
 }
 
 .slant-div-1 {
@@ -471,6 +485,25 @@ form.input {
     transform: skewX(-23deg);
   }
 }
+
+.slant-div-1 button{
+  justify-content: center;
+  align-self: center;
+  
+}
+
+.slant-div-2{
+  width: 5em;
+  padding-left: 30px;
+  display: flex;
+}
+
+.slant-div-2 button{
+  justify-content: center;
+  align-self: center;
+  
+}
+
 
 
 /* ========================================================= Header End ========================================================= */
@@ -969,6 +1002,12 @@ form.input {
 
 .overlay.active {
   display: block;
+}
+
+@media only screen and (max-width: 880px) {
+  .mainnavbar, .rightnavbar{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 420px) {

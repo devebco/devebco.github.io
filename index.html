@@ -22,10 +22,10 @@
 <body>
   <!-- ================================================================ Header Start ================================================================ -->
   <!-- ================================================================ Logo Start ================================================================ -->
-  <div style="display: flex" id="header-parent-div">
+  <!-- <div id="header-parent-div"> -->
     <div class="header"> <!-- check this ---------------- style="display: flex;" -->
       <!-- =============== Logo Start =============== -->
-      <div class="logo">
+      <div class="logo-area">
         <a href="/" class="logo">
           <img class="logo-img" src="/img/logo/ebco_blue_logo.png" alt="Logo">
         </a>
@@ -34,7 +34,7 @@
       <!-- ========================================================== Central Navbar Start ========================================================== -->
       <div class="mainnavbar">
         <!-- <label class="mainnavbarlinklabel">Our Brands: </label> -->
-        <div class="dropdown" data-dropdown>
+        <div class="dropdown" data-dropdown style="display: flex;">
 
           <a class="link" data-dropdown-button id="mainnavbar-ebco">Ebco
             <img src="/img/logo/ebco-white.png" alt="Ebco" class="mainnavbar-btn-logo" data-dropdown-button />
@@ -104,7 +104,7 @@
             </div>
           </div>
         </div>
-        <div class="dropdown" data-dropdown>
+        <div class="dropdown" data-dropdown style="display: flex;">
           <a class="link" data-dropdown-button id="mainnavbar-worksmart">Worksmart
             <img src="/img/logo/worksmart-white.png" alt="worksmart" class="mainnavbar-btn-logo" data-dropdown-button
               width=50px srcset="" />
@@ -134,7 +134,7 @@
             </div>
           </div>
         </div>
-        <div class="dropdown" data-dropdown>
+        <div class="dropdown" data-dropdown style="display: flex;">
           <a class="link" data-dropdown-button id="mainnavbar-livsmart">Livsmart
             <img src="/img/logo/livsmart-white.png" alt="livsmart" class="mainnavbar-btn-logo" data-dropdown-button
               width=50px srcset="" />
@@ -203,7 +203,7 @@
         <!-- Try End -->
 
         <div class="dropdown slant-div-1" data-dropdown style="background-color: var(--livsmartcolor);">
-          <button id="links-link" class="link" data-dropdown-button style="padding: 0 0 0 0;">Links
+          <button id="links-link" class="link" data-dropdown-button>Links
             <i class="fa fa-link"></i>
             <!-- <svg fill="#ffffff" viewBox="0 0 30 30"><path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"/></svg> -->
           </button>
@@ -283,15 +283,15 @@
           </div>
         </div> -->
 
-        <div class="dropdown" data-dropdown style="background-color: var(--worksmartcolor);">
-          <button class="link" data-dropdown-button style="padding: 0 15px 0 30px;"> Shop
+        <div class="dropdown slant-div-2" data-dropdown style="background-color: var(--worksmartcolor);">
+          <button class="link" data-dropdown-button> Shop
             <i class="fa fa-shopping-cart"></i>
           </button>
         </div>
       </div>
       <!-- =============== Right Navbar End =============== -->
     </div>
-  </div>
+  <!-- </div> -->
   <!-- ================================================ Header End ================================================ -->
   <!-- ============================================== Carousel1 Start ============================================== -->
   <!--   <div id="slider" style="display:none">

@@ -437,6 +437,7 @@ form.input {
 .registerlink {
   text-decoration: none;
   color: white;
+  padding-right: 1em;
 }
 
 .slant-div-1 {
@@ -498,60 +499,10 @@ form.input {
 .slant-div-2 button {
   justify-content: center;
   align-self: center;
-
 }
-
-
 
 /* ========================================================= Header End ========================================================= */
 /* ========================================================= Carousel1 Start ========================================================= */
-
-/* 
-#slider {
-  overflow: hidden;
-}
-
-#slider figure {
-  position: relative;
-  width: 400%; // Multiply 100% with images count
-  margin: 0;
-  left: 0;
-  animation: 24s slider infinite; // Change time for change interval
-}
-
-#slider figure a img {
-  float: left;
-  width: 25%; // Divide 100% by images count 
-  height: 75vh;
-}
-
-@keyframes slider {
-  0% {
-    left: 0;
-  }
-  25% {
-    left: 0;
-  }
-  30% {
-    left: -100%;
-  }
-  50% {
-    left: -100%;
-  }
-  55% {
-    left: -200%;
-  }
-  75% {
-    left: -200%;
-  }
-  80% {
-    left: -300%;
-  }
-  100% {
-    left: -300%;
-  }
-} */
-
 
 .carousel2slider {
   width: 100%;
@@ -563,7 +514,6 @@ form.input {
   position: relative;
   overflow: hidden;
 }
-
 
 .carousel2slide {
   position: absolute;
@@ -626,17 +576,6 @@ form.input {
 }
 
 /* ========================================================= Carousel1 End ========================================================= */
-
-/* .arrow-container { 
-	padding: 20px;
-	background-color: white; 
-}
-
-.arrow-6 {
-	color: black;
-	height: 50px; width: 50px;
-	transform: rotate(270deg);
-} */
 
 .scroll-down-arrow {
   opacity: 0.8;

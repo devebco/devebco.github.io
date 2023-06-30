@@ -1057,15 +1057,14 @@ form.input {
 /* ========================================================= Icon Box Slider End ========================================================= */
 /* ========================================================= Footer Start ========================================================= */
 
-.footer-heading {
+.footer-body {
+  display: flex;
+  font-size: 1.5em;
   color: white;
-  text-align: center;
-  padding: 3vh 0 5vh 0;
-}
-
-#footer-body {
-  height: 20vh;
-  background-color: rgb(59, 68, 68);
+  justify-content: center;
+  padding-top: 2vw;
+  height: 6vw;
+  background-color: var(--worksmartcolor);
 }
 
 

@@ -1,0 +1,85 @@
+@media only screen and (max-width: 880px) {
+
+  .rightnavbar {
+    display: none;
+  }
+
+  a.link{
+    display: block;
+    background-color: transparent;
+    font-size: 1em;
+  }
+
+  .nav-toggler {
+    display: block;
+  }
+
+  .mainnavbar {
+    display: block;
+    background-color: #444;
+    height: 100vh;
+    max-width: 480px;
+    /* left: 50vw; */
+    top: 0;
+    line-height: 30px;
+    overflow-y: scroll;
+    width: 280%;
+  }
+
+  .dropdown{
+    position: relative;
+    display: block;
+  }
+
+  .dropdown-area {
+    width: auto;
+    
+  }
+
+  .dropdown.active>.link+.dropdown-menu {
+    /* Use hover for click operation */
+    position: static;
+    box-sizing: border-box;
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+    background-color: var(--navbarcolor);  
+    left: 50vw;
+    padding: 0px;
+    /* top: calc(var(--headerheight)*3.25/3); */
+    width: 50%;
+    background-color: transparent;
+  }
+
+  /* When leaving hover from menus */
+  .dropdown-menu {
+    display: block;
+    position: absolute;
+    /* position: static; */
+    background-color: transparent;
+    left: 0px;
+    top: 3.5em;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .dropdown-heading{
+    padding-bottom: 0em;
+    margin-bottom: 0em;
+    color: var(--livsmartcolor);
+    border-bottom: var(--livsmartcolor) 1px solid;
+    border-top: var(--livsmartcolor) 1px solid;
+    font-weight: bold;
+    font-size: 1.0em;
+    margin-top: 20px;
+    width: 80vw;
+    background-color: transparent;
+    padding: 0 10px;
+  }
+
+  .dropdown-links{
+    width: 80vw;
+    padding: 0px;
+    padding: 0 10px;
+  }
+}

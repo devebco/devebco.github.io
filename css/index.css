@@ -82,7 +82,7 @@ body {
 -ms-overflow-style: none;
 scrollbar-width: none;  
 } */
-/* =========================================================Scrollbar CSS End | Header Start ========================================================= */
+/* ========================================================= Scrollbar CSS End | Header Start ========================================================= */
 
 #header-parent-div {
   display: flex;
@@ -159,7 +159,7 @@ scrollbar-width: none;
   height: var(--headerheight)
 }
 
-/* ================================================ Check this ================================================ */
+/* ============ Check this ============ */
 /* #mainnavbar-worksmart-outerdiv,
 #mainnavbar-livsmart-outerdiv{
   display: flex;
@@ -274,7 +274,7 @@ button.link {
   gap: 1rem;
 
   /* position: absolute; */
-  /* =====================Dropdown Down========= Try changing this ============================== */
+  /* ===== Dropdown Down ==== Try changing this ==== */
   /* display: none; */
   /* position: absolute; */
   left: 0;
@@ -288,7 +288,7 @@ button.link {
   /* box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.1); */
   opacity: 0;
   /* transform: translateY(-35px); */
-  /* transform: translateY(calc(        55px                     - var(--headerheight))); */
+  /* transform: translateY(calc(        55px              - var(--headerheight))); */
   transform: translateY(calc(calc(var(--headerheight) - 10px) - var(--headerheight)));
   transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
   pointer-events: none;
@@ -299,6 +299,9 @@ button.link {
   width: 100%;
   justify-content: center;
 }
+
+@media only screen and  (min-width: 880.01px) {
+  
 
 /* :hover for hover oprations & .active for click operations */
 .dropdown:hover>.link+.dropdown-menu {
@@ -316,7 +319,7 @@ button.link {
 
   position: fixed;
   /* position: absolute; */
-  /* ============ =========Dropdown Up========= Try changing this ============================== */
+  /* ===== Dropdown Up ==== Try changing this ==== */
   left: 0px;
   /* top: var(--headerheight); */
   top: calc(var(--headerheight)*3.25/3);
@@ -324,6 +327,8 @@ button.link {
   /* height: 50vh; */
   /* max-height: 50vh; */
   /* justify-content: center; */
+}
+
 }
 
 .dropdown-area {
@@ -433,11 +438,21 @@ form.input {
   font-size: 1em;
 }
 
+
 .search-text {
   width: 70%;
   height: 27px;
   padding-top: 3px;
   padding-right: 5px;
+}
+
+
+#email,
+#password {
+  margin: 2px 0;
+  padding: 5px 0;
+  font-size: 0.8em;
+  width: -webkit-fill-available;
 }
 
 .registerlink {
@@ -497,9 +512,6 @@ form.input {
 
 }
 
-#email, #password{
-margin: 2px 0; padding: 5px 0; font-size: 0.8em; width: -webkit-fill-available;
-}
 
 
 .slant-div-2 {
@@ -514,8 +526,58 @@ margin: 2px 0; padding: 5px 0; font-size: 0.8em; width: -webkit-fill-available;
   align-self: center;
 }
 
-/* ========================================================= Header End ========================================================= */
-/* ========================================================= Carousel1 Start ========================================================= */
+/* ======================================================= Toggler Start ======================================================= */
+
+.nav-toggler {
+  display: none;
+  min-height: calc(var(--headerheight)/1.2);
+  min-width: calc(var(--headerheight)/1.2);
+  position: absolute;
+  align-self: center;
+  right: 20px;
+
+}
+
+
+
+
+/* .nav-toggler {
+  border: 3px solid #fff;
+  padding: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  height: 39px;
+  display: none;
+}
+.nav-toggler span, 
+.nav-toggler span:before, 
+.nav-toggler span:after {
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  display: block;
+  transition: .3s;
+}
+.nav-toggler span:before {
+  content: '';
+  transform: translateY(-9px);
+}
+.nav-toggler span:after {
+  content: '';
+  transform: translateY(6px);
+}
+.nav-toggler.toggler-open span {
+  background-color: transparent;
+}
+.nav-toggler.toggler-open span:before {
+  transform: translateY(0px) rotate(45deg);
+}
+.nav-toggler.toggler-open span:after {
+  transform: translateY(-3px) rotate(-45deg);
+} */
+
+/* ======================================================= Toggler End ======================================================= */
+/* ========================================================= Header End | Carousel1 Start ========================================================= */
 
 .carousel2slider {
   width: 100%;
@@ -676,7 +738,7 @@ margin: 2px 0; padding: 5px 0; font-size: 0.8em; width: -webkit-fill-available;
   /* background: rgba(255, 255, 255,0); */
   background-color: rgba(255, 255, 255, 0.3);
   /* font-size: 25px; */
-  font-size: 1em;
+  font-size: 1.2vw;
 }
 
 .all-area-explore:hover {
@@ -687,16 +749,16 @@ margin: 2px 0; padding: 5px 0; font-size: 0.8em; width: -webkit-fill-available;
 
 /* ========================================================== Cover Grid Area End ========================================================== */
 /* ========================================================= New Launches Start ========================================================= */
-.new-launches-heading {
+.section-heading {
   text-align: center;
-  font-size: 3em;
-  padding: 1.5em 0 0 0;
+  font-size: 4vw;
+  padding: 7vw 0 0 0;
 }
 
-.new-launches-subheading {
+.section-subheading {
   text-align: center;
-  font-size: 1.5em;
-  padding: 1em 0;
+  font-size: 2vw;
+  padding: 2vw 0;
 }
 
 /* ========================================================= New Launches End ========================================================= */
@@ -804,7 +866,7 @@ margin: 2px 0; padding: 5px 0; font-size: 0.8em; width: -webkit-fill-available;
   color: black;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 0 25px 5px 25px;
-  font-size: 1.2em;
+  font-size: 1.75vw;
 }
 
 .random-grid-item span {
@@ -814,18 +876,22 @@ margin: 2px 0; padding: 5px 0; font-size: 0.8em; width: -webkit-fill-available;
   left: 0;
 }
 
-#random-grid-bedroom{
+#random-grid-bedroom {
   background-image: url("../img/area-pages/bedroom/bedroom-1.jpg");
 }
-#random-grid-wfh{
-background-image: url("/img/area-pages/wfh/wfh-11.jpg");
+
+#random-grid-wfh {
+  background-image: url("/img/area-pages/wfh/wfh-11.jpg");
 }
-#random-grid-kitchen{
-background-image: url("/img/area-pages/kitchen/kitchen-11-16x9.jpg");
+
+#random-grid-kitchen {
+  background-image: url("/img/area-pages/kitchen/kitchen-11-16x9.jpg");
 }
-#random-grid-living{
-background-image: url("/img/area-pages/living/living-16x9.jpg");
+
+#random-grid-living {
+  background-image: url("/img/area-pages/living/living-16x9.jpg");
 }
+
 /* ========================================================= Random Grid End ========================================================= */
 /* ========================================================= Icon Box Slider Start ========================================================= */
 
@@ -967,13 +1033,6 @@ background-image: url("/img/area-pages/living/living-16x9.jpg");
   display: block;
 }
 
-@media only screen and (max-width: 880px) {
-
-  .mainnavbar,
-  .rightnavbar {
-    display: none;
-  }
-}
 
 @media only screen and (max-width: 420px) {
   .iconboxslider {

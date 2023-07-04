@@ -648,6 +648,7 @@ form.input {
 /* ========================================================= Carousel1 End ========================================================= */
 
 .scroll-down-arrow {
+  display: none; /* Remove this when required */
   opacity: 0.8;
   color: white;
   font-size: 48px;

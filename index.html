@@ -8,7 +8,7 @@
   <title>EBCO</title>
   <link rel="shortcut icon" href="#">
   <script src="https://use.fontawesome.com/c58334dbd3.js"></script>
-  <!-- <script src="/js/jquery/jquery-3.7.0.min.js"></script> -->  
+  <!-- <script src="/js/jquery/jquery-3.7.0.min.js"></script> -->
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/index-responsive.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"> -->
@@ -30,11 +30,12 @@
         <img class="logo-img" src="/img/logo/ebco_blue_logo.png" alt="Logo">
       </a>
     </div>
+    <input id="checkthis" type="checkbox">
     <!-- ================================================================ Logo End ================================================================ -->
     <!-- ========================================================== Central Navbar Start ========================================================== -->
     <div class="mainnavbar">
       <!-- <label class="mainnavbarlinklabel">Our Brands: </label> -->
-      <div class="dropdown" data-dropdown >
+      <div class="dropdown" data-dropdown id="mainnavbar-ebco-outerdiv">
 
         <a class="link" data-dropdown-button id="mainnavbar-ebco">Ebco
           <img src="/img/logo/ebco-white.png" alt="Ebco" class="mainnavbar-btn-logo" data-dropdown-button />
@@ -281,16 +282,22 @@
           </div>
         </div> -->
 
-      <div class="dropdown slant-div-2" data-dropdown >
+      <div class="dropdown slant-div-2" data-dropdown>
         <button id="rightnavbar-shop" class="link" data-dropdown-button> Shop
           <i class="fa fa-shopping-cart"></i>
         </button>
       </div>
     </div>
     <!-- ======================================= Right Navbar End | Toggler Start ======================================= -->
-    <button class="nav-toggler">
-      <span></span>
+    <!-- <button class="nav-toggler">
+      <span class="drop">A</span>
     </button>
+    <button class="nav-toggler2">
+      <span>B</span>
+    </button> -->
+
+
+    
     <!-- =================================================== Toggler End===================================================  -->
   </nav>
   <!-- </div> -->
@@ -315,7 +322,7 @@
     <button class="btn btn-next"><!-- &gt; --><i class="fa fa-arrow-right"></i></button>
   </div>
   <!-- ============================================== Carousel1 End ============================================== -->
-  <div class="scroll-down-arrow" >
+  <div class="scroll-down-arrow">
     <i class="fa fa-angle-double-down fa-arrow-circle-down"></i>
   </div>
   <!--  <div class="arrow-container">			
@@ -370,6 +377,7 @@
       <div style="background-color:ghostwhite">Product Eight</div>
     </div>
   </div> -->
+
   <!-- =========================================== New Launches Start =========================================== -->
   <div class="section-heading">Discover More</div>
   <div class="section-subheading">SHOP BY ROOM</div>

@@ -122,6 +122,10 @@ scrollbar-width: none;
   z-index: 99999;
 }
 
+#checkthis{
+  display: none;
+}
+
 .mainnavbar {
   /* background-color: var(--navbarcolor); */
   /* margin: 0 0 0 3em; */
@@ -300,34 +304,26 @@ button.link {
   justify-content: center;
 }
 
-@media only screen and  (min-width: 1100.01px) {
-  
+@media only screen and (min-width: 1100.01px) {
 
-/* :hover for hover oprations & .active for click operations */
-.dropdown:hover>.link+.dropdown-menu {
-  /* Use hover for click operation */
-  opacity: 1;
-  transform: translateY(0);
 
-  pointer-events: auto;
-  /* background-color: rgba(0,0,0,0.1); */
-  background-color: var(--navbarcolor);
-
-  /* position: fixed;
-      left: 0px;
-      top: 38px; */
-
-  position: fixed;
-  /* position: absolute; */
-  /* ===== Dropdown Up ==== Try changing this ==== */
-  left: 0px;
-  /* top: var(--headerheight); */
-  top: calc(var(--headerheight)*3.25/3);
-  width: 100%;
-  /* height: 50vh; */
-  /* max-height: 50vh; */
-  /* justify-content: center; */
-}
+  /* :hover for hover oprations & .active for click operations */
+  .dropdown:hover>.link+.dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+    background-color: var(--navbarcolor);
+    position: fixed;
+    /* position: absolute; */
+    /* ===== Dropdown Up ==== Try changing this ==== */
+    left: 0px;
+    /* top: var(--headerheight); */
+    top: calc(var(--headerheight)*3.25/3);
+    width: 100%;
+    /* height: 50vh; */
+    /* max-height: 50vh; */
+    /* justify-content: center; */
+  }
 
 }
 
@@ -528,14 +524,13 @@ form.input {
 
 /* ======================================================= Toggler Start ======================================================= */
 
-.nav-toggler {
+.nav-toggler, .nav-toggler2 {
   display: none;
   min-height: calc(var(--headerheight)/1.2);
   min-width: calc(var(--headerheight)/1.2);
   position: absolute;
   align-self: center;
   right: 20px;
-
 }
 
 

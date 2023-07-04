@@ -31,16 +31,16 @@
 
 
   .mainnavbar {
-    margin-top: 50px;
     background-color: #444;
-    height: 100vh;
-    max-width: 480px;
+    position: absolute;
+    height: 70vh;
     /* left: 50vw; */
-    top: 0;
+    top: calc(var(--headerheight)*1.33);
+    /* top: var(--headerheight); */
     line-height: 30px;
     overflow-y: scroll;
     overflow-x: hidden;
-    width: 280%;
+    width: 100%;
   }
 
   .dropdown {

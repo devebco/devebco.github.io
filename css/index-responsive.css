@@ -1,6 +1,11 @@
 @media only screen and (max-width: 1100px) {
 
 
+  .header{
+    height: var(--headerheight);
+    min-height: 20px;
+  }
+
 
   .rightnavbar {
     display: none;
@@ -26,10 +31,6 @@
   input:checked ~ .mainnavbar {
     display: block;
   }
-
-
-
-
 
   .mainnavbar {
     background-color: #444;
@@ -105,6 +106,9 @@
     padding: 0 10px;
   }
 
+  .carousel2slider{
+    top: var(--headerheight);
+  }
 
   .carousel2slider .btn{
     width: 20px;
@@ -113,6 +117,7 @@
     font-size: 9px;
   }
 
+  
 
   .control-prev-btn,
   .control-next-btn {

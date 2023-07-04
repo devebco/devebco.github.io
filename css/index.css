@@ -91,7 +91,7 @@ scrollbar-width: none;
 .header {
   background-color: var(--navbarcolor);
   height: var(--headerheight);
-  min-height: 52px;
+  min-height: 52px; /* Remove this, this creates lot of issues */
   width: var(--headerwidth);
   grid-template-columns: calc(var(--logoleft) + var(--logowidth)) var(--mainnavbarwidth) var(--rightnavbarwidth);
   z-index: 999;

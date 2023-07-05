@@ -35,7 +35,7 @@
     align-self:center;
     z-index: 100;
     border: 1px solid black;
-    padding: 3px;
+    padding: 3px 4px;
   }
   
   input[type="checkbox"]  {
@@ -58,7 +58,7 @@
   }
 
   .mainnavbar {
-    background-color: rgba(39, 72, 137, 1);
+    background-color: var(--worksmartcolor);
     position: absolute;
     height: 95vh;
     /* left: 50vw; */
@@ -68,7 +68,7 @@
     overflow-y: scroll;
     overflow-x: hidden;
     width: 100vw;
-    margin-top: var(--headerheight);
+    padding-top: var(--headerheight);
   }
 
   .dropdown {
@@ -116,7 +116,7 @@
     padding-bottom: 0em;
     margin-bottom: 0em;
     color: var(--livsmartcolor);
-    border-bottom: var(--livsmartcolor) 1px solid;
+    border-bottom: none;
     border-top: var(--livsmartcolor) 1px solid;
     font-weight: bold;
     font-size: 1.0em;

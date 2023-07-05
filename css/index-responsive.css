@@ -50,10 +50,12 @@
     display:none;
   }
   .drop:after {
-    content:'▼';
+    /* content:'▼'; */
+    content:'≡';
     }
   :checked  ~ .drop:after {
-    content:'▲';
+    /* content:'▲'; */
+    content:'x';
     }
   input:checked ~ .drop ~ .mainnavbar{
     display:block;

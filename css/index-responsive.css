@@ -18,6 +18,7 @@
 
   #mainnavbar-ebco, #mainnavbar-worksmart, #mainnavbar-livsmart{
     background-color: grey;
+    font-size: 1.2em;
   }
   
   /* 
@@ -39,7 +40,7 @@
     align-self: center;
     z-index: 100;
     border: 1px solid black;
-    padding: 0 15px;
+    padding: 0 12px;
     font-size: 1.5em;
     font-weight: bold;
   }
@@ -174,7 +175,7 @@
     color: #444;
     cursor: pointer;
     z-index: 55;
-    top: 128%;
+    top: 150%;
     font-size: 9px;
   }
 

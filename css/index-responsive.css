@@ -35,7 +35,9 @@
     align-self:center;
     z-index: 100;
     border: 1px solid black;
-    padding: 3px 4px;
+    padding: 1px 3px;
+    font-size: 1.5em;
+    font-weight: bold;
   }
   
   input[type="checkbox"]  {

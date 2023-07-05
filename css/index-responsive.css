@@ -16,7 +16,9 @@
     font-size: 1em;
   }
 
-  /* #mainnavbar-ebco, #mainnavbar-ebco-outerdiv{} */
+  #mainnavbar-ebco, #mainnavbar-worksmart, #mainnavbar-livsmart{
+    background-color: grey;
+  }
   
   /* 
   #checkthis{

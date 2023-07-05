@@ -175,7 +175,7 @@
     color: #444;
     cursor: pointer;
     z-index: 55;
-    top: 150%;
+    top: 140%;
     font-size: 9px;
   }
 
@@ -187,7 +187,9 @@
     right: 0px;
   }
 
-
+  .all-area-explore {
+    border: dashed 1px black;
+  }
 
 
 

@@ -1,9 +1,9 @@
 @media only screen and (max-width: 1100px) {
 
-  .header{
+  .header {
     height: var(--headerheight);
     min-height: 20px;
-    background-color:  rgba(39, 72, 137, 0.3);
+    background-color: rgba(39, 72, 137, 0.3);
   }
 
   .rightnavbar {
@@ -13,16 +13,18 @@
   a.link {
     display: block;
     background-color: transparent;
-    font-size: 1em; 
+    font-size: 1em;
   }
 
   /* #mainnavbar-ebco, #mainnavbar-ebco-outerdiv{} */
-/* 
+  
+  /* 
   #checkthis{
     display: block;
   }
- */
-/*   input ~ .mainnavbar {
+  */
+  
+  /*   input ~ .mainnavbar {
     display: none;
   }
   input:checked ~ .mainnavbar {
@@ -32,36 +34,39 @@
   .drop {
     cursor: pointer;
     display: block;
-    align-self:center;
+    align-self: center;
     z-index: 100;
     border: 1px solid black;
-    padding: 3px 4px;
+    padding: 2px 5px;
     font-size: 1.5em;
     font-weight: bold;
   }
-  
-  input[type="checkbox"]  {
-   display: none; /* hide the checkboxes */
+
+  input[type="checkbox"] {
+    display: none;
+    /* hide the checkboxes */
   }
-  
-  input +.drop +  .mainnavbar
-  
-  {
-    display:none;
+
+  input+.drop+.mainnavbar {
+    display: none;
   }
+
   .drop:after {
     /* content:'▼'; */
-    content:'≡';
-    }
-  :checked  ~ .drop:after {
-    /* content:'▲'; */
-    content:'x';
-    }
-  input:checked ~ .drop ~ .mainnavbar{
-    display:block;
+    content: '≡';
   }
-  input:checked ~ .drop ~ .header{
-  background-color: red;
+
+  :checked~.drop:after {
+    /* content:'▲'; */
+    content: 'x';
+  }
+
+  input:checked~.drop~.mainnavbar {
+    display: block;
+  }
+
+  input:checked~.drop~.header {
+    background-color: red;
   }
 
   .mainnavbar {
@@ -84,7 +89,7 @@
     text-align: center;
   }
 
-  .dropdown a.link{
+  .dropdown a.link {
     justify-content: center;
   }
 
@@ -139,18 +144,18 @@
     padding: 0 10px;
   }
 
-/*   .carousel2slider{
+  /*   .carousel2slider{
     top: var(--headerheight);
   } */
 
-  .carousel2slider .btn{
+  .carousel2slider .btn {
     width: 20px;
     height: 20px;
     padding: 5px;
     font-size: 9px;
   }
 
-  
+
 
   .control-prev-btn,
   .control-next-btn {
@@ -170,15 +175,15 @@
     top: 128%;
     font-size: 9px;
   }
-  
+
   .control-prev-btn {
     left: 0px;
   }
-  
+
   .control-next-btn {
     right: 0px;
   }
-  
+
 
 
 

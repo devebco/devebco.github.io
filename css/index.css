@@ -27,7 +27,7 @@ body {
   --ebcocolor: #274889;
   --livsmartcolor: #f36620;
   --worksmartcolor: #696c6c;
-  --headerheight: 3em;
+  --headerheight: 8vh;
   --headerwidth: 100%;
   --logoleft: 1.5vw;
   --logowidth: 7.5vw;
@@ -284,7 +284,8 @@ button.link {
   /* display: none; */
   /* position: absolute; */
   left: 0;
-  top: calc(var(--headerheight) * 1.2);
+  /* top: calc(var(--headerheight) * 1.2); */
+  top: var(--headerheight);
   /* width: 80vw; */
   /* Width of submenu links mainnavbar */
   /* width: auto; */

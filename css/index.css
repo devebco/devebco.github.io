@@ -183,9 +183,9 @@ button.link {
 } */
 
 .mainnavbar-btn-logo {
-  height: calc(var(--headerheight) * 0.4);
+  height: calc(var(--headerheight) * 0.3);
   /* height: var(--headerheight); */
-  width: calc(var(--headerheight) * 0.4);
+  width: calc(var(--headerheight) * 0.3);
   /* max-height: 70px; */
   padding-left: 10px;
 }
@@ -370,7 +370,7 @@ button.link {
   /* left: 86vw; */
   /* left: 80vw; */
   /* margin: 2vw 10.5vw 0 0; */
-  padding-right: 30px;
+  padding-right: 40px;
   transform: translate(00%, -50%);
   display: flex;
   justify-content: center;

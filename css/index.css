@@ -160,7 +160,7 @@ scrollbar-width: none;
   grid-auto-flow: column;
   text-align: center;
   align-items: center;
-  padding: 0px 1.3vw;
+  padding: 0px 1.5vw;
   height: var(--headerheight);
   font-size: 1.2vw;
 }
@@ -370,7 +370,7 @@ button.link {
   /* left: 86vw; */
   /* left: 80vw; */
   /* margin: 2vw 10.5vw 0 0; */
-  padding-right: 40px;
+  padding-right: 70px;
   transform: translate(00%, -50%);
   display: flex;
   justify-content: center;
@@ -385,7 +385,7 @@ button.link {
   padding: 0;
   opacity: 0;
   border-radius: 2px;
-  line-height: 35px;
+  line-height: 2.5vw;
   font-size: 18px;
   color: #fff;
   transition: all 0.5s;
@@ -522,8 +522,8 @@ form.input {
 
 
 .slant-div-2 {
-  width: 5vw;
-  padding-left: 30px;
+  width: 6vw;
+  padding-left: 60px;
   display: flex;
   background-color: var(--worksmartcolor);
 }
@@ -628,15 +628,15 @@ form.input {
 
 .btn {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 4vw;
+  height: 4vw;
   padding: 10px;
   border: none;
   border-radius: 50%;
   z-index: 10px;
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.3);
-  font-size: 18px;
+  font-size: 1.5vw;
 }
 
 .btn:hover {
@@ -938,7 +938,7 @@ form.input {
 }
 
 .iconboxslider img:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -961,7 +961,7 @@ form.input {
 .control-prev-btn,
 .control-next-btn {
   position: absolute;
-  margin: 125px 0;
+  margin: 8vw 0;
   background-color: rgba(255, 255, 255, 0.8);
   height: 40px;
   line-height: 40px;

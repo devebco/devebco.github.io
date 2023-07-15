@@ -215,13 +215,13 @@ button.link {
 }
 
 #rightnavbar-links {
-  padding: 0 5px;
+  padding: 0 2px;
   font-size: 1.2vw;
 }
 
 #rightnavbar-shop {
   font-size: 1.2vw;
-  padding: 0 5px;
+  padding: 0 2px;
 }
 
 .dropdown:hover>#rightnavbar-links,
@@ -398,8 +398,8 @@ button.link {
 
 .searchBox svg {
   background-color: transparent;
-  width: 25px;
-  height: 25px;
+  width: 1.5vw;
+  height: 1.5vw;
   padding: 1px 0 0 10px;
   border-radius: 5%;
   color: white;
@@ -470,7 +470,7 @@ form.input {
 
 .slant-div-1 {
   background-color: var(--livsmartcolor);
-  width: 6em;
+  width: 5vw;
   position: relative;
   /* background: maroon; */
   display: flex;
@@ -522,7 +522,7 @@ form.input {
 
 
 .slant-div-2 {
-  width: 6em;
+  width: 5vw;
   padding-left: 30px;
   display: flex;
   background-color: var(--worksmartcolor);

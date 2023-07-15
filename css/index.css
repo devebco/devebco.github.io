@@ -385,7 +385,7 @@ button.link {
   padding: 0;
   opacity: 0;
   border-radius: 2px;
-  line-height: 2.5vw;
+  line-height: 2.25vw;
   font-size: 18px;
   color: #fff;
   transition: all 0.5s;
@@ -441,7 +441,7 @@ form.input {
   margin: 10px 0;
   color: white;
   border: none;
-  font-size: 1vw;
+  font-size: 0.9vw;
 }
 
 
@@ -465,7 +465,7 @@ form.input {
   text-decoration: none;
   color: white;
   padding-right: 1em;
-  font-size: 0.9vw;
+  font-size: 0.8vw;
 }
 
 .slant-div-1 {
@@ -963,17 +963,32 @@ form.input {
   position: absolute;
   margin: 8vw 0;
   background-color: rgba(255, 255, 255, 0.8);
-  height: 40px;
-  line-height: 40px;
-  border-radius: 40px;
-  width: 40px;
+  width: 4vw;
+  height: 4vw;
+  line-height: 4vw;
+  border-radius: 4vw;
   text-align: center;
   box-shadow: 0 1px 3px #888;
   user-select: none;
   color: #444;
   cursor: pointer;
   z-index: 55;
+  font-size: 1.5vw;
 }
+
+
+/* .btn {
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  z-index: 10px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-size: 1.5vw;
+} */
 
 .control-prev-btn {
   left: 0;

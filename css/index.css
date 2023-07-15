@@ -160,7 +160,7 @@ scrollbar-width: none;
   grid-auto-flow: column;
   text-align: center;
   align-items: center;
-  padding: 0px 15px;
+  padding: 0px 1.3vw;
   height: var(--headerheight);
   font-size: 1.2vw;
 }
@@ -303,7 +303,7 @@ button.link {
   opacity: 0;
   /* transform: translateY(-35px); */
   /* transform: translateY(calc(        55px              - var(--headerheight))); */
-  transform: translateY(calc(calc(var(--headerheight) - 50px) - var(--headerheight)));
+  transform: translateY(calc(calc(var(--headerheight) - 3vw) - var(--headerheight)));
   transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
   pointer-events: none;
 
@@ -434,14 +434,14 @@ form.input {
   margin: 4px 0;
 }
 
-.loginbtn,
-.searchbtn {
+/* .searchbtn, */
+.loginbtn{
   background-color: rgba(0, 0, 0, 0.2);
   padding: 8px 12px;
   margin: 10px 0;
   color: white;
   border: none;
-  font-size: 1em;
+  font-size: 1vw;
 }
 
 
@@ -457,7 +457,7 @@ form.input {
 #password {
   margin: 2px 0;
   padding: 5px 0;
-  font-size: 0.8em;
+  font-size: 0.6vw;
   width: -webkit-fill-available;
 }
 
@@ -465,6 +465,7 @@ form.input {
   text-decoration: none;
   color: white;
   padding-right: 1em;
+  font-size: 0.9vw;
 }
 
 .slant-div-1 {

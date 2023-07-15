@@ -370,7 +370,7 @@ button.link {
   /* left: 86vw; */
   /* left: 80vw; */
   /* margin: 2vw 10.5vw 0 0; */
-  padding-right: 70px;
+  padding-right: 2vw;
   transform: translate(00%, -50%);
   display: flex;
   justify-content: center;
@@ -523,7 +523,7 @@ form.input {
 
 .slant-div-2 {
   width: 6vw;
-  padding-left: 60px;
+  padding-left: 3vw;
   display: flex;
   background-color: var(--worksmartcolor);
 }

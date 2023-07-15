@@ -303,7 +303,7 @@ button.link {
   opacity: 0;
   /* transform: translateY(-35px); */
   /* transform: translateY(calc(        55px              - var(--headerheight))); */
-  transform: translateY(calc(calc(var(--headerheight) - 10px) - var(--headerheight)));
+  transform: translateY(calc(calc(var(--headerheight) - 50px) - var(--headerheight)));
   transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
   pointer-events: none;
 

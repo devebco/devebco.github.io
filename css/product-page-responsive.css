@@ -8,6 +8,30 @@
         max-width: 98vw;
     }
 
+    .pro-page-btn-prev{
+        left: 18vw;
+    }
+
+    .pro-page-btn img {
+        position: absolute;
+        width: 2.5vw;
+        left: 1.2vw;
+        top: 1.6vw;
+    }
+
+    .pro-page-btn-next {
+        right: 18vw;
+    }
+
+    table td{
+        padding: 5px 10px;
+        font-size: 3vw;
+    }
+
+    ul li{
+        font-size: 3vw;
+    }
+
     .carousel1{
         width: 100%;
         height: 30vh;
@@ -18,4 +42,18 @@
     .product-title{
         font-size: 8vw;
     }
+
+    .btn-area{
+        padding: 2em 1em 1em 0em;
+    }
+
+    .btn-area button {
+        /* text-transform: uppercase; */
+        padding: 2vw 4vw;
+        margin: 2vw;
+        display: block;
+        font-size: 3vw;
+    }
+
+
 }

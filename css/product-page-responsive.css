@@ -82,17 +82,19 @@
         background: white;
         padding: 1vw;
         width: 97vw;
-        margin-top: 24vh;
+        margin-top: 32vh;
     }
 
 
 
     .btn-area button {
         /* text-transform: uppercase; */
+        display: flex;
         padding: 2vw 4vw;
         margin: 2vw;
         /* display: block; */
-        font-size: 3vw;
+        font-size: 2vw;
+        border: 1px solid var(--ebcocolor);
     }
 
     

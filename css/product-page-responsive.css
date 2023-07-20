@@ -44,11 +44,11 @@
     }
 
     .pro-page-btn-prev {
-        left: 25vw;
+        left: 22vw;
     }
 
     .pro-page-btn-next {
-        right: 25vw;
+        right: 22vw;
     }
 
     table td {
@@ -81,8 +81,8 @@
         bottom: 0;
         background: white;
         padding: 1vw;
-        /* height: 30px; */
-        width: 100vw;
+        width: 97vw;
+        margin-top: 24vh;
     }
 
 
@@ -95,12 +95,10 @@
         font-size: 3vw;
     }
 
-    [data-tooltip] {
-        left: 0;
-    }
+    
 
     [data-tooltip]:before {
-        bottom: -40px;
+        bottom: 65px;
         font-size: 2vw;
         width: 100%;
         left: 35%;
@@ -108,11 +106,11 @@
 
     /* Triangular mark */
     [data-tooltip]:after {
-        bottom: -23%;
+        bottom: 116%;
         left: 50%;
         font-size: 3vw;
-        border-top: 0px solid hsla(0, 0%, 20%, 0.9);
-        border-bottom: 5px solid hsla(0, 0%, 20%, 0.9);
+/*         border-top: 0px solid hsla(0, 0%, 20%, 0.9);
+        border-bottom: 5px solid hsla(0, 0%, 20%, 0.9); */
       }
 
 }

@@ -86,6 +86,9 @@
     }
 
 
+    #product-fit-instru img {
+        max-width: 100%;
+    }
 
     .btn-area button {
         /* text-transform: uppercase; */

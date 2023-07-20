@@ -3,16 +3,29 @@
         display: block;
     }
 
-    .container{
+    .container {
         width: 98vw;
         max-width: 98vw;
     }
 
     .product-title {
         margin-bottom: 4vw;
+        font-size: 7vw;
+        text-align: center;
     }
 
-    .element{
+    .question label {
+        font-size: 14vw;
+    }
+
+    #desc-title,
+    #specs-title,
+    #fit-instruct-title,
+    #pack-chart-title {
+        font-size: 3vw;
+    }
+
+    .element {
         border-top: 1px solid #bec4c4;
         margin: 0;
     }
@@ -24,41 +37,38 @@
         top: 1.6vw;
     }
 
-    .pro-page-btn-prev{
+    .pro-page-btn-prev {
         left: 25vw;
     }
+
     .pro-page-btn-next {
         right: 25vw;
     }
 
-    table td{
+    table td {
         padding: 5px 10px;
         font-size: 3vw;
     }
 
-    ul{
+    ul {
         padding-inline-start: 4px;
         margin-block-start: 0;
         margin-block-start: 1px;
     }
 
-    ul li{
+    ul li {
         font-size: 3vw;
     }
 
-    .carousel1{
+    .carousel1 {
         width: 100%;
         height: 30vh;
         max-width: 100%;
         margin-bottom: 2vh;
     }
 
-    .product-title{
-        font-size: 8vw;
-        text-align: center;
-    }
 
-    .btn-area{
+    .btn-area {
         padding: 2em 1em 1em 0em;
     }
 

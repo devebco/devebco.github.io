@@ -26,9 +26,9 @@ slides.forEach((slide, indx) => {
 });
 
 // select prev slide button
-const prevSlideBtn = document.querySelector(".btn-prev");
+const prevSlideBtn = document.querySelector(".pro-page-btn-prev");
 // select next slide button
-const nextSlideBtn = document.querySelector(".btn-next");
+const nextSlideBtn = document.querySelector(".pro-page-btn-next");
 
 let curSlide = 0;
 
@@ -143,4 +143,4 @@ elements.forEach(element => {
 
     });*/
 });
-/* ========================================================= Accordion Start ========================================================= */
+/* ========================================================= Accordion End ========================================================= */

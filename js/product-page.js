@@ -25,6 +25,8 @@ slides.forEach((slide, indx) => {
     slide.style.transitionDelay = "-2s";
 });
 
+console.log("ABC");
+
 // select prev slide button
 const prevSlideBtn = document.querySelector(".pro-page-btn-prev");
 // select next slide button

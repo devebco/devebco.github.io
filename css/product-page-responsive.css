@@ -8,8 +8,13 @@
         max-width: 98vw;
     }
 
-    .pro-page-btn-prev{
-        left: 18vw;
+    .product-title {
+        margin-bottom: 4vw;
+    }
+
+    .element{
+        border-top: 1px solid #bec4c4;
+        margin: 0;
     }
 
     .pro-page-btn img {
@@ -19,13 +24,22 @@
         top: 1.6vw;
     }
 
+    .pro-page-btn-prev{
+        left: 25vw;
+    }
     .pro-page-btn-next {
-        right: 18vw;
+        right: 25vw;
     }
 
     table td{
         padding: 5px 10px;
         font-size: 3vw;
+    }
+
+    ul{
+        padding-inline-start: 4px;
+        margin-block-start: 0;
+        margin-block-start: 1px;
     }
 
     ul li{
@@ -36,11 +50,12 @@
         width: 100%;
         height: 30vh;
         max-width: 100%;
-        margin-bottom: 4vh;
+        margin-bottom: 2vh;
     }
 
     .product-title{
         font-size: 8vw;
+        text-align: center;
     }
 
     .btn-area{

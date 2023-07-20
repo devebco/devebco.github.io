@@ -586,15 +586,42 @@ form.input {
 /* ======================================================= Toggler End ======================================================= */
 /* ========================================================= Header End | Carousel1 Start ========================================================= */
 
+
+
+/* .iconboxslider {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  /* height: 200px;
+  height: auto;
+  max-height: auto;
+  overflow-y: hidden;
+  overflow-x: scroll !important;
+  /* padding: 16px;
+  transform: scroll(calc(var(--i, 0) / var(--n) * -100%));
+  scroll-behavior: smooth;
+  /* z-index: 5;
+  padding: 1em 0 3em 0;
+}
+
+.iconboxslider::-webkit-scrollbar {
+  height: 5px;
+  width: 150px;
+  display: none;
+} */
+
 .carousel2slider {
   width: 100%;
   padding-top: 54vw;
   height: 0px;
   position: relative;
   place-items: center;
+  overflow-y: hidden;
+  overflow-x: scroll !important;
   margin: 0;
   position: relative;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 .carousel2slide {

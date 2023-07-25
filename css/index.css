@@ -1340,10 +1340,10 @@ span.livsmart-area-link {
   } */
 
   .carousel2slider .btn {
-    width: 26px;
-    height: 26px;
-    padding: 5px;
-    font-size: 15px;
+    width: 28px;
+    height: 28px;
+    padding: 0px;
+    font-size: 18px;
   }
 
 
@@ -1432,6 +1432,10 @@ span.livsmart-area-link {
     width: 14.5%;
     height: 10%;
   }
+}
 
 
   /* ================================================== Responsive End ================================================== */
+
+
+  

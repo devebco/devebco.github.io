@@ -19,10 +19,10 @@ body {
   font-style: normal;
   font-weight: normal;
   src: url("font/Uniform.otf") format("opentype");
-} */ 
+} */
 
 :root {
-  --navbarcolor: rgba(39, 72, 137, 0.8); 
+  --navbarcolor: rgba(39, 72, 137, 0.8);
   --linkscolor: white;
   --ebcocolor: #274889;
   --livsmartcolor: #f36620;
@@ -85,14 +85,15 @@ scrollbar-width: none;
 } */
 /* ========================================================= Scrollbar CSS End | Header Start ========================================================= */
 
-#header-parent-div { 
+#header-parent-div {
   display: flex;
 }
 
 .header {
   background-color: var(--navbarcolor);
   /* height: var(--headerheight);
-  min-height: 52px; */ /* Remove this, this creates lot of issues */
+  min-height: 52px; */
+  /* Remove this, this creates lot of issues */
   width: var(--headerwidth);
   grid-template-columns: calc(var(--logoleft) + var(--logowidth)) var(--mainnavbarwidth) var(--rightnavbarwidth);
   z-index: 999;
@@ -123,7 +124,7 @@ scrollbar-width: none;
   z-index: 99999;
 }
 
-#checkthis{
+#checkthis {
   display: none;
 }
 
@@ -435,7 +436,7 @@ form.input {
 }
 
 /* .searchbtn, */
-.loginbtn{
+.loginbtn {
   background-color: rgba(0, 0, 0, 0.2);
   padding: 8px 12px;
   margin: 10px 0;
@@ -531,12 +532,13 @@ form.input {
 .slant-div-2 button {
   justify-content: center;
   align-self: center;
-  
+
 }
 
 /* ======================================================= Toggler Start ======================================================= */
 
-.nav-toggler, .nav-toggler2 {
+.nav-toggler,
+.nav-toggler2 {
   display: none;
   min-height: calc(var(--headerheight)/1.2);
   min-width: calc(var(--headerheight)/1.2);
@@ -687,7 +689,8 @@ form.input {
 /* ========================================================= Carousel1 End ========================================================= */
 
 .scroll-down-arrow {
-  display: none; /* Remove this when required */
+  display: none;
+  /* Remove this when required */
   opacity: 0.8;
   color: white;
   font-size: 48px;
@@ -727,19 +730,33 @@ form.input {
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
 }
 
-.sub-title-div {
+.ebco-area-body-logo {
+  width: 10%;
+  height: 17%;
+}
+
+.worksmart-area-body-logo {
+  width: 30%;
+  height: 10%;
+}
+
+.livsmart-area-body-logo {
+  width: 14.5%;
+  height: 10%;
+}
+
+
+
+/* .sub-title-div {
   margin-bottom: 4%;
 
-}
+} */
 
-.sub-title-span {
-  /* display: inline-block; */
+/* .sub-title-span {
   color: white;
   font-size: 1em;
-  /*   background-color: rgba(0, 0, 0, 0.6); */
-  /* background-color: var(--navbarcolor); */
   background-color: rgba(0, 0, 0, 0.3);
-}
+} */
 
 .ebco-area-body {
   background-image: url("/img/brand-pages/ebco/ebco-4x3.png");
@@ -755,24 +772,37 @@ form.input {
 
 .livsmart-area-body {
   background-image: url("/img/brand-pages/livsmart/livsmart-16x9.png");
-  grid-column: span 2;
+  grid-column: span 2 !important;
   margin-bottom: 1%;
 }
 
+
+span.ebco-area-link,
+span.worksmart-area-link,
+span.livsmart-area-link {
+
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 .all-area-explore {
-  /*   width: 10vw; */
-  /* margin-top: 5%; */
+  display: none;
+}
+
+/* .all-area-explore {
   text-decoration: none;
   color: black;
   padding: 0.5% 2%;
   cursor: pointer;
   font-weight: bold;
-  /*   height: 2vw; */
   border: solid 1px black;
   border-radius: 2px;
-  /* background: rgba(255, 255, 255,0); */
   background-color: rgba(255, 255, 255, 0.3);
-  /* font-size: 25px; */
   font-size: 1.2vw;
 }
 
@@ -780,7 +810,7 @@ form.input {
   background: rgba(0, 0, 0, 0.3);
   border: solid 1px rgba(0, 0, 0, 0.3);
   color: white;
-}
+} */
 
 /* ========================================================== Cover Grid Area End ========================================================== */
 /* ========================================================= New Launches Start ========================================================= */
@@ -1151,8 +1181,8 @@ form.input {
 /* ================================================== Responsive Start ================================================== */
 @media only screen and (max-width: 1100px) {
 
-  :root{
-    --headerheight:5vh;
+  :root {
+    --headerheight: 5vh;
   }
 
 
@@ -1172,17 +1202,19 @@ form.input {
     font-size: 1em;
   }
 
-  #mainnavbar-ebco, #mainnavbar-worksmart, #mainnavbar-livsmart{
+  #mainnavbar-ebco,
+  #mainnavbar-worksmart,
+  #mainnavbar-livsmart {
     background-color: grey;
     font-size: 1.2em;
   }
-  
+
   /* 
   #checkthis{
     display: block;
   }
   */
-  
+
   /*   input ~ .mainnavbar {
     display: none;
   }
@@ -1308,10 +1340,10 @@ form.input {
   } */
 
   .carousel2slider .btn {
-    width: 20px;
-    height: 20px;
+    width: 26px;
+    height: 26px;
     padding: 5px;
-    font-size: 9px;
+    font-size: 15px;
   }
 
 
@@ -1341,21 +1373,65 @@ form.input {
 
   .control-next-btn {
     right: 0px;
-  } 
+  }
 
   .all-area-explore {
-    border: dashed 1px black;
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 0.5% 2%;
+    width: fit-content;
+    cursor: pointer;
+    font-weight: bold;
+    border: solid 1px black;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 3vw;
+    margin: 5% auto;
+  }
+
+  .all-area-explore:hover {
+    background: rgba(0, 0, 0, 0.3);
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    color: white;
   }
 
   .ebco-area-body {
     grid-column: span 2;
     margin-right: 0%;
-}
+  }
 
-.worksmart-area-body {
-  grid-column: span 2;
-  margin-left: 0%;
-}
+  .worksmart-area-body {
+    grid-column: span 2;
+    margin-left: 0%;
+  }
+
+  .livsmart-area-body {
+    grid-column: span 2;
+    margin-left: 0%;
+  }
+
+  span.ebco-area-link,
+  span.worksmart-area-link,
+  span.livsmart-area-link {
+    display: none;
+  }
 
 
-/* ================================================== Responsive End ================================================== */
+  .ebco-area-body-logo {
+    width: 5%;
+    height: 17%;
+  }
+  
+  .worksmart-area-body-logo {
+    width: 14.5%;
+    height: 10%;
+  }
+  
+  .livsmart-area-body-logo {
+    width: 14.5%;
+    height: 10%;
+  }
+
+
+  /* ================================================== Responsive End ================================================== */

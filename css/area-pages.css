@@ -30,7 +30,7 @@ body {
 
 *, :after, :before {
     box-sizing: border-box;
-} */ 
+} */
 
 @font-face {
   font-family: "Uniform";
@@ -55,7 +55,9 @@ body {
 
 html,
 body {
-  font-family: "Uniform", /* "Nunito", Tahoma, */ cursive;
+  font-family: "Uniform",
+    /* "Nunito", Tahoma, */
+    cursive;
   height: 100%;
   margin: 0;
   font-size: 16px;
@@ -98,7 +100,7 @@ body {
 }
 
 .ptext {
-    
+
   position: absolute;
   top: 90%;
   width: 100%;
@@ -299,3 +301,39 @@ body {
   text-align: center;
   margin: 2% 10%;
 }
+
+/* ================================================== Responsive Start ================================================== */
+@media only screen and (max-width: 1100px) {
+
+  .iconboxslider-container{
+    padding: 0%;
+  }
+
+  .iconboxslide {
+    padding: 0px 5px;
+  }
+
+  .section{
+    padding: 2vw 3vw 0vw 3vw;
+  }
+
+  .iconboxslide img {
+    height: 36vw;
+    width: 36vw;
+  }
+
+  .img_label {
+    line-height: 1.2em;
+  }
+
+  .control-prev-btn, .control-next-btn{
+    display: none;
+  }
+
+  .logo, .logo-img {
+    width: calc(var(--logowidth) * 3);
+    height: calc(var(--headerheight) * 4.5);
+  }
+}
+
+/* ================================================== Responsive End ================================================== */

@@ -547,9 +547,6 @@ form.input {
   right: 20px;
 }
 
-
-
-
 /* .nav-toggler {
   border: 3px solid #fff;
   padding: 5px;
@@ -587,8 +584,6 @@ form.input {
 
 /* ======================================================= Toggler End ======================================================= */
 /* ========================================================= Header End | Carousel1 Start ========================================================= */
-
-
 
 /* .iconboxslider {
   width: 100%;
@@ -723,12 +718,14 @@ form.input {
   transition: 0.25s ease-in-out;
 }
 
-
-
 .all-area-body:hover {
   transform: scale(1.02);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
 }
+
+/* .livsmart-area-body:hover {
+  transform: scale(1.03);
+} */
 
 .ebco-area-body-logo {
   width: 10%;
@@ -745,11 +742,8 @@ form.input {
   height: 10%;
 }
 
-
-
 /* .sub-title-div {
   margin-bottom: 4%;
-
 } */
 
 /* .sub-title-span {
@@ -761,13 +755,13 @@ form.input {
 .ebco-area-body {
   background-image: url("/img/brand-pages/ebco/ebco-4x3.png");
   margin-right: 0.5%;
-  margin-bottom: 1%;
+  margin-bottom: 0.6%;
 }
 
 .worksmart-area-body {
   background-image: url("/img/brand-pages/worksmart/worksmart-4x3.png");
   margin-left: 0.5%;
-  margin-bottom: 1%;
+  margin-bottom: 0.6%;
 }
 
 .livsmart-area-body {

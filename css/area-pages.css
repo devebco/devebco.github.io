@@ -338,7 +338,15 @@ body {
   }
 
   .pimg1 {
-    background-image: url(/img/area-pages/bedroom/bedroom-portrait.jpg);
+    background-image: url(/img/area-pages/bedroom/bedroom-1-portrait.jpg);
+  }
+
+  .pimg2 {
+    background-image: url(/img/area-pages/bedroom/bedroom-2-portrait.jpg);
+  }
+
+  .pimg3 {
+    background-image: url(/img/area-pages/bedroom/bedroom-3-portrait.jpg);
   }
 
   .control-btn {

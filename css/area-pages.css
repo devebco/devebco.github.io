@@ -305,7 +305,7 @@ body {
 /* ================================================== Responsive Start ================================================== */
 @media only screen and (max-width: 1100px) {
 
-  .iconboxslider-container{
+  .iconboxslider-container {
     padding: 0%;
   }
 
@@ -313,7 +313,7 @@ body {
     padding: 0px 5px;
   }
 
-  .section{
+  .section {
     padding: 2vw 3vw 0vw 3vw;
   }
 
@@ -326,13 +326,39 @@ body {
     line-height: 1.2em;
   }
 
-  .control-prev-btn, .control-next-btn{
+  .control-prev-btn,
+  .control-next-btn {
     display: none;
   }
 
-  .logo, .logo-img {
+  .logo,
+  .logo-img {
     width: calc(var(--logowidth) * 3);
     height: calc(var(--headerheight) * 4.5);
+  }
+
+  .control-btn {
+    align-self: center;
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 8vw;
+    height: 8vw;
+  }
+
+  .control-btn:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  .left-control-btn {
+    justify-self: left;
+  }
+
+  .right-control-btn {
+    justify-self: right;
   }
 }
 

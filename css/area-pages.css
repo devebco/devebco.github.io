@@ -78,15 +78,15 @@ body {
 
 
 
-/* .pimg1 {
-  background-image: url(/img/banner/kitchen-banner-1.jpg);
+.pimg1 {
+  background-image: url(/img/area-pages/bedroom/bedroom-1.jpg);
 }
 .pimg2 {
-  background-image: url(/img/banner/kitchen-banner-2.png);
+  background-image: url(/img/area-pages/bedroom/bedroom-2.jpg);
 }
 .pimg3 {
-  background-image: url(/img/banner/kitchen-banner-3.jpg);
-} */
+  background-image: url(/img/area-pages/bedroom/bedroom-3.jpg);
+}
 
 .pimg1,
 .pimg2,
@@ -335,6 +335,10 @@ body {
   .logo-img {
     width: calc(var(--logowidth) * 3);
     height: calc(var(--headerheight) * 4.5);
+  }
+
+  .pimg1 {
+    background-image: url(/img/area-pages/bedroom/bedroom-portrait.jpg);
   }
 
   .control-btn {

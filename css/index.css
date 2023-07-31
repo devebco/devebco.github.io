@@ -923,6 +923,7 @@ span.livsmart-area-link {
   padding: 0 25px 5px 25px;
   font-size: 1.75vw;
 }
+
 /* ----------------------------------------------------------------------------------------------check here */
 .random-grid-item span {
   width: 100%;
@@ -1327,86 +1328,91 @@ span.livsmart-area-link {
 
   /*   .carousel2slider{
     top: var(--headerheight);
-  } */ /* uncomment this for carousel below navbar */
+  } */
+  /* uncomment this for carousel below navbar */
 
   /* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-  
-.iconboxslider {
-  width: 100%;
-  margin: auto;
-  display: flex;
-  /* height: 200px; */
-  height: auto;
-  max-height: auto;
-  overflow-y: hidden;
-  overflow-x: scroll !important;
-  /* padding: 16px; */
-  transform: scroll(calc(var(--i, 0) / var(--n) * -100%));
-  scroll-behavior: smooth;
-  /* z-index: 5; */
-  padding: 1em 0 3em 0;
-}
 
-.iconboxslider::-webkit-scrollbar {
-  height: 5px;
-  width: 150px;
-  display: none;
-}
+  .iconboxslide {
+    position: relative;
+  }
 
-.iconboxslider::-webkit-scrollbar-track {
-  background: transparent;
-}
+  .iconboxslider {
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    /* height: 200px; */
+    height: auto;
+    max-height: auto;
+    overflow-y: hidden;
+    overflow-x: scroll !important;
+    /* padding: 16px; */
+    transform: scroll(calc(var(--i, 0) / var(--n) * -100%));
+    scroll-behavior: smooth;
+    /* z-index: 5; */
+    padding: 1em 0 3em 0;
+  }
 
-.iconboxslider::-webkit-scrollbar-thumb {
-  background: #888;
-}
+  .iconboxslider::-webkit-scrollbar {
+    height: 5px;
+    width: 150px;
+    display: none;
+  }
 
-.iconboxslider::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
+  .iconboxslider::-webkit-scrollbar-track {
+    background: transparent;
+  }
 
-.iconboxslider img:hover {
-  transform: scale(1.04);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-}
+  .iconboxslider::-webkit-scrollbar-thumb {
+    background: #888;
+  }
 
-.iconboxslide {
-  position: relative;
-}
+  .iconboxslider::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 
-.iconboxslide img {
-  /* height: 300px;
+  .iconboxslider img:hover {
+    transform: scale(1.04);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .iconboxslide {
+    position: relative;
+  }
+
+  .iconboxslide img {
+    /* height: 300px;
   width: 300px; */
-  height: 20vw;
-  width: 20vw;
-  margin: 0 4px;
-  object-fit: cover;
-  /* border-radius: 15px; */
-  cursor: pointer;
-  transition: 0.25s ease-in-out;
-}
+    height: 20vw;
+    width: 20vw;
+    margin: 0 4px;
+    object-fit: cover;
+    /* border-radius: 15px; */
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+  }
 
-.control-prev-btn,
-.control-next-btn {
-  position: absolute;
-  margin: 8vw 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  width: 4vw;
-  height: 4vw;
-  line-height: 4vw;
-  border-radius: 4vw;
-  text-align: center;
-  box-shadow: 0 1px 3px #888;
-  user-select: none;
-  color: #444;
-  cursor: pointer;
-  z-index: 55;
-  font-size: 1.5vw;
-}
+  .control-prev-btn,
+  .control-next-btn {
+    position: absolute;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 4vw;
+    height: 4vw;
+    line-height: 4vw;
+    border-radius: 4vw;
+    text-align: center;
+    box-shadow: 0 1px 3px #888;
+    user-select: none;
+    color: #444;
+    cursor: pointer;
+    z-index: 55;
+    font-size: 1.5vw;
+  }
 
-/* --------------------------------------------------------------------------------------------------------------------------------------------------------- */ 
-
+  /* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
   .carousel2slider .btn {
     width: 28px;
@@ -1415,9 +1421,9 @@ span.livsmart-area-link {
     font-size: 14px;
   }
 
-
   .control-prev-btn,
   .control-next-btn {
+    /* display: block;
     position: absolute;
     margin: 0;
     background-color: rgba(255, 255, 255, 0.8);
@@ -1433,8 +1439,7 @@ span.livsmart-area-link {
     z-index: 55;
     top: 140%;
     font-size: 9px;
-    /* position: relative; */
-    align-self: center;
+    align-self: center; */
   }
 
   .control-prev-btn {
@@ -1443,7 +1448,7 @@ span.livsmart-area-link {
 
   .control-next-btn {
     right: 0px;
-    
+
   }
 
   /* --------------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -1495,12 +1500,12 @@ span.livsmart-area-link {
     width: 5%;
     height: 17%;
   }
-  
+
   .worksmart-area-body-logo {
     width: 14.5%;
     height: 10%;
   }
-  
+
   .livsmart-area-body-logo {
     width: 14.5%;
     height: 10%;
@@ -1509,10 +1514,7 @@ span.livsmart-area-link {
   .random-grid-item label {
     padding: 0.75vw 5vw 1vw 5vw;
     font-size: 2.25vw;
-}
+  }
 
 
   /* ================================================== Responsive End ================================================== */
-
-
-  

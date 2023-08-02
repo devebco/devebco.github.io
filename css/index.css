@@ -317,7 +317,6 @@ button.link {
 
 @media only screen and (min-width: 1100.01px) {
 
-
   /* :hover for hover oprations & .active for click operations */
   .dropdown:hover>.link+.dropdown-menu {
     opacity: 1;
@@ -335,7 +334,6 @@ button.link {
     /* max-height: 50vh; */
     /* justify-content: center; */
   }
-
 }
 
 .dropdown-area {
@@ -1109,7 +1107,7 @@ span.livsmart-area-link {
   }
 
   .iconboxslide {
-    padding: 16px 10px;
+    padding: 10px 5px;
   }
 
   .iconboxslide img {
@@ -1156,8 +1154,8 @@ span.livsmart-area-link {
   font-size: 2.5vw;
   color: white;
   justify-content: center;
-  padding-top: 2vw;
-  height: 8vw;
+  padding-top: 5vw;
+  height: 7vw;
   background-color: var(--worksmartcolor);
 }
 
@@ -1175,7 +1173,6 @@ span.livsmart-area-link {
   :root {
     --headerheight: 5vh;
   }
-
 
   .header {
     height: var(--headerheight);
@@ -1339,7 +1336,7 @@ span.livsmart-area-link {
   }
 
   .iconboxslider {
-    position: absolute;
+    position: relative;
     width: 100%;
     margin: auto;
     display: flex;
@@ -1384,10 +1381,10 @@ span.livsmart-area-link {
 
   .iconboxslide img {
     /* height: 300px;
-  width: 300px; */
-    height: 20vw;
-    width: 20vw;
-    margin: 0 4px;
+    width: 300px; */
+    height: 30vw;
+    width: 30vw;
+    margin: 0 0px;
     object-fit: cover;
     /* border-radius: 15px; */
     cursor: pointer;
@@ -1421,9 +1418,9 @@ span.livsmart-area-link {
     font-size: 14px;
   }
 
-  .control-prev-btn,
-  .control-next-btn {
-    /* display: block;
+/*    .control-prev-btn,
+    .control-next-btn {
+    display: block;
     position: absolute;
     margin: 0;
     background-color: rgba(255, 255, 255, 0.8);
@@ -1439,8 +1436,8 @@ span.livsmart-area-link {
     z-index: 55;
     top: 140%;
     font-size: 9px;
-    align-self: center; */
-  }
+    align-self: center; 
+  } */
 
   .control-prev-btn {
     left: 0px;

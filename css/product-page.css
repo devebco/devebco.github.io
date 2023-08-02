@@ -297,10 +297,12 @@ table tr td:last-child {
     font-weight: bold;
     background-color: transparent;
     border-color: var(--ebcocolor);
+    cursor: pointer;
 }
 
 .btn-area button label {
     padding-left: 7px;
+    cursor: pointer;
 }
 
 /* ========================================== Accordion End | Empty Area Start ========================================== */
@@ -485,6 +487,7 @@ iframe {
 
     .btn-area button {
         /* text-transform: uppercase; */
+        cursor: pointer;
         display: flex;
         padding: 2vw 4vw;
         margin: 2vw;
